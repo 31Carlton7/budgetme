@@ -16,8 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -28,18 +26,13 @@ import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:heroicons/heroicons.dart';
 
 class AddGoalButton extends ConsumerWidget {
   const AddGoalButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    IconData icon() {
-      if (Platform.isIOS) return CupertinoIcons.square_pencil;
-
-      return Icons.edit_note;
-    }
-
     return Container(
       margin: const EdgeInsets.only(right: kDefaultPadding, bottom: kDefaultPadding),
       child: BMPrimaryButton(
@@ -50,7 +43,7 @@ class AddGoalButton extends ConsumerWidget {
         boxShadow: primaryBoxShadow,
         padding: EdgeInsets.zero,
         alignment: MainAxisAlignment.center,
-        prefixIcon: Icon(icon(), size: 27, color: BudgetMeLightColors.white),
+        prefixIcon: HeroIcon(HeroIcons.pencilAlt, size: 27, color: BudgetMeLightColors.white),
         onPressed: () async {
           HapticFeedback.mediumImpact();
 
