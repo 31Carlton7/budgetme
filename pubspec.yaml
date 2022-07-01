@@ -33,10 +33,10 @@ dependencies:
   # UI
   heroicons: ^0.4.0
   modal_bottom_sheet: ^2.0.1
-  flutter_platform_widgets: ^1.20.0
   dotted_line: ^3.1.0
   auto_size_text_field: ^2.0.0
   confetti: ^0.7.0
+  flutter_platform_widgets: ^1.20.0
   currency_picker:
     path: ./packages/flutter_currency_picker
 
@@ -58,20 +58,20 @@ dependencies:
 
   # Other
   rxdart: ^0.27.4
-  flutter_native_timezone: ^2.0.0
-  flutter_local_notifications: ^9.6.1
   device_preview: ^1.0.0
   device_preview_screenshot: ^1.0.0
   image_downloader: ^0.31.0
   image_picker: ^0.8.5+3
-  flutter_screenutil: ^5.5.2
   path_provider: ^2.0.10
   intl: ^0.17.0
   uuid: ^3.0.6
   currency_text_input_formatter: ^2.1.5
   url_launcher: ^6.0.9
-  flutter_launcher_icons: ^0.9.1
   jiffy: ^5.0.0
+  flutter_native_timezone: ^2.0.0
+  flutter_local_notifications: ^9.6.1
+  flutter_screenutil: ^5.5.2
+  flutter_launcher_icons: ^0.9.3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -93,6 +93,10 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+flutter_icons:
+  android: 'launcher_icon'
+  ios: true
+  image_path: 'assets/app_icons/app_icon.png'
 
 # The following section is specific to Flutter.
 flutter:
