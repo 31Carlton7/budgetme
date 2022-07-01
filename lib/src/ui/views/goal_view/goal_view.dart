@@ -150,6 +150,11 @@ class _DashboardViewState extends ConsumerState<GoalView> {
             SliverToBoxAdapter(
               child: TransactionHistorySection(goal),
             ),
+            // const SliverPadding(padding: EdgeInsets.only(bottom: kDefaultPadding)),
+
+            //  SliverToBoxAdapter(
+            //   child: Text('UnSplash'),
+            // ),
             const SliverPadding(padding: EdgeInsets.only(bottom: kLargePadding * 4)),
           ],
         ),
