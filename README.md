@@ -1,16 +1,87 @@
-# budgetme
+<img src="https://github.com/31Carlton7/budgetme/blob/master/assets/app_icons/banner.png"> </img>
 
-A new Flutter project.
+# BudgetMe
+
+An app that helps you save money and achieve your goal!
+
+<!-- Put App Store and Google Play Store Stickers Here-->
+
+[Screenshots](#screenshots)
+
+[TestFlight & Google Play Beta](#testflight--google-play-beta)
+
+[License](https://github.com/31Carlton7/budgetme/blob/master/LICENSE)
+
+## About
+
+This is an app to save money small to medium sums of money to achieve goals. I created this app in hopes that users will be able to save money and become more organized and responsible in terms of money management. This app is intended for people of all ages who want to save money to reach goals. Everyone can do it, you just need a budget and some dedication.
+
+My friend was explaining to me how she really wanted to go to Paris during the summer of senior year (2023) as a graduation/birthday treat, however, her parents were not planning on paying for a ticket and she is not the best at saving money for long periods of time. She needed $1500 for everything she wanted to do. So I decided to create this app to help her and others budget properly to be able to reach their goal.
+
+## Developer Info
+
+To build the app I utilized the [Flutter SDK](https://flutter.dev) as the UI Framework and that uses [Dartlang](https://dart.dev) as the programming language. The list of packages the app uses can be found [here](https://github.com/31Carlton7/elisha/blob/master/pubspec.yaml) under the dependencies indent. I also used Firebase Analytics and Crashlytics to better understand the users who use the app.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Assuming Flutter is installed and setup on your device (If not, follow the steps to do so here), Fork, clone, or download the code for this repository and navigate to the enclosing folder inside your terminal. Then use this command to run:
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## TestFlight & Google Play Beta
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you would like to use the app via TestFlight or Google Play Beta, you can download the apps with the following links below:
+
+TestFlight: [https://testflight.apple.com/join/7vWnoWaD](https://testflight.apple.com/join/7vWnoWaD)
+
+Google Play Beta: [https://play.google.com/store/apps/details?id=com.elisha.app](https://play.google.com/store/apps/details?id=com.elisha.app)
+
+## Screenshots
+
+<!--
+<table>
+  <tr>
+    <td>
+      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_1.png"> </img>
+    </td>
+    <td>
+      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_2.png">
+  </img>
+    </td>
+    <td>
+        <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_3.png">
+  </img>
+    </td>
+  </tr>
+
+  <tr>
+     <td>
+       <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_4.png">
+  </img>
+    </td>
+    <td>
+      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_5.png">
+    </td>
+    <td>
+      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_7.png">
+    </td>
+  </tr>
+
+</table> -->
+
+<!-- ## Featured In
+
+- [FlutterAwesome](https://flutterawesome.com/pocket-bible-church-app-built-with-flutter/) -->
+
+## Socials
+
+If you have any questions, you can reach me here:
+
+- Email: carltonaikins7@gmail.com
+- LinkedIn: [Carlton Aikins](https://www.linkedin.com/in/carlton-aikins-a34a14226)
+- Twitter: [@31carlton7](https://www.twitter.com/31carlton7)
+- Instagram: [@31carlton7](https://www.instagram.com/31carlton7/)
+
+In God we trust 🙏🏾
