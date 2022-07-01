@@ -1,10 +1,11 @@
 import 'dart:math';
 
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/views/goal_view/components/show_goal_settings_bottom_sheet.dart';
-import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
 
 // ignore: non_constant_identifier_names

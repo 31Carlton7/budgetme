@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
+import 'package:budgetme/src/ui/components/back_button.dart' as b;
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
-import 'package:budgetme/src/ui/components/back_button.dart' as b;
 import 'package:budgetme/src/ui/views/create_goal_view/bottom_sheet_views/view_three.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

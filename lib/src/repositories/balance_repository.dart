@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:currency_picker/currency_picker.dart';
-import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class BalanceRepository extends ChangeNotifier {

@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/dark_theme/dark_color_palette.dart';
 import 'package:budgetme/src/config/themes/text_theme.dart';
-import 'package:flutter/material.dart';
 
 ThemeData darkTheme() {
   final ThemeData base = ThemeData.dark();

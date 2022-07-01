@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/config/themes/text_theme.dart';
-import 'package:flutter/material.dart';
 
 ThemeData lightTheme() {
   final ThemeData base = ThemeData.light();

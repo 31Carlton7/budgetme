@@ -1,21 +1,22 @@
 import 'dart:io';
 
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/providers/goal_repository_provider.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
+import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/views/all_goals_view/components/add_goal_button.dart';
 import 'package:budgetme/src/ui/views/all_goals_view/components/goal_card.dart';
-import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:budgetme/src/ui/views/profile_view/profile_view.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AllGoalsView extends ConsumerStatefulWidget {
   const AllGoalsView({Key? key}) : super(key: key);

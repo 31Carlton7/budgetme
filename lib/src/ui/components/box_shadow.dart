@@ -1,5 +1,6 @@
-import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:flutter/material.dart';
+
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 
 List<BoxShadow> cardBoxShadow = [
   BoxShadow(

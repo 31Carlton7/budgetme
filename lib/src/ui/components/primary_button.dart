@@ -1,10 +1,10 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/dark_theme/dark_color_palette.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-
-import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 const EdgeInsets _kButtonPadding = EdgeInsets.all(16.0);

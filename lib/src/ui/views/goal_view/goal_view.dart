@@ -1,5 +1,7 @@
 import 'dart:math' as math;
 
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
@@ -8,12 +10,11 @@ import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/components/time_left_card.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
-import 'package:budgetme/src/ui/views/goal_view/components/transaction_history_section.dart';
 import 'package:budgetme/src/ui/views/goal_view/components/add_money_button.dart';
 import 'package:budgetme/src/ui/views/goal_view/components/goal_progress_card.dart';
 import 'package:budgetme/src/ui/views/goal_view/components/goal_view_header.dart';
+import 'package:budgetme/src/ui/views/goal_view/components/transaction_history_section.dart';
 import 'package:confetti/confetti.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class GoalView extends ConsumerStatefulWidget {

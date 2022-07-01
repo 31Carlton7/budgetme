@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/views/adjust_monthly_spending_limit_view/adjust_monthly_spending_limit_view.dart';
-import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
 
 class SettingsSection extends StatelessWidget {

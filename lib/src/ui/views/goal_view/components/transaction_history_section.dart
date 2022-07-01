@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/transaction_card.dart';
 import 'package:budgetme/src/ui/views/transaction_history_view/transaction_history_view.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:heroicons/heroicons.dart';
 

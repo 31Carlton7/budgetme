@@ -1,17 +1,18 @@
 import 'dart:io';
 
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/providers/goal_repository_provider.dart';
+import 'package:budgetme/src/ui/components/back_button.dart' as b;
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:currency_picker/currency_picker.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:budgetme/src/ui/components/back_button.dart' as b;
 import 'package:http/http.dart' show get;
 import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';

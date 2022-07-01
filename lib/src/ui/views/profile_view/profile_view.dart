@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/ui/components/back_button.dart';
 import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
 import 'package:budgetme/src/ui/views/profile_view/components/purchase_pro_card.dart';
 import 'package:budgetme/src/ui/views/profile_view/components/settings_section.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:timezone/timezone.dart' as tz;

@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter/foundation.dart';
 
 import 'package:budgetme/src/models/transaction.dart';
+import 'package:currency_picker/currency_picker.dart';
 
 class Goal {
   /// UUID v4 to differentiate all goals.

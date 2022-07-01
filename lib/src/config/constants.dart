@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:currency_picker/currency_picker.dart';
-import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' as intl;
 
 const String kAppTitle = 'BudgetMe';

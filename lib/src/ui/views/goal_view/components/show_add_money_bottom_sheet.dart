@@ -1,3 +1,6 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
 import 'package:auto_size_text_field/auto_size_text_field.dart';
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
@@ -10,12 +13,9 @@ import 'package:budgetme/src/ui/components/close_button.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:currency_text_input_formatter/currency_text_input_formatter.dart';
 import 'package:dotted_line/dotted_line.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
-
 import 'package:uuid/uuid.dart';
 
 Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
