@@ -59,6 +59,14 @@ class BalanceRepository extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> setRemainingBalance(double amount) async {
+    final box = Hive.box('budgetme');
+
+    _remainingBalance = amount;
+    await box.put('remaining_balance', _remainingBalance);
+    notifyListeners();
+  }
+
   Future<void> increaseRemainingBalance(double amount) async {
     final box = Hive.box('budgetme');
 

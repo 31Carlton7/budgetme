@@ -127,8 +127,14 @@ class AdjustMonthlySpendingLimitView extends ConsumerWidget {
             borderRadius: BorderRadius.circular(999),
             padding: EdgeInsets.zero,
             alignment: MainAxisAlignment.center,
-            onPressed: () {
-              ref.read(balanceRepositoryProvider).setBalance(double.parse(_controller.text));
+            onPressed: () async {
+              await ref.read(balanceRepositoryProvider).setBalance(double.parse(_controller.text));
+
+              if (ref.read(balanceRepositoryProvider).remainingBalance >= ref.read(balanceRepositoryProvider).balance) {
+                await ref
+                    .read(balanceRepositoryProvider)
+                    .setRemainingBalance(ref.read(balanceRepositoryProvider).balance.toDouble());
+              }
               FocusScope.of(context).requestFocus(FocusNode());
             },
           ),
