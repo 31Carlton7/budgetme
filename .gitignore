@@ -1,15 +1,15 @@
 .DS_Store
 
 # Miscellaneous
-budgetme_mobileapp*.class
-budgetme_mobileapp*.log
-budgetme_mobileapp*.pyc
-budgetme_mobileapp*.swp
-budgetme_mobileapp.DS_Store
-budgetme_mobileapp.atom/
-budgetme_mobileapp.buildlog/
-budgetme_mobileapp.history
-budgetme_mobileapp.svn/
+budgetme_mobileapp/*.class
+budgetme_mobileapp/*.log
+budgetme_mobileapp/*.pyc
+budgetme_mobileapp/*.swp
+budgetme_mobileapp/.DS_Store
+budgetme_mobileapp/.atom/
+budgetme_mobileapp/.buildlog/
+budgetme_mobileapp/.history
+budgetme_mobileapp/.svn/
 
 # IntelliJ related
 budgetme_mobileapp*.iml
