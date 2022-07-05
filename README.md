@@ -1,4 +1,4 @@
-<img src="https://github.com/31Carlton7/budgetme/blob/master/assets/app_icons/banner.png"> </img>
+<img src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/app_icons/banner.png"> </img>
 
 # BudgetMe
 
