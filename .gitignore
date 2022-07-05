@@ -1,1 +1,52 @@
 .DS_Store
+
+# Miscellaneous
+budgetme_mobileapp*.class
+budgetme_mobileapp*.log
+budgetme_mobileapp*.pyc
+budgetme_mobileapp*.swp
+budgetme_mobileapp.DS_Store
+budgetme_mobileapp.atom/
+budgetme_mobileapp.buildlog/
+budgetme_mobileapp.history
+budgetme_mobileapp.svn/
+
+# IntelliJ related
+budgetme_mobileapp*.iml
+budgetme_mobileapp*.ipr
+budgetme_mobileapp*.iws
+budgetme_mobileapp.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+budgetme_mobileapp/**/doc/api/
+budgetme_mobileapp/**/ios/Flutter/.last_build_id
+budgetme_mobileapp/.dart_tool/
+budgetme_mobileapp/.flutter-plugins
+budgetme_mobileapp/.flutter-plugins-dependencies
+budgetme_mobileapp/.packages
+budgetme_mobileapp/.pub-cache/
+budgetme_mobileapp/.pub/
+budgetme_mobileapp/build/
+
+budgetme_mobileapp/**/flutter_currency_picker
+
+# Web related
+budgetme_mobileapp/lib/generated_plugin_registrant.dart
+
+# Symbolication related
+budgetme_mobileapp/app.*.symbols
+
+# Obfuscation related
+budgetme_mobileapp/app.*.map.json
+
+# Android Studio will place build artifacts here
+budgetme_mobileapp/android/app/debug
+budgetme_mobileapp/android/app/profile
+budgetme_mobileapp/android/app/release
+
+budgetme_mobileapp/lib/src/config/environment_keys.dart
