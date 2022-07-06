@@ -1,0 +1,17 @@
+"filename", "language", "Dart", "JavaScript", "JSON", "Svelte", "comment", "blank", "total"
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/main.dart", "Dart", -1, 0, 0, 0, 1, 0, 0
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/config/constants.dart", "Dart", 2, 0, 0, 0, 0, 0, 2
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/models/goal.dart", "Dart", 15, 0, 0, 0, 0, 2, 17
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/ui/views/all_goals_view/all_goals_view.dart", "Dart", -1, 0, 0, 0, 0, 0, -1
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/ui/views/create_goal_view/components/show_image_selection_bottom_sheet.dart", "Dart", 9, 0, 0, 0, 0, 1, 10
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/ui/views/create_goal_view/create_goal_view.dart", "Dart", 2, 0, 0, 0, 0, 0, 2
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/ui/views/goal_view/components/goal_view_header.dart", "Dart", 4, 0, 0, 0, 0, 0, 4
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/ui/views/goal_view/goal_view.dart", "Dart", 11, 0, 0, 0, 0, 1, 12
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/package-lock.json", "JSON", 0, 0, 55, 0, 0, 0, 55
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/package.json", "JSON", 0, 0, 1, 0, 0, 0, 1
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/components/Home.svelte", "Svelte", 0, 0, 0, -142, 0, -2, -144
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/Banner.svelte", "Svelte", 0, 0, 0, 7, 0, 1, 8
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/Footer.svelte", "Svelte", 0, 0, 0, 153, 0, 4, 157
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/svelte.config.js", "JavaScript", 0, 1, 0, 0, 0, 0, 1
+"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/tailwind.config.cjs", "JavaScript", 0, 1, 0, 0, 0, 0, 1
+"Total", "-", 41, 2, 56, 18, 1, 7, 125
