@@ -8,11 +8,14 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "start": "sirv public --single"
+    "start": "sirv public --single",
+    "deploy": "npm run build && node ./scripts/gh-pages.js"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
     "@tsconfig/svelte": "^2.0.1",
+    "@types/gh-pages": "^3.2.1",
+    "@types/node": "^18.0.3",
     "autoprefixer": "^10.4.7",
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
