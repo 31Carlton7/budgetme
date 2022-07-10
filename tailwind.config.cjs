@@ -18,6 +18,14 @@ module.exports = {
           800: '#3730A3',
           900: '#312E81',
         },
+        linkedin: {
+          100: '#0077B5',
+          200: '#135D85',
+        },
+        twitter: {
+          100: '#1DA1F2',
+          200: '#138CD6',
+        },
       },
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],
