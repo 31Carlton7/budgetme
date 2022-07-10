@@ -1,0 +1,64 @@
+Date : 2022-07-08 20:10:55
+Directory : /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme
+Total : 26 files,  450 codes, 1 comments, 31 blanks, all 482 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Svelte     |         19 |        392 |          1 |         30 |        423 |
+| JSON       |          3 |         19 |          0 |          0 |         19 |
+| HTML       |          1 |         18 |          0 |          0 |         18 |
+| JavaScript |          2 |         11 |          0 |          0 |         11 |
+| TypeScript |          1 |         10 |          0 |          1 |         11 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                               |         26 |        450 |          1 |         31 |        482 |
+| budgetme_website                                                                                                                                |         26 |        450 |          1 |         31 |        482 |
+| budgetme_website/src                                                                                                                            |         20 |        402 |          1 |         31 |        434 |
+| budgetme_website/src/lib                                                                                                                        |         19 |        382 |          1 |         30 |        413 |
+| budgetme_website/src/lib/components                                                                                                             |          4 |        140 |          0 |          1 |        141 |
+| budgetme_website/src/lib/elements                                                                                                               |         14 |        232 |          1 |         28 |        261 |
+| budgetme_website/src/lib/elements/AboutPage                                                                                                     |          1 |         27 |          0 |          2 |         29 |
+| budgetme_website/src/lib/elements/HomePage                                                                                                      |          1 |         33 |          0 |          2 |         35 |
+| budgetme_website/src/lib/elements/PrivacyPolicyPage                                                                                             |          1 |         34 |          0 |          4 |         38 |
+| budgetme_website/src/lib/elements/SupportPage                                                                                                   |          4 |        132 |          0 |         12 |        144 |
+| budgetme_website/src/routes                                                                                                                     |          1 |         20 |          0 |          1 |         21 |
++-------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/index.html                                                     | HTML       |         18 |          0 |          0 |         18 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/package-lock.json                                              | JSON       |         17 |          0 |          0 |         17 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/package.json                                                   | JSON       |          1 |          0 |          0 |          1 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/rollup.config.js                                               | JavaScript |          3 |          0 |          0 |          3 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/site.webmanifest                                               | JSON       |          1 |          0 |          0 |          1 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/Constants.ts                                           | TypeScript |         10 |          0 |          1 |         11 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/components/About.svelte                                | Svelte     |         29 |          0 |          1 |         30 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/components/Home.svelte                                 | Svelte     |         -3 |          0 |          0 |         -3 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/components/PrivacyPolicy.svelte                        | Svelte     |         94 |          0 |          0 |         94 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/components/Support.svelte                              | Svelte     |         20 |          0 |          0 |         20 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/AboutPage/AboutMockupSection.svelte           | Svelte     |         27 |          0 |          2 |         29 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/Footer.svelte                                 | Svelte     |          3 |          0 |          1 |          4 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/Header.svelte                                 | Svelte     |         14 |          0 |          2 |         16 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/HeroSection.svelte                            | Svelte     |        -33 |          0 |         -2 |        -35 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/HomePage/HeroSection.svelte                   | Svelte     |         33 |          0 |          2 |         35 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/ModalContent.svelte                           | Svelte     |          6 |          1 |          2 |          9 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/Navbar.svelte                                 | Svelte     |          9 |          0 |          2 |         11 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/Popup.svelte                                  | Svelte     |          4 |          0 |          2 |          6 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/PrivacyPolicyPage/PrivacyPolicySection.svelte | Svelte     |         34 |          0 |          4 |         38 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/SecondaryLogo.svelte                          | Svelte     |          3 |          0 |          1 |          4 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/SupportPage/EmailCard.svelte                  | Svelte     |         33 |          0 |          3 |         36 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/SupportPage/InstagramCard.svelte              | Svelte     |         33 |          0 |          3 |         36 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/SupportPage/LinkedInCard.svelte               | Svelte     |         33 |          0 |          3 |         36 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/lib/elements/SupportPage/TwitterCard.svelte                | Svelte     |         33 |          0 |          3 |         36 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/routes/__layout.svelte                                     | Svelte     |         20 |          0 |          1 |         21 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/tailwind.config.cjs                                            | JavaScript |          8 |          0 |          0 |          8 |
+| Total                                                                                                                                           |            |        450 |          1 |         31 |        482 |
++-------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
