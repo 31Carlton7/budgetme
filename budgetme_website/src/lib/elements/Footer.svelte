@@ -6,9 +6,9 @@
 </script>
 
 <footer
-  class="py-4 bg-gray-100 p-12 w-screen left-1/2 right-1/2 -mr-[50vw] -ml-[50vw] relative"
+  class="py-12 overflow-hidden bg-gray-100 px-12 w-screen left-1/2 right-1/2 -mr-[50vw] -ml-[50vw] relative"
 >
-  <div class="md:flex md:justify-between md:px-36 sm:px-24">
+  <div class="lg:flex lg:justify-between lg:items-center md:px-48 sm:px-24">
     <div class="mb-4 md:mb-0">
       <a href="/" class="flex items-center">
         <Logo />
@@ -24,7 +24,7 @@
             <a
               href="https://www.linkedin.com/in/carlton-aikins-a34a14226/"
               target="_blank"
-              class="social-btn hover:text-gray-900"
+              class="social-btn"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,14 +34,14 @@
                 ><path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
-                  d="M 100.3 448 H 7.4 V 148.9 h 92.9 V 448 Z M 53.8 108.1 C 24.1 108.1 0 83.5 0 53.8 S 24.1 0 53.8 0 s 53.8 24.1 53.8 53.8 s -24.1 54.3 -53.8 54.3 Z M 448 448 h -92.7 V 302.4 c 0 -34.7 -0.7 -79.2 -48.3 -79.2 c -48.3 0 -55.7 37.7 -55.7 76.7 V 448 h -92.8 V 148.9 h 89.1 v 40.8 h 1.3 c 12.4 -23.5 42.7 -48.3 87.9 -48.3 c 94 0 111.3 61.9 111.3 142.3 V 448 h -0.1 Z"
+                  d="M5.26433 21.3846H0.95842V7.51803H5.26433V21.3846ZM3.10906 5.62651C1.73217 5.62651 0.615356 4.48603 0.615356 3.10911C0.615356 2.44773 0.878085 1.81343 1.34574 1.34576C1.8134 0.878091 2.44769 0.615356 3.10906 0.615356C3.77042 0.615356 4.40471 0.878091 4.87237 1.34576C5.34003 1.81343 5.60275 2.44773 5.60275 3.10911C5.60275 4.48603 4.48548 5.62651 3.10906 5.62651ZM21.38 21.3846H17.0833V14.6344C17.0833 13.0257 17.0509 10.9627 14.8446 10.9627C12.6059 10.9627 12.2628 12.7105 12.2628 14.5185V21.3846H7.96154V7.51803H12.0913V9.40956H12.1516C12.7264 8.32008 14.1307 7.17033 16.2257 7.17033C20.5835 7.17033 21.3846 10.0401 21.3846 13.7675V21.3846H21.38Z"
                 /></svg
               >
             </a>
             <a
               href="https://github.com/31carlton7/budgetme"
               target="_blank"
-              class="social-btn hover:text-gray-900"
+              class="social-btn"
             >
               <svg
                 class="w-5 h-5"
@@ -58,7 +58,7 @@
             <a
               href="https://www.twitter.com/31carlton7"
               target="_blank"
-              class="social-btn hover:text-gray-900"
+              class="social-btn"
             >
               <svg
                 class="w-5 h-5"
@@ -73,7 +73,7 @@
             <a
               href="https://www.instagram.com/31carlton7"
               target="_blank"
-              class="social-btn hover:text-gray-900"
+              class="social-btn"
             >
               <svg
                 class="w-5 h-5"
@@ -139,7 +139,7 @@
       </div>
     </div>
   </div>
-  <div class="my-32 flex-row flex justify-between space-x-16 px-36">
+  <div class="my-32 flex-row flex justify-between space-x-16 px-48">
     <span class="text-sm text-gray-600 sm:text-center"
       >Copyright © 2022 <a href="/" class="hover:text-gray-500">BudgetMe</a>
     </span>
@@ -152,5 +152,9 @@
 <style>
   .social-btn {
     @apply p-2 rounded-lg bg-gray-200 text-gray-600;
+  }
+
+  .social-btn:hover {
+    @apply p-2 rounded-lg bg-gray-200 text-gray-900;
   }
 </style>
