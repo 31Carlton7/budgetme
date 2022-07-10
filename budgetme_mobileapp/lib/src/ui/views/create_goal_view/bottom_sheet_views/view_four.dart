@@ -16,6 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
@@ -24,6 +25,7 @@ import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/back_button.dart' as b;
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
+
 import 'package:budgetme/src/ui/views/create_goal_view/bottom_sheet_views/view_five.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -67,14 +69,14 @@ class _CGViewFourState extends ConsumerState<CGViewFour> {
       backgroundColor: Theme.of(context).bottomSheetTheme.backgroundColor,
       appBar: AppBar(
         leading: const Padding(
-          padding: EdgeInsets.only(left: kSmallPadding),
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: b.BMBackButton(),
         ),
-        leadingWidth: 35,
+        leadingWidth: 57,
         actions: [
           PlatformTextButton(
             child: PlatformText(
-              'Cancel',
+              BudgetMeLocalizations.of(context)!.cancel,
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
               ),
@@ -97,7 +99,7 @@ class _CGViewFourState extends ConsumerState<CGViewFour> {
                 children: [
                   Expanded(
                     child: Text(
-                      'How much money is currently saved?',
+                      BudgetMeLocalizations.of(context)!.howMuchSavedQ,
                       style: Theme.of(context).textTheme.headline5?.copyWith(
                             fontWeight: FontWeight.w500,
                           ),
@@ -172,7 +174,9 @@ class _CGViewFourState extends ConsumerState<CGViewFour> {
                     boxShadow: primaryBoxShadow,
                     padding: EdgeInsets.zero,
                     alignment: MainAxisAlignment.center,
-                    buttonText: _editingModeOn ? 'Skip' : 'Next',
+                    buttonText: _editingModeOn
+                        ? BudgetMeLocalizations.of(context)!.skip
+                        : BudgetMeLocalizations.of(context)!.next,
                     onPressed: isEnabled
                         ? () {
                             if (_editingModeOn) {
@@ -186,8 +190,8 @@ class _CGViewFourState extends ConsumerState<CGViewFour> {
                               );
                             } else if (int.parse(_controller.text.trim()) >= _goal.requiredAmount) {
                               final dialog = PlatformAlertDialog(
-                                title: Text(
-                                    'Please enter a value less than your required amount of ${_goal.requiredAmount}'),
+                                title: Text(BudgetMeLocalizations.of(context)!
+                                    .pleaseEnterLess('', _goal.requiredAmount.toString())),
                                 actions: [
                                   PlatformTextButton(
                                     material: (context, platform) {

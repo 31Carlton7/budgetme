@@ -16,7 +16,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/config/constants.dart';
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:heroicons/heroicons.dart';
@@ -28,11 +30,15 @@ class BMBackButton extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return GestureDetector(
       onTap: () => Navigator.pop(context),
-      child: HeroIcon(
-        HeroIcons.arrowLeft,
-        size: 24,
-        color: Theme.of(context).colorScheme.primary,
-        solid: false,
+      child: Transform(
+        alignment: Alignment.center,
+        transform: Matrix4.rotationY(isRTL(context) ? math.pi : 0),
+        child: HeroIcon(
+          HeroIcons.arrowLeft,
+          size: 24,
+          color: Theme.of(context).colorScheme.primary,
+          solid: false,
+        ),
       ),
     );
   }

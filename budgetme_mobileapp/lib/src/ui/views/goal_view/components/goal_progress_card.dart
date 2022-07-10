@@ -16,11 +16,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
+
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -48,7 +50,7 @@ class GoalProgressCard extends ConsumerWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    'Current Progress',
+                    BudgetMeLocalizations.of(context)!.currentProgress,
                     style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: kSmallPadding),
@@ -97,7 +99,7 @@ class GoalProgressCard extends ConsumerWidget {
                   const SizedBox(height: kSmallPadding),
                   Center(
                     child: Text(
-                      'You are ${goal.percentCompleted}% of the way there!',
+                      BudgetMeLocalizations.of(context)!.userPercentProgress(goal.percentCompleted.toString()),
                       style: Theme.of(context).textTheme.bodyText2?.copyWith(
                             fontWeight: FontWeight.w500,
                           ),

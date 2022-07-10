@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import 'dart:io';
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
@@ -25,6 +26,7 @@ import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart'
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
+
 import 'package:budgetme/src/ui/views/create_goal_view/bottom_sheet_views/view_two.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/components/show_image_selection_bottom_sheet.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
@@ -72,7 +74,7 @@ class _CGViewOneState extends ConsumerState<CGViewOne> {
         actions: [
           PlatformTextButton(
             child: PlatformText(
-              'Cancel',
+              BudgetMeLocalizations.of(context)!.cancel,
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
               ),
@@ -150,7 +152,7 @@ class _CGViewOneState extends ConsumerState<CGViewOne> {
                   children: [
                     Expanded(
                       child: Text(
-                        'What are you saving for?',
+                        BudgetMeLocalizations.of(context)!.savingForQ,
                         style: Theme.of(context).textTheme.headline5?.copyWith(
                               fontWeight: FontWeight.w500,
                             ),
@@ -168,7 +170,7 @@ class _CGViewOneState extends ConsumerState<CGViewOne> {
                       ),
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
-                    hintText: 'Vacation',
+                    hintText: BudgetMeLocalizations.of(context)!.vacation,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: const BorderSide(
@@ -207,7 +209,7 @@ class _CGViewOneState extends ConsumerState<CGViewOne> {
                         boxShadow: primaryBoxShadow,
                         padding: EdgeInsets.zero,
                         alignment: MainAxisAlignment.center,
-                        buttonText: 'Next',
+                        buttonText: BudgetMeLocalizations.of(context)!.next,
                         onPressed: isEnabled
                             ? () async {
                                 _goal = _goal.copyWith(

@@ -150,6 +150,18 @@ class _DashboardViewState extends ConsumerState<GoalView> {
             SliverToBoxAdapter(
               child: TransactionHistorySection(goal),
             ),
+            SliverToBoxAdapter(
+              child: goal.photographer != ''
+                  ? Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: kDefaultPadding),
+                      child: Text(
+                        'Image by ${goal.photographer} / ${goal.photographerLink}',
+                        style: Theme.of(context).textTheme.bodyText2,
+                      ),
+                    )
+                  : Container(),
+            ),
+
             // const SliverPadding(padding: EdgeInsets.only(bottom: kDefaultPadding)),
 
             //  SliverToBoxAdapter(

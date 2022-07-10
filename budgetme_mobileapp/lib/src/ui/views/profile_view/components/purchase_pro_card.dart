@@ -16,11 +16,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
+import 'dart:math' as math;
+
 import 'package:budgetme/src/ui/components/show_purchase_pro_bottom_sheet.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:heroicons/heroicons.dart';
@@ -48,18 +51,21 @@ class PurchaseProCard extends ConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Purchase Pro 😎',
+                  BudgetMeLocalizations.of(context)!.purchasePro,
                   style: Theme.of(context)
                       .textTheme
                       .headline6
                       ?.copyWith(fontWeight: FontWeight.w700, color: BudgetMeLightColors.white),
                 ),
-                HeroIcon(HeroIcons.arrowRight, color: BudgetMeLightColors.white),
+                Transform(
+                    alignment: Alignment.center,
+                    transform: Matrix4.rotationY(isRTL(context) ? math.pi : 0),
+                    child: HeroIcon(HeroIcons.arrowRight, color: BudgetMeLightColors.white)),
               ],
             ),
             const SizedBox(height: kSmallPadding),
             Text(
-              'Unlock unlimited Goals, Spending Activity Downloads and more for just \$2.99! 😆 Pay once, Pay forever!',
+              BudgetMeLocalizations.of(context)!.unlockText(''),
               style: Theme.of(context)
                   .textTheme
                   .bodyText1

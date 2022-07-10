@@ -27,7 +27,7 @@ ThemeData darkTheme() {
   return base.copyWith(
     textTheme: BudgetMeTextTheme.theme(base),
     primaryIconTheme: const IconThemeData(size: 24, color: BudgetMeDarkColors.white),
-    brightness: Brightness.light,
+    brightness: Brightness.dark,
     dividerTheme: DividerThemeData(
       space: 0,
       thickness: 0.25,

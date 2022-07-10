@@ -16,10 +16,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
+import 'dart:math' as math;
+
 import 'package:budgetme/src/ui/views/adjust_monthly_spending_limit_view/adjust_monthly_spending_limit_view.dart';
 import 'package:heroicons/heroicons.dart';
 
@@ -58,15 +61,19 @@ class SettingsSection extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Adjust Monthly Spending Limit',
+                      BudgetMeLocalizations.of(context)!.adjustMonthlySpendingLimit,
                       style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                     ),
-                    Container(
-                      child: HeroIcon(
-                        HeroIcons.chevronRight,
-                        size: 21,
-                        solid: true,
-                        color: Theme.of(context).colorScheme.secondaryContainer,
+                    Transform(
+                      alignment: Alignment.center,
+                      transform: Matrix4.rotationY(isRTL(context) ? math.pi : 0),
+                      child: Container(
+                        child: HeroIcon(
+                          HeroIcons.chevronRight,
+                          size: 21,
+                          solid: true,
+                          color: Theme.of(context).colorScheme.secondaryContainer,
+                        ),
                       ),
                     ),
                   ],
@@ -82,7 +89,7 @@ class SettingsSection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'About',
+                    BudgetMeLocalizations.of(context)!.about,
                     style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                   ),
                   GestureDetector(
@@ -105,7 +112,7 @@ class SettingsSection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Privacy Policy',
+                    BudgetMeLocalizations.of(context)!.privacyPolicy,
                     style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                   ),
                   GestureDetector(
@@ -132,7 +139,7 @@ class SettingsSection extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Support',
+                    BudgetMeLocalizations.of(context)!.support,
                     style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                   ),
                   GestureDetector(

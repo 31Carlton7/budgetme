@@ -48,3 +48,6 @@ app.*.map.json
 /android/app/release
 
 /lib/src/config/environment_keys.dart
+
+localazy.json
+gsheet_to_arb.yaml

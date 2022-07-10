@@ -21,6 +21,7 @@ import 'package:flutter/material.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:currency_picker/currency_picker.dart';
+import 'dart:io';
 import 'package:intl/intl.dart' as intl;
 
 const String kAppTitle = 'BudgetMe';
@@ -91,6 +92,8 @@ Goal defGoal = Goal(
   transactions: [],
   currency: Currency.from(json: defaultCurrency),
   image: '',
+  photographer: '',
+  photographerLink: '',
 );
 
 extension DarkMode on BuildContext {
@@ -100,3 +103,16 @@ extension DarkMode on BuildContext {
     return brightness == Brightness.dark;
   }
 }
+
+bool get localeIsEn => Platform.localeName.substring(0, 2) == 'en';
+bool isRTL(BuildContext context) => Directionality.of(context) == TextDirection.rtl;
+
+const purchaseProAmountUSD = '2.99';
+const purchaseProAmountEUR = '2.99';
+const purchaseProAmountGBP = '2.49';
+const purchaseProAmountCYN = '19.99';
+const purchaseProAmountJPY = '399.99';
+const purchaseProAmountRUB = '199.99';
+const purchaseProAmountAED = '10.99';
+const purchaseProAmountKRW = '3899.99';
+const purchaseProAmountILS = '10.49';

@@ -16,6 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,7 @@ import 'package:budgetme/src/providers/goal_repository_provider.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:heroicons/heroicons.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
@@ -53,7 +55,7 @@ Future<void> showGoalSettingsBottomSheet(BuildContext ctx, void Function(void Fu
                     children: [
                       ListTile(
                         title: Text(
-                          'Edit Goal',
+                          BudgetMeLocalizations.of(context)!.editGoal,
                           style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w500),
                         ),
                         leading: HeroIcon(HeroIcons.pencil, size: 24, color: Theme.of(context).colorScheme.primary),
@@ -63,7 +65,7 @@ Future<void> showGoalSettingsBottomSheet(BuildContext ctx, void Function(void Fu
                       ),
                       ListTile(
                         title: Text(
-                          'Delete Goal',
+                          BudgetMeLocalizations.of(context)!.deleteGoal,
                           style: Theme.of(context).textTheme.bodyText1?.copyWith(
                                 color: BudgetMeLightColors.error,
                                 fontWeight: FontWeight.w500,
@@ -75,14 +77,14 @@ Future<void> showGoalSettingsBottomSheet(BuildContext ctx, void Function(void Fu
                             context: ctx,
                             builder: (context) {
                               return PlatformAlertDialog(
-                                title: const Text('Delete Goal?'),
-                                content: Text('Are you sure want to delete your ${goal.title} goal?'),
+                                title: Text(BudgetMeLocalizations.of(context)!.deleteGoalQ),
+                                content: Text(BudgetMeLocalizations.of(context)!.areYouSureDelQ(goal.title)),
                                 actions: [
                                   PlatformTextButton(
                                     material: (context, platform) {
                                       return MaterialTextButtonData(
-                                        child: const Text(
-                                          'Delete',
+                                        child: Text(
+                                          BudgetMeLocalizations.of(context)!.delete,
                                           style: TextStyle(color: Colors.red, fontWeight: FontWeight.w500),
                                         ),
                                         onPressed: () async {
@@ -93,8 +95,8 @@ Future<void> showGoalSettingsBottomSheet(BuildContext ctx, void Function(void Fu
                                     },
                                     cupertino: (context, platform) {
                                       return CupertinoTextButtonData(
-                                        child: const Text(
-                                          'Delete',
+                                        child: Text(
+                                          BudgetMeLocalizations.of(context)!.delete,
                                           style: TextStyle(
                                               color: CupertinoColors.destructiveRed, fontWeight: FontWeight.w500),
                                         ),
@@ -110,7 +112,7 @@ Future<void> showGoalSettingsBottomSheet(BuildContext ctx, void Function(void Fu
                                   PlatformTextButton(
                                     material: (context, platform) {
                                       return MaterialTextButtonData(
-                                        child: const Text('Cancel'),
+                                        child: Text(BudgetMeLocalizations.of(context)!.cancel),
                                         onPressed: () {
                                           Navigator.pop(context);
                                         },
@@ -118,7 +120,7 @@ Future<void> showGoalSettingsBottomSheet(BuildContext ctx, void Function(void Fu
                                     },
                                     cupertino: (context, platform) {
                                       return CupertinoTextButtonData(
-                                        child: const Text('Cancel'),
+                                        child: Text(BudgetMeLocalizations.of(context)!.cancel),
                                         onPressed: () {
                                           Navigator.pop(context);
                                         },

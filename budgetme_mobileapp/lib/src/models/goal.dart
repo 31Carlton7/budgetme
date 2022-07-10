@@ -54,6 +54,10 @@ class Goal {
   /// save.
   String image;
 
+  String photographer;
+
+  String photographerLink;
+
   Goal({
     required this.id,
     required this.title,
@@ -63,6 +67,8 @@ class Goal {
     required this.transactions,
     required this.currency,
     required this.image,
+    required this.photographer,
+    required this.photographerLink,
   });
 
   int get percentCompleted => ((this.currentAmount / this.requiredAmount) * 100).toInt();
@@ -76,6 +82,8 @@ class Goal {
     List<Transaction>? transactions,
     Currency? currency,
     String? image,
+    String? photographer,
+    String? photographerLink,
   }) {
     return Goal(
       id: id ?? this.id,
@@ -86,6 +94,8 @@ class Goal {
       transactions: transactions ?? this.transactions,
       currency: currency ?? this.currency,
       image: image ?? this.image,
+      photographer: photographer ?? this.photographer,
+      photographerLink: photographerLink ?? this.photographerLink,
     );
   }
 
@@ -99,20 +109,23 @@ class Goal {
       'transactions': transactions.map((x) => x.toMap()).toList(),
       'currency': currency.toJson(),
       'image': image,
+      'photographer': photographer,
+      'photographerLink': photographerLink,
     };
   }
 
   factory Goal.fromMap(Map<String, dynamic> map) {
     return Goal(
-      id: map['id'] ?? '',
-      title: map['title'] ?? '',
-      deadline: DateTime.fromMillisecondsSinceEpoch(map['deadline']),
-      requiredAmount: map['requiredAmount']?.toInt() ?? 0,
-      currentAmount: map['currentAmount']?.toInt() ?? 0,
-      transactions: List<Transaction>.from(map['transactions']?.map((x) => Transaction.fromMap(x))),
-      currency: Currency.from(json: map['currency']),
-      image: map['image'] ?? '',
-    );
+        id: map['id'] ?? '',
+        title: map['title'] ?? '',
+        deadline: DateTime.fromMillisecondsSinceEpoch(map['deadline']),
+        requiredAmount: map['requiredAmount']?.toInt() ?? 0,
+        currentAmount: map['currentAmount']?.toInt() ?? 0,
+        transactions: List<Transaction>.from(map['transactions']?.map((x) => Transaction.fromMap(x))),
+        currency: Currency.from(json: map['currency']),
+        image: map['image'] ?? '',
+        photographer: map['photographer'] ?? '',
+        photographerLink: map['photographerLink'] ?? '');
   }
 
   String toJson() => json.encode(toMap());
@@ -136,6 +149,8 @@ class Goal {
         other.currentAmount == currentAmount &&
         listEquals(other.transactions, transactions) &&
         other.currency == currency &&
+        other.photographer == photographer &&
+        other.photographerLink == photographerLink &&
         other.image == image;
   }
 
@@ -148,6 +163,8 @@ class Goal {
         currentAmount.hashCode ^
         transactions.hashCode ^
         currency.hashCode ^
+        photographer.hashCode ^
+        photographerLink.hashCode ^
         image.hashCode;
   }
 }

@@ -18,9 +18,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import 'dart:async';
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
+
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
@@ -96,7 +98,7 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Time Left',
+                BudgetMeLocalizations.of(context)!.timeLeft,
                 style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: kSmallPadding),
@@ -141,7 +143,7 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
                         ),
                         const SizedBox(height: kSmallPadding / 2),
                         Text(
-                          'Months',
+                          BudgetMeLocalizations.of(context)!.months,
                           style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w500),
                         ),
                       ],
@@ -185,7 +187,7 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
                         ),
                         const SizedBox(height: kSmallPadding / 2),
                         Text(
-                          'Days',
+                          BudgetMeLocalizations.of(context)!.days,
                           style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w500),
                         ),
                       ],
@@ -229,7 +231,7 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
                         ),
                         const SizedBox(height: kSmallPadding / 2),
                         Text(
-                          'Hours',
+                          BudgetMeLocalizations.of(context)!.hours,
                           style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w500),
                         ),
                       ],
@@ -274,7 +276,7 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
                         ),
                         const SizedBox(height: kSmallPadding / 2),
                         Text(
-                          'Minutes',
+                          BudgetMeLocalizations.of(context)!.minutes,
                           style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w500),
                         ),
                       ],
@@ -319,7 +321,7 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
                         ),
                         const SizedBox(height: kSmallPadding / 2),
                         Text(
-                          'Seconds',
+                          BudgetMeLocalizations.of(context)!.seconds,
                           style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w500),
                         ),
                       ],

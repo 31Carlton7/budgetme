@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import 'dart:io';
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -31,8 +32,8 @@ import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/views/all_goals_view/components/add_goal_button.dart';
 import 'package:budgetme/src/ui/views/all_goals_view/components/goal_card.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
+
 import 'package:budgetme/src/ui/views/profile_view/profile_view.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -60,16 +61,13 @@ class _AllGoalsViewState extends ConsumerState<AllGoalsView> {
       appBar: AppBar(
         centerTitle: false,
         backgroundColor: Theme.of(context).canvasColor,
-        title: Padding(
-          padding: const EdgeInsets.only(left: kDefaultPadding),
-          child: Text(
-            'Dashboard',
-            style: Theme.of(context).textTheme.headline2?.copyWith(fontWeight: FontWeight.w600, fontSize: 32),
-          ),
+        title: Text(
+          BudgetMeLocalizations.of(context)!.dashboard,
+          style: Theme.of(context).textTheme.headline2?.copyWith(fontWeight: FontWeight.w600, fontSize: 32),
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: kDefaultPadding + kSmallPadding),
+            padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
             child: GestureDetector(
               onTap: () async {
                 Navigator.push(
@@ -103,38 +101,43 @@ class _AllGoalsViewState extends ConsumerState<AllGoalsView> {
           Expanded(
             child: Align(
               alignment: Alignment.center,
-              child: Text.rich(
-                TextSpan(
-                  text: 'Press the ',
-                  style: Theme.of(context).textTheme.headline6,
-                  children: [
-                    WidgetSpan(
-                      alignment: PlaceholderAlignment.middle,
-                      child: Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 5),
-                        child: BMPrimaryButton(
-                          containerWidth: 30,
-                          containerHeight: 30,
-                          gradient: BudgetMeLightColors.primaryGradient,
-                          shape: const CircleBorder(),
-                          boxShadow: primaryBoxShadow,
-                          padding: EdgeInsets.zero,
-                          alignment: MainAxisAlignment.center,
-                          prefixIcon: Icon(icon(), size: 18, color: BudgetMeLightColors.white),
-                          onPressed: () async {
-                            HapticFeedback.mediumImpact();
+              child: Platform.localeName.substring(0, 2) == 'en'
+                  ? Text.rich(
+                      TextSpan(
+                        text: 'Press the ',
+                        style: Theme.of(context).textTheme.headline6,
+                        children: [
+                          WidgetSpan(
+                            alignment: PlaceholderAlignment.middle,
+                            child: Container(
+                              margin: const EdgeInsets.symmetric(horizontal: 5),
+                              child: BMPrimaryButton(
+                                containerWidth: 30,
+                                containerHeight: 30,
+                                gradient: BudgetMeLightColors.primaryGradient,
+                                shape: const CircleBorder(),
+                                boxShadow: primaryBoxShadow,
+                                padding: EdgeInsets.zero,
+                                alignment: MainAxisAlignment.center,
+                                prefixIcon: Icon(icon(), size: 18, color: BudgetMeLightColors.white),
+                                onPressed: () async {
+                                  HapticFeedback.mediumImpact();
 
-                            return await showCreateGoalView(context);
-                          },
-                        ),
+                                  return await showCreateGoalView(context);
+                                },
+                              ),
+                            ),
+                          ),
+                          TextSpan(
+                            text: ' to create a new Goal!',
+                          ),
+                        ],
                       ),
+                    )
+                  : Text(
+                      BudgetMeLocalizations.of(context)!.pressThePBtn,
+                      style: Theme.of(context).textTheme.headline6,
                     ),
-                    TextSpan(
-                      text: ' to create a new Goal!',
-                    ),
-                  ],
-                ),
-              ),
             ),
           ),
           SizedBox(height: kDefaultPadding * 4),
@@ -160,9 +163,9 @@ class _AllGoalsViewState extends ConsumerState<AllGoalsView> {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: kDefaultPadding * 2, top: kSmallPadding, bottom: kSmallPadding),
+                padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding, vertical: kSmallPadding),
                 child: Text(
-                  'Savings Goals',
+                  BudgetMeLocalizations.of(context)!.savingsGoals,
                   style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w600),
                 ),
               )
@@ -180,11 +183,11 @@ class _AllGoalsViewState extends ConsumerState<AllGoalsView> {
       child: ExpansionTile(
         initiallyExpanded: true,
         title: Text(
-          'Monthly Savings',
+          BudgetMeLocalizations.of(context)!.monthlySavings,
           style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w600),
         ),
         controlAffinity: ListTileControlAffinity.leading,
-        tilePadding: const EdgeInsets.only(left: kDefaultPadding * 2),
+        tilePadding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
         collapsedIconColor: Theme.of(context).iconTheme.color,
         iconColor: Theme.of(context).iconTheme.color,
         children: [

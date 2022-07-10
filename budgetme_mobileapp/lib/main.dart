@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import 'dart:async';
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -34,7 +35,6 @@ import 'package:budgetme/src/ui/views/all_goals_view/all_goals_view.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -103,23 +103,25 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
           debugShowCheckedModeBanner: false,
           title: kAppTitle,
           themeMode: repo.themeMode,
-          locale: Locale('en', ''),
+          locale: Locale('es', ''),
           theme: lightTheme(),
           darkTheme: darkTheme(),
           home: const AllGoalsView(),
-          // localizationsDelegates: AppLocalizations.localizationsDelegates,
-          // supportedLocales: [
-          //   Locale('en', ''),
-          //   Locale('es', ''),
-          //   Locale('ja', ''),
-          //   Locale('ko', ''),
-          //   Locale('ru', ''),
-          //   Locale('zh', ''),
-          //   Locale('ar', ''),
-          //   Locale('pt', ''),
-          //   Locale('fr', ''),
-          //   Locale('de', ''),
-          // ],
+          localizationsDelegates: BudgetMeLocalizations.localizationsDelegates,
+          supportedLocales: [
+            Locale('en', ''),
+            Locale('es', ''),
+            Locale('ja', ''),
+            Locale('ko', ''),
+            Locale('ru', ''),
+            Locale('zh', 'CN'),
+            Locale('zh', 'TW'),
+            Locale('ar', ''),
+            Locale('pt', ''),
+            Locale('fr', ''),
+            Locale('de', ''),
+            Locale('he', ''),
+          ],
           builder: (context, child) {
             return MediaQuery(
               data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),

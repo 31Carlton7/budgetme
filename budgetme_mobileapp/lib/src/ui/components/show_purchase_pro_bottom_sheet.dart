@@ -16,17 +16,27 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'dart:io';
+
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
+
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 Future<void> showPurchaseProBottomSheet(BuildContext context) async {
+  final locale = Localizations.localeOf(context);
+  final format = NumberFormat.simpleCurrency(locale: locale.toString());
+  // ignore: unused_local_variable
+  final currencySymbol = format.currencySymbol;
+
   await showCustomModalBottomSheet(
     context: context,
     useRootNavigator: true,
@@ -35,6 +45,7 @@ Future<void> showPurchaseProBottomSheet(BuildContext context) async {
       return Container();
     },
     containerWidget: (context, animation, child) {
+      print(Platform.localeName.substring(0, 2));
       return Consumer(
         builder: (context, ref, child) {
           return SafeArea(
@@ -47,7 +58,7 @@ Future<void> showPurchaseProBottomSheet(BuildContext context) async {
                   actions: [
                     PlatformTextButton(
                       child: PlatformText(
-                        'Cancel',
+                        BudgetMeLocalizations.of(context)!.cancel,
                         style: TextStyle(
                           color: Theme.of(context).primaryColor,
                         ),
@@ -77,29 +88,16 @@ Future<void> showPurchaseProBottomSheet(BuildContext context) async {
                     ),
                     const SizedBox(height: kSmallPadding),
                     Text(
-                      'Unlimited Goals',
+                      BudgetMeLocalizations.of(context)!.unlimitedGoals,
                       style: Theme.of(context).textTheme.headline5?.copyWith(fontWeight: FontWeight.w500),
                     ),
                     const SizedBox(height: kDefaultPadding * 2),
-                    Text.rich(
-                      TextSpan(
-                        text: 'Unlock your ',
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                      child: Text(
+                        BudgetMeLocalizations.of(context)!.unlockText('2.99 USD'),
                         style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w500),
-                        children: [
-                          TextSpan(
-                            text: 'true self',
-                            style: Theme.of(context)
-                                .textTheme
-                                .headline6
-                                ?.copyWith(fontWeight: FontWeight.w500, fontStyle: FontStyle.italic),
-                          ),
-                          TextSpan(
-                            text: ' with unlimited goals for a one-time purchase of just \$2.99! 😎',
-                            style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w500),
-                          ),
-                        ],
                       ),
-                      textAlign: TextAlign.center,
                     ),
                     Expanded(
                       child: Align(
@@ -116,7 +114,7 @@ Future<void> showPurchaseProBottomSheet(BuildContext context) async {
                               boxShadow: primaryBoxShadow,
                               padding: EdgeInsets.zero,
                               alignment: MainAxisAlignment.center,
-                              buttonText: 'PURCHASE',
+                              buttonText: BudgetMeLocalizations.of(context)!.purchase,
                               onPressed: () {},
                             ),
                           ),

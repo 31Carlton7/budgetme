@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import 'dart:io';
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -27,6 +28,7 @@ import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/back_button.dart' as b;
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
+
 import 'package:budgetme/src/ui/views/create_goal_view/bottom_sheet_views/view_four.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -67,14 +69,14 @@ class _CGViewThreeState extends ConsumerState<CGViewThree> {
       backgroundColor: Theme.of(context).bottomSheetTheme.backgroundColor,
       appBar: AppBar(
         leading: const Padding(
-          padding: EdgeInsets.only(left: kSmallPadding),
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: b.BMBackButton(),
         ),
-        leadingWidth: 35,
+        leadingWidth: 57,
         actions: [
           PlatformTextButton(
             child: PlatformText(
-              'Cancel',
+              BudgetMeLocalizations.of(context)!.cancel,
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
               ),
@@ -95,7 +97,7 @@ class _CGViewThreeState extends ConsumerState<CGViewThree> {
               children: [
                 Expanded(
                   child: Text(
-                    'When is the deadline?',
+                    BudgetMeLocalizations.of(context)!.whenDeadlineQ,
                     style: Theme.of(context).textTheme.headline5?.copyWith(
                           fontWeight: FontWeight.w500,
                         ),
@@ -196,7 +198,7 @@ class _CGViewThreeState extends ConsumerState<CGViewThree> {
                     boxShadow: primaryBoxShadow,
                     padding: EdgeInsets.zero,
                     alignment: MainAxisAlignment.center,
-                    buttonText: 'Next',
+                    buttonText: BudgetMeLocalizations.of(context)!.next,
                     onPressed: isEnabled
                         ? () {
                             _goal = _goal.copyWith(deadline: _selectedDate.subtract(Duration(minutes: 1)));

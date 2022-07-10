@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import 'dart:io';
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
@@ -30,6 +31,7 @@ import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' show get;
 import 'package:path_provider/path_provider.dart';
@@ -66,14 +68,14 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
       backgroundColor: Theme.of(context).bottomSheetTheme.backgroundColor,
       appBar: AppBar(
         leading: const Padding(
-          padding: EdgeInsets.only(left: kSmallPadding),
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: b.BMBackButton(),
         ),
-        leadingWidth: 35,
+        leadingWidth: 57,
         actions: [
           PlatformTextButton(
             child: PlatformText(
-              'Cancel',
+              BudgetMeLocalizations.of(context)!.cancel,
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
               ),
@@ -93,7 +95,7 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
             Row(
               children: [
                 Text(
-                  'Select Your Preferred Currency',
+                  BudgetMeLocalizations.of(context)!.prefCurr,
                   style: Theme.of(context).textTheme.headline5?.copyWith(
                         fontWeight: FontWeight.w500,
                       ),
@@ -116,7 +118,7 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
                   theme: CurrencyPickerThemeData(),
                   inputDecoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
-                    hintText: 'Search',
+                    hintText: BudgetMeLocalizations.of(context)!.search,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide(
@@ -184,7 +186,7 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
                     boxShadow: cardBoxShadow,
                     padding: EdgeInsets.zero,
                     alignment: MainAxisAlignment.center,
-                    buttonText: 'Finish',
+                    buttonText: BudgetMeLocalizations.of(context)!.finish,
                     onPressed: isEnabled
                         ? () async {
                             if (_goal.image.contains('images.unsplash.com')) {

@@ -16,12 +16,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/transaction_card.dart';
+
 import 'package:budgetme/src/ui/views/transaction_history_view/transaction_history_view.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:heroicons/heroicons.dart';
@@ -48,7 +50,7 @@ class TransactionHistorySection extends ConsumerWidget {
                 child: Row(
                   children: [
                     Text(
-                      'Transaction History',
+                      BudgetMeLocalizations.of(context)!.transactionHistory,
                       style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                     ),
                     const Spacer(),
@@ -67,7 +69,7 @@ class TransactionHistorySection extends ConsumerWidget {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Text(
-                            'See All',
+                            BudgetMeLocalizations.of(context)!.seeAll,
                             style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w500),
                           ),
                           HeroIcon(
@@ -87,7 +89,7 @@ class TransactionHistorySection extends ConsumerWidget {
                 Padding(
                   padding: const EdgeInsets.all(kDefaultPadding),
                   child: Text(
-                    'No transactions have been made...yet!',
+                    BudgetMeLocalizations.of(context)!.noTransactions,
                     style: Theme.of(context).textTheme.bodyText1,
                   ),
                 ),

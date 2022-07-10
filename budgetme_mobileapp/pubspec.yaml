@@ -62,7 +62,11 @@ dependencies:
   image_picker: ^0.8.5+3
   path_provider: ^2.0.10
   intl: ^0.17.0
+  intl_generator:
+    path: ./packages/intl_generator
   uuid: ^3.0.6
+  gsheet_to_arb:
+    path: ./packages/gsheet_to_arb
   currency_text_input_formatter: ^2.1.5
   url_launcher: ^6.0.9
   jiffy: ^5.0.0
@@ -151,3 +155,23 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+gsheet_to_arb:
+  arb_file_prefix: 'intl'
+  localization_file_name: 'l10n'
+  output_directory: 'lib/l10n'
+  gsheet:
+    auth_file: './gsheet_to_arb.yaml'
+    category_prefix: '# '
+    document_id: '16j_eUksFsK3jRDVb2qmOtVrC1EHmuevthzAG5v2Q8uQ'
+    sheet_id: '0'
+    columns:
+      description: 1
+      first_language_key: 2
+      key: 0
+    rows:
+      first_translation_row: 1
+      header_row: 0
+  add_context_prefix: false
+  caseType: null
+  generate_code: true

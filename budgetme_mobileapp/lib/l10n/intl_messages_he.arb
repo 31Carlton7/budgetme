@@ -1,0 +1,404 @@
+{
+  "@@locale": "he",
+  "@@last_modified": "2022-07-09T13:56:54.373454",
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "monthlySavings": "Monthly Savings",
+  "@monthlySavings": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "remainingBalance": "Remaining Balance",
+  "@remainingBalance": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "totalSaved": "Total Saved",
+  "@totalSaved": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "savingsGoals": "Savings Goals",
+  "@savingsGoals": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "currentProgress": "Current Progress",
+  "@currentProgress": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "userPercentProgress": "You are {percent}% of the way there!",
+  "@userPercentProgress": {
+    "type": "text",
+    "placeholders_order": [
+      "percent"
+    ],
+    "placeholders": {
+      "percent": {}
+    }
+  },
+  "timeLeft": "Time Left",
+  "@timeLeft": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "years": "Years",
+  "@years": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "months": "Months",
+  "@months": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "days": "Days",
+  "@days": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "hours": "Hours",
+  "@hours": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "minutes": "Minutes",
+  "@minutes": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "seconds": "Seconds",
+  "@seconds": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "transactionHistory": "Transaction History",
+  "@transactionHistory": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "seeAll": "See All",
+  "@seeAll": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "transaction": "Transaction",
+  "@transaction": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "editGoal": "Edit Goal",
+  "@editGoal": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "deleteGoal": "Delete Goal",
+  "@deleteGoal": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "next": "Next",
+  "@next": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "skip": "Skip",
+  "@skip": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "create": "Create",
+  "@create": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "edit": "Edit",
+  "@edit": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "save": "Save",
+  "@save": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "savingForQ": "What are you saving for?",
+  "@savingForQ": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "howMuchNeededQ": "How much money is needed?",
+  "@howMuchNeededQ": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "whenDeadlineQ": "When is the deadline?",
+  "@whenDeadlineQ": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "howMuchSavedQ": "How much money is currently saved?",
+  "@howMuchSavedQ": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "prefCurr": "Select your Preferred Currency",
+  "@prefCurr": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "purchasePro": "Purchase Pro😎",
+  "@purchasePro": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "purchaseProText": "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!",
+  "@purchaseProText": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "statistics": "{month} Dashboard",
+  "@statistics": {
+    "type": "text",
+    "placeholders_order": [
+      "month"
+    ],
+    "placeholders": {
+      "month": {}
+    }
+  },
+  "settings": "Settings",
+  "@settings": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "adjustMonthlySpendingLimit": "Adjust Monthly Spending Limit",
+  "@adjustMonthlySpendingLimit": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "about": "About",
+  "@about": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "support": "Support",
+  "@support": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "version": "Version {versionNumber}",
+  "@version": {
+    "type": "text",
+    "placeholders_order": [
+      "versionNumber"
+    ],
+    "placeholders": {
+      "versionNumber": {}
+    }
+  },
+  "profile": "Profile",
+  "@profile": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "unlimitedGoals": "Unlimited Goals",
+  "@unlimitedGoals": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "unlockText": "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies",
+  "@unlockText": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "purchase": "Purchase",
+  "@purchase": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "pleaseNote": "Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged.",
+  "@pleaseNote": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "newMonthlySpendingLimit": "New Monthly Spending Limit",
+  "@newMonthlySpendingLimit": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "pressThePBtn": "Press the purple button to create a new Goal!",
+  "@pressThePBtn": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "search": "Search",
+  "@search": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "finish": "Finish",
+  "@finish": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "pleaseEnterLess": "Please enter a value less than your required amount of {currency}{number}",
+  "@pleaseEnterLess": {
+    "type": "text",
+    "placeholders_order": [
+      "currency",
+      "number"
+    ],
+    "placeholders": {
+      "currency": {},
+      "number": {}
+    }
+  },
+  "vacation": "Vacation",
+  "@vacation": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "web": "Web",
+  "@web": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "device": "Device",
+  "@device": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "selectImage": "Select Image",
+  "@selectImage": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "searchForImage": "Search for images on UnSplash using the search bar",
+  "@searchForImage": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "noResults": "No Results",
+  "@noResults": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "done": "Done",
+  "@done": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "remove": "Remove",
+  "@remove": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "add": "Add",
+  "@add": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "hideFrom": "Hide from history",
+  "@hideFrom": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "delete": "Delete",
+  "@delete": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "deleteGoalQ": "Delete Goal?",
+  "@deleteGoalQ": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "areYouSureDelQ": "Are you sure want to delete your {goalTitle} goal?",
+  "@areYouSureDelQ": {
+    "type": "text",
+    "placeholders_order": [
+      "goalTitle"
+    ],
+    "placeholders": {
+      "goalTitle": {}
+    }
+  },
+  "noTransactions": "No transactions have been made...yet!",
+  "@noTransactions": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  }
+}

@@ -99,6 +99,8 @@ class _CreateGoalViewState extends ConsumerState<CreateGoalView> {
         transactions: [],
         currency: Currency.from(json: defaultCurrency),
         image: '',
+        photographer: '',
+        photographerLink: '',
       );
     }
   }

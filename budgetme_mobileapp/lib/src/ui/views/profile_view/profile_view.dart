@@ -16,10 +16,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/config/extensions.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/ui/components/back_button.dart';
+
 import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
 import 'package:budgetme/src/ui/views/profile_view/components/purchase_pro_card.dart';
 import 'package:budgetme/src/ui/views/profile_view/components/settings_section.dart';
@@ -43,14 +46,14 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).canvasColor,
         title: Text(
-          'Profile',
+          BudgetMeLocalizations.of(context)!.profile,
           style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w600),
         ),
         leading: Padding(
-          padding: const EdgeInsets.only(left: kDefaultPadding),
+          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: BMBackButton(),
         ),
-        leadingWidth: 38,
+        leadingWidth: 57,
       ),
       body: _content(context),
     );
@@ -66,24 +69,24 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
       children: [
         PurchaseProCard(),
         Padding(
-          padding: const EdgeInsets.only(left: kDefaultPadding * 2),
+          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
           child: Text(
-            '$month Statistics',
+            BudgetMeLocalizations.of(context)!.statistics(month).toCamelCase(),
             style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
           ),
         ),
         MonthlySavingsCard(),
         Padding(
-          padding: const EdgeInsets.only(left: kDefaultPadding * 2, top: kMediumPadding),
+          padding: const EdgeInsets.only(left: kDefaultPadding * 2, right: kDefaultPadding * 2, top: kMediumPadding),
           child: Text(
-            'Settings',
+            BudgetMeLocalizations.of(context)!.settings,
             style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
           ),
         ),
         SettingsSection(),
         Center(
           child: Text(
-            'Version 1.0.0 (1)',
+            BudgetMeLocalizations.of(context)!.version('1.0.0 (1)'),
             style: Theme.of(context).textTheme.bodyText2?.copyWith(fontWeight: FontWeight.w500),
           ),
         ),

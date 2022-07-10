@@ -16,6 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,7 @@ import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart'
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/providers/unsplash_service_provider.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
+
 import 'package:budgetme/src/ui/components/close_button.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
@@ -66,14 +68,18 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
   var isEnabled = true;
   var photos = <Photo>[];
   var selectedImage = -1;
-  var noImageText = 'Search for images on UnSplash using the search bar';
+  var noImageText = '';
   var _selectedImage = '';
+  var _photographer = '';
+  var _photographerLink = '';
 
   @override
   void initState() {
     super.initState();
 
     _goal = widget.goal;
+
+    noImageText = BudgetMeLocalizations.of(context)!.searchForImage;
 
     setState(() {
       isEnabled = selectedImage >= 0;
@@ -93,7 +99,7 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
           appBar: PreferredSize(
             preferredSize: const Size(double.infinity, 30),
             child: Padding(
-              padding: const EdgeInsets.only(right: kDefaultPadding),
+              padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: const <Widget>[BMCloseButton()],
@@ -111,7 +117,7 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                     child: Row(
                       children: [
                         Text(
-                          'Select Image',
+                          BudgetMeLocalizations.of(context)!.selectImage,
                           style: Theme.of(context).textTheme.headline3,
                         ),
                       ],
@@ -127,8 +133,8 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                             groupValue: webDeviceGroupValue,
                             thumbColor: Theme.of(context).cardTheme.color!,
                             children: {
-                              0: PlatformText('Web'),
-                              1: PlatformText('Device'),
+                              0: PlatformText(BudgetMeLocalizations.of(context)!.web),
+                              1: PlatformText(BudgetMeLocalizations.of(context)!.device),
                             },
                             onValueChanged: (val) async {
                               if (val == 1) {
@@ -170,9 +176,9 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                             photos = kPhotos.results;
 
                             if (photos.isEmpty && str.isNotEmpty) {
-                              noImageText = 'No Results';
+                              noImageText = BudgetMeLocalizations.of(context)!.noResults;
                             } else if (photos.isEmpty && str.isEmpty) {
-                              noImageText = 'Search for images on UnSplash using the search bar';
+                              noImageText = BudgetMeLocalizations.of(context)!.searchForImage;
                             }
                           });
                         },
@@ -212,6 +218,8 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                                     isEnabled = false;
                                   } else {
                                     selectedImage = index;
+                                    _photographer = photos[index].user.username;
+                                    _photographerLink = photos[index].user.links.self.toString();
                                     _selectedImage = photos[index].urls.regular.toString();
                                     isEnabled = true;
                                   }
@@ -266,10 +274,16 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                       boxShadow: primaryBoxShadow,
                       padding: EdgeInsets.zero,
                       alignment: MainAxisAlignment.center,
-                      buttonText: 'Done',
+                      buttonText: BudgetMeLocalizations.of(context)!.done,
                       onPressed: isEnabled
                           ? () async {
-                              _goal = _goal.copyWith(image: _selectedImage);
+                              _goal = _goal.copyWith(
+                                image: _selectedImage,
+                                photographer: _photographer,
+                                photographerLink: _photographerLink,
+                              );
+
+                              print(_goal.photographer);
 
                               Navigator.pop(context, _goal);
                             }

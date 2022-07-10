@@ -19,6 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
@@ -46,11 +47,15 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
             shape: BoxShape.circle,
           ),
           padding: const EdgeInsets.all(8),
-          child: const HeroIcon(
-            HeroIcons.arrowNarrowLeft,
-            size: 20,
-            color: BudgetMeLightColors.white,
-            solid: true,
+          child: Transform(
+            alignment: Alignment.center,
+            transform: Matrix4.rotationY(isRTL(context) ? math.pi : 0),
+            child: const HeroIcon(
+              HeroIcons.arrowNarrowLeft,
+              size: 20,
+              color: BudgetMeLightColors.white,
+              solid: true,
+            ),
           ),
         ),
       ),
@@ -75,17 +80,21 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
       ],
       flexibleSpace: FlexibleSpaceBar(
         stretchModes: const [StretchMode.zoomBackground],
-        background: Image.asset(
-          goalImagePath(goal),
-          fit: BoxFit.cover,
-          errorBuilder: (context, obj, stack) {
-            return Container(
-              height: 230,
-              decoration: BoxDecoration(
-                color: BudgetMeLightColors().allColors300[Random().nextInt(4)],
-              ),
-            );
-          },
+        background: Stack(
+          children: [
+            Image.asset(
+              goalImagePath(goal),
+              fit: BoxFit.cover,
+              errorBuilder: (context, obj, stack) {
+                return Container(
+                  height: 230,
+                  decoration: BoxDecoration(
+                    color: BudgetMeLightColors().allColors300[Random().nextInt(4)],
+                  ),
+                );
+              },
+            ),
+          ],
         ),
       ),
     ),

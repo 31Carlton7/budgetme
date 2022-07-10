@@ -16,6 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -33,12 +34,13 @@ import 'package:currency_text_input_formatter/currency_text_input_formatter.dart
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:uuid/uuid.dart';
 
 Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
   var addRemoveGroupValue = 0;
-  var title = 'Add';
+  var title = BudgetMeLocalizations.of(context)!.add;
   var glComplete = false;
 
   var hideFromActivity = false;
@@ -48,7 +50,7 @@ Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
 
   if (goal.currentAmount >= goal.requiredAmount) {
     addRemoveGroupValue = 1;
-    title = 'Remove';
+    title = BudgetMeLocalizations.of(context)!.remove;
   }
 
   await showCustomModalBottomSheet(
@@ -105,17 +107,17 @@ Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
                                       groupValue: addRemoveGroupValue,
                                       thumbColor: Theme.of(context).cardTheme.color!,
                                       children: {
-                                        0: PlatformText('Add'),
-                                        1: PlatformText('Remove'),
+                                        0: PlatformText(BudgetMeLocalizations.of(context)!.add),
+                                        1: PlatformText(BudgetMeLocalizations.of(context)!.remove),
                                       },
                                       onValueChanged: (val) {
                                         setState(() {
                                           addRemoveGroupValue = val as int;
 
                                           if (val == 0) {
-                                            title = 'Add';
+                                            title = BudgetMeLocalizations.of(context)!.add;
                                           } else {
-                                            title = 'Remove';
+                                            title = BudgetMeLocalizations.of(context)!.remove;
                                           }
 
                                           controller.selection = TextSelection.fromPosition(
@@ -181,7 +183,7 @@ Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  'Hide from history',
+                                  BudgetMeLocalizations.of(context)!.hideFrom,
                                   style: Theme.of(context).textTheme.headline6?.copyWith(
                                         fontWeight: FontWeight.w800,
                                       ),
@@ -220,7 +222,7 @@ Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
 
                                       final transaction = Transaction(
                                         id: const Uuid().v4(),
-                                        title: 'Transaction',
+                                        title: BudgetMeLocalizations.of(context)!.transaction,
                                         amount: amount,
                                         time: DateTime.now(),
                                         remove: false,
@@ -244,7 +246,7 @@ Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
 
                                       final transaction = Transaction(
                                         id: const Uuid().v4(),
-                                        title: 'Transaction',
+                                        title: BudgetMeLocalizations.of(context)!.transaction,
                                         amount: amount,
                                         time: DateTime.now(),
                                         remove: true,
@@ -268,7 +270,7 @@ Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
 
                                       final transaction = Transaction(
                                         id: const Uuid().v4(),
-                                        title: 'Transaction',
+                                        title: BudgetMeLocalizations.of(context)!.transaction,
                                         amount: amount,
                                         time: DateTime.now(),
                                         remove: false,
@@ -293,7 +295,7 @@ Future<bool> showAddMoneyBottomSheet(BuildContext context, Goal goal) async {
 
                                       final transaction = Transaction(
                                         id: const Uuid().v4(),
-                                        title: 'Transaction',
+                                        title: BudgetMeLocalizations.of(context)!.transaction,
                                         amount: amount,
                                         time: DateTime.now(),
                                         remove: true,

@@ -16,12 +16,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:flutter/material.dart';
 
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/providers/balance_repository_provider.dart';
 import 'package:budgetme/src/ui/components/back_button.dart';
+
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -36,14 +38,14 @@ class AdjustMonthlySpendingLimitView extends ConsumerWidget {
       appBar: AppBar(
         backgroundColor: Theme.of(context).canvasColor,
         title: Text(
-          'Adjust Monthly Spending Limit',
+          BudgetMeLocalizations.of(context)!.adjustMonthlySpendingLimit,
           style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w600),
         ),
         leading: Padding(
-          padding: const EdgeInsets.only(left: kDefaultPadding),
+          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: BMBackButton(),
         ),
-        leadingWidth: 38,
+        leadingWidth: 57,
       ),
       body: _content(context, ref),
     );
@@ -62,7 +64,7 @@ class AdjustMonthlySpendingLimitView extends ConsumerWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
             child: Text(
-              'Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged.',
+              BudgetMeLocalizations.of(context)!.pleaseNote,
               style: Theme.of(context).textTheme.bodyText2?.copyWith(
                     color: Theme.of(context).colorScheme.secondaryContainer,
                   ),
@@ -74,7 +76,7 @@ class AdjustMonthlySpendingLimitView extends ConsumerWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding, vertical: kSmallPadding),
           child: Text(
-            'New Monthly Spending Limit',
+            BudgetMeLocalizations.of(context)!.newMonthlySpendingLimit,
             style: Theme.of(context).textTheme.bodyText1?.copyWith(
                   fontWeight: FontWeight.w700,
                 ),
@@ -120,7 +122,7 @@ class AdjustMonthlySpendingLimitView extends ConsumerWidget {
         Align(
           alignment: Alignment.center,
           child: BMPrimaryButton(
-            buttonText: 'Save',
+            buttonText: BudgetMeLocalizations.of(context)!.save,
             textColor: Theme.of(context).primaryColor,
             color: BudgetMeLightColors.transparent,
             containerWidth: MediaQuery.of(context).size.width / 3.25,
