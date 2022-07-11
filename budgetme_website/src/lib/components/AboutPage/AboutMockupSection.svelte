@@ -13,14 +13,14 @@
   <img src={mockupImage} alt="" width="180" />
   <div class="flex-col w-[22rem] ">
     <h3
-      class="font-semibold text-2xl {alignmentRight
+      class="font-semibold lg:text-2xl text-lg {alignmentRight
         ? 'text-right'
         : 'text-left'} mx-8"
     >
       {title}
     </h3>
     <h6
-      class="font-normal text-2xl sm:text-lg {alignmentRight
+      class="font-normal lg:text-2xl text-lg {alignmentRight
         ? 'text-right'
         : 'text-left'} mx-8"
     >
