@@ -20,7 +20,7 @@
       {title}
     </h3>
     <h6
-      class="font-normal text-2xl {alignmentRight
+      class="font-normal text-2xl sm:text-lg {alignmentRight
         ? 'text-right'
         : 'text-left'} mx-8"
     >
