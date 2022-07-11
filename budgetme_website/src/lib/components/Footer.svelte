@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import AppStoreDownloadButton from './AppStoreDownloadButton.svelte';
   import GooglePlayDownloadButton from './GooglePlayDownloadButton.svelte';
 
@@ -139,7 +139,7 @@
       </div>
     </div>
   </div>
-  <div class="my-32 flex-row flex justify-between space-x-16 px-48">
+  <div class="my-32 flex-row flex justify-between space-x-16 md:px-48 sm:px-24">
     <span class="text-sm text-gray-600 sm:text-center"
       >Copyright © 2022 <a href="/" class="hover:text-gray-500">BudgetMe</a>
     </span>
