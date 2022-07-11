@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import AppStoreDownloadButton from '../AppStoreDownloadButton.svelte';
   import GooglePlayDownloadButton from '../GooglePlayDownloadButton.svelte';
 </script>

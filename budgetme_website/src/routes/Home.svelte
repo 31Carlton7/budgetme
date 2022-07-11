@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Banner from '../lib/components/Banner.svelte';
   import Footer from '../lib/components/Footer.svelte';
   import HeroSection from '../lib/components/HomePage/HeroSection.svelte';

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { getContext } from 'svelte';
   import Popup from './Popup.svelte';
   //   const { open } = getContext('simple-modal');

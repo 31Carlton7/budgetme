@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import AboutMockupSection from '../lib/components/AboutPage/AboutMockupSection.svelte';
 
   import Footer from '../lib/components/Footer.svelte';
