@@ -6,7 +6,7 @@
 </script>
 
 <div class="py-4">
-  <div class="flex-col mx-36">
+  <div class="flex-col lg:mx-36 md:mx-20 sm:mx-18">
     <h3 class="font-semibold text-2xl py-4">
       {title}
     </h3>

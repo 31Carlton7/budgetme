@@ -99,10 +99,10 @@
             <a href="/" class="hover:text-gray-500">Website</a>
           </li>
           <li class="mb-4">
-            <a href="/about" class="hover:text-gray-500">About</a>
+            <a href="#/about" class="hover:text-gray-500">About</a>
           </li>
           <li class="mb-4">
-            <a href="/privacypolicy" class="hover:text-gray-500"
+            <a href="#/privacypolicy" class="hover:text-gray-500"
               >Privacy Policy</a
             >
           </li>
@@ -118,7 +118,7 @@
             >
           </li>
           <li>
-            <a href="/support" class="hover:text-gray-500">Support</a>
+            <a href="#/support" class="hover:text-gray-500">Support</a>
           </li>
         </ul>
       </div>

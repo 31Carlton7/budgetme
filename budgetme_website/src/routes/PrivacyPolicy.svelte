@@ -1,8 +1,8 @@
 <script>
-  import Footer from '../elements/Footer.svelte';
-  import Header from '../elements/Header.svelte';
-  import Navbar from '../elements/Navbar.svelte';
-  import PrivacyPolicySection from '../elements/PrivacyPolicyPage/PrivacyPolicySection.svelte';
+  import Footer from '../lib/components/Footer.svelte';
+  import Header from '../lib/components/Header.svelte';
+  import Navbar from '../lib/components/Navbar.svelte';
+  import PrivacyPolicySection from '../lib/components/PrivacyPolicyPage/PrivacyPolicySection.svelte';
 </script>
 
 <div class="relative bg-white">

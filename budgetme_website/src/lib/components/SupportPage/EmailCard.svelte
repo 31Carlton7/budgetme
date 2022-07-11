@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { emailSvgPath } from '../../Constants';
-
   let link: string = 'mailto:carltonaikins7@gmail.com';
   let platform: string = 'Email';
   let tag: string = 'carltonaikins7@gmail.com';
@@ -9,7 +7,7 @@
 <a
   href={link}
   target="_blank"
-  class="group p-2 my-4 rounded-md max-w-sm w-full justify-between items-center transition-colors bg-gray-200 hover:bg-red-500 lg:max-w-full lg:flex"
+  class="group p-2 my-4 rounded-md max-w-sm w-full flex flex-1 justify-between items-center transition-colors bg-gray-200 hover:bg-red-500 lg:max-w-full lg:flex"
 >
   <div class="flex items-center justify-center">
     <a

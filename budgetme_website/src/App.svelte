@@ -1,21 +1,20 @@
 <script lang="ts">
   import './app.css';
-  import router from 'page';
-  import Home from './lib/components/Home.svelte';
-  import About from './lib/components/About.svelte';
-  import Support from './lib/components/Support.svelte';
-  import PrivacyPolicy from './lib/components/PrivacyPolicy.svelte';
+  import Router from 'svelte-spa-router';
 
-  let page: any;
+  import Home from './routes/Home.svelte';
+  import About from './routes/About.svelte';
+  import Support from './routes/Support.svelte';
+  import PrivacyPolicy from './routes/PrivacyPolicy.svelte';
 
-  router('/', () => (page = Home));
-  router('/about', () => (page = About));
-  router('/support', () => (page = Support));
-  router('/privacypolicy', () => (page = PrivacyPolicy));
-
-  router.start();
+  let routes = {
+    '/': Home,
+    '/about': About,
+    '/support': Support,
+    '/privacypolicy': PrivacyPolicy,
+  };
 </script>
 
 <main>
-  <svelte:component this={page} />
+  <Router {routes} />
 </main>
