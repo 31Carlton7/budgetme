@@ -10,7 +10,7 @@
     ? ''
     : 'flex-row-reverse'}"
 >
-  <img src={mockupImage} alt="" width="180" />
+  <img src={mockupImage} alt="" width="165" />
   <div class="flex-col w-[22rem] ">
     <h3
       class="font-semibold lg:text-2xl text-lg {alignmentRight
