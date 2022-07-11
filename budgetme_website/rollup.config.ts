@@ -9,7 +9,7 @@ export default {
   input: './src/main.ts',
   output: {
     format: 'iife',
-    file: './build/bundle.js',
+    file: './public/build/bundle.js',
   },
   plugins: [
     svelte({
