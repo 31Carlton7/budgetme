@@ -50,3 +50,6 @@ budgetme_mobileapp/android/app/profile
 budgetme_mobileapp/android/app/release
 
 budgetme_mobileapp/lib/src/config/environment_keys.dart
+
+# Local Netlify folder
+.netlify
