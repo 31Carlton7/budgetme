@@ -10,7 +10,7 @@
     <Navbar />
     <HeroSection />
     <div class="py-14 flex items-center justify-center">
-      <img src="../src/assets/images/mockup_home.png" alt="" width="650" />
+      <img src="images/mockup_home.png" alt="" width="650" />
     </div>
     <Banner />
     <Footer />

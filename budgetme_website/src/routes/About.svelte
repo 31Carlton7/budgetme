@@ -13,25 +13,25 @@
     <AboutMockupSection
       title="Intuitive & Simple"
       content="Create Goals in a simple and easy manner. No unnecessary features."
-      mockupImage="../src/assets/images/mockup_about_1.png"
+      mockupImage="images/mockup_about_1.png"
       alignmentRight={true}
     />
     <AboutMockupSection
       title="Modern User Interface"
       content="A 21st century feeling interface that makes the app more visually appealing and fun to use."
-      mockupImage="../src/assets/images/mockup_about_2.png"
+      mockupImage="images/mockup_about_2.png"
       alignmentRight={false}
     />
     <AboutMockupSection
       title="Informative"
       content="View transaction history to keep track of spending and saving habits."
-      mockupImage="../src/assets/images/mockup_about_3.png"
+      mockupImage="images/mockup_about_3.png"
       alignmentRight={true}
     />
     <AboutMockupSection
       title="Available in 12 languages and all currencies"
       content="No matter where you’re saving from, you can feel right at home with your native currency."
-      mockupImage="../src/assets/images/mockup_about_4.png"
+      mockupImage="images/mockup_about_4.png"
       alignmentRight={false}
     />
     <Footer />
