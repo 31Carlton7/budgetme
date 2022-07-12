@@ -16,6 +16,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import 'package:budgetme/src/providers/goal_repository_provider.dart';
+import 'package:budgetme/src/ui/components/show_purchase_pro_bottom_sheet.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -47,7 +49,13 @@ class AddGoalButton extends ConsumerWidget {
         onPressed: () async {
           HapticFeedback.mediumImpact();
 
-          return showCreateGoalView(context);
+          final goals = ref.read(goalRepositoryProvider);
+
+          if (goals.length >= 2 /* && if they don't have Pro */) {
+            return showPurchaseProBottomSheet(context);
+          } else {
+            return showCreateGoalView(context);
+          }
         },
       ),
     );

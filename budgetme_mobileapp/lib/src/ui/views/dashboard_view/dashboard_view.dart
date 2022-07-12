@@ -19,6 +19,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:io';
 
 import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/providers/balance_repository_provider.dart';
+import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -29,22 +31,32 @@ import 'package:budgetme/src/providers/goal_repository_provider.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
-import 'package:budgetme/src/ui/views/all_goals_view/components/add_goal_button.dart';
-import 'package:budgetme/src/ui/views/all_goals_view/components/goal_card.dart';
+import 'package:budgetme/src/ui/views/dashboard_view/components/add_goal_button.dart';
+import 'package:budgetme/src/ui/views/dashboard_view/components/goal_card.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 
 import 'package:budgetme/src/ui/views/profile_view/profile_view.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 
-class AllGoalsView extends ConsumerStatefulWidget {
-  const AllGoalsView({Key? key}) : super(key: key);
+class DashboardView extends ConsumerStatefulWidget {
+  const DashboardView({Key? key}) : super(key: key);
 
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _AllGoalsViewState();
+  ConsumerState<ConsumerStatefulWidget> createState() => _DashboardViewState();
 }
 
-class _AllGoalsViewState extends ConsumerState<AllGoalsView> {
+class _DashboardViewState extends ConsumerState<DashboardView> {
+  void _updateUserCurrency() async {
+    final locale = Localizations.localeOf(context);
+    final format = NumberFormat.simpleCurrency(locale: locale.toString());
+    final currencyName = format.currencyName;
+    final currency = Currency.from(json: currencies.where((element) => element['code'] == currencyName).first);
+
+    await ref.read(balanceRepositoryProvider).setCurrency(currency);
+  }
+
   IconData icon() {
     if (Platform.isIOS) return CupertinoIcons.square_pencil;
 
@@ -53,6 +65,7 @@ class _AllGoalsViewState extends ConsumerState<AllGoalsView> {
 
   @override
   Widget build(BuildContext context) {
+    _updateUserCurrency();
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Theme.of(context).canvasColor,
