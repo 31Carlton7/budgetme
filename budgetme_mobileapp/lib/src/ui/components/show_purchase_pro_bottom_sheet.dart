@@ -45,7 +45,6 @@ Future<void> showPurchaseProBottomSheet(BuildContext context) async {
       return Container();
     },
     containerWidget: (context, animation, child) {
-      print(Platform.localeName.substring(0, 2));
       return Consumer(
         builder: (context, ref, child) {
           return SafeArea(
