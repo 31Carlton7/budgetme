@@ -1,0 +1,281 @@
+{
+  "@@locale": "ja",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "ダッシュボード",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "毎月の節約",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "保たれているバランス",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "総節約",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "節約目標",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "現在の進行",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "あなたはそこの道の{percent}％です！",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "残り時間",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "年",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "数ヶ月",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "日々",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "時間",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "分",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "秒",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "取引履歴",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "すべてを見る",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "取引",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "目標を編集します",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "目標を削除します",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "次",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "スキップ",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "キャンセル",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "の",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "作成",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "編集",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "保存",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "何のために節約していますか？",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "どれくらいのお金が必要ですか？",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "締め切りはいつですか？",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "現在どのくらいのお金が節約されていますか？",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "優先通貨を選択します",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "Pro😎を購入します",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "わずか2.99米ドルの無制限の目標のロックを解除する😆一度支払う、永遠に支払う！",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "7月の統計",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "設定",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "毎月の支出制限を調整します",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "約",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "プライバシーポリシー",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "サポート",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "バージョン1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "プロフィール",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "無制限の目標",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "わずか2.99米ドルの1回限りの購入のための無制限の目標であなたの本当の自己のロックを解除してください！ 😎注：価格は他の通貨で異なる場合があります",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "購入",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "毎週の支出を増やすと、目標を達成するのが難しくなり、落胆していることに注意してください。",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "新しい毎月の支出制限",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "パープルボタンを押して、新しい目標を作成します！",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "探す",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "終了",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "必要な量の{currency}{number}よりも小さい値を入力してください",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "休暇",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "ウェブ",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "デバイス",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "画像を選択します",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "検索バーを使用して、Unsplashで画像を検索します",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "結果がありません",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "終わり",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "削除する",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "追加",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "歴史から隠れます",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "目標を削除しますか？",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "あなたはあなたの目標を削除したいですか？",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "消去",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "取引は行われていません...まだ！",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "あなたの目標を達成しておめでとうございます！ 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "新しい目標を開始します",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}

@@ -19,84 +19,86 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ja';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "あなたはあなたの目標を削除したいですか？";
 
-  static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
+  static m1(currency, number) => "必要な量の${currency}${number}よりも小さい値を入力してください";
 
-  static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
+  static m2(amount) => "わずか2.99米ドルの無制限の目標のロックを解除する😆一度支払う、永遠に支払う！";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "7月の統計";
 
-  static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
+  static m4(amount) => "わずか2.99米ドルの1回限りの購入のための無制限の目標であなたの本当の自己のロックを解除してください！ 😎注：価格は他の通貨で異なる場合があります";
 
-  static m5(percent) => "You are ${percent}% of the way there!";
+  static m5(percent) => "あなたはそこの道の${percent}％です！";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "バージョン1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("About"),
-    "add" : MessageLookupByLibrary.simpleMessage("Add"),
-    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
+    "about" : MessageLookupByLibrary.simpleMessage("約"),
+    "add" : MessageLookupByLibrary.simpleMessage("追加"),
+    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("毎月の支出制限を調整します"),
     "areYouSureDelQ" : m0,
-    "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
-    "create" : MessageLookupByLibrary.simpleMessage("Create"),
-    "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
-    "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
-    "days" : MessageLookupByLibrary.simpleMessage("Days"),
-    "delete" : MessageLookupByLibrary.simpleMessage("Delete"),
-    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Delete Goal"),
-    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Delete Goal?"),
-    "device" : MessageLookupByLibrary.simpleMessage("Device"),
-    "done" : MessageLookupByLibrary.simpleMessage("Done"),
-    "edit" : MessageLookupByLibrary.simpleMessage("Edit"),
-    "editGoal" : MessageLookupByLibrary.simpleMessage("Edit Goal"),
-    "finish" : MessageLookupByLibrary.simpleMessage("Finish"),
-    "hideFrom" : MessageLookupByLibrary.simpleMessage("Hide from history"),
-    "hours" : MessageLookupByLibrary.simpleMessage("Hours"),
-    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("How much money is needed?"),
-    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("How much money is currently saved?"),
-    "minutes" : MessageLookupByLibrary.simpleMessage("Minutes"),
-    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Monthly Savings"),
-    "months" : MessageLookupByLibrary.simpleMessage("Months"),
-    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("New Monthly Spending Limit"),
-    "next" : MessageLookupByLibrary.simpleMessage("Next"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No Results"),
-    "noTransactions" : MessageLookupByLibrary.simpleMessage("No transactions have been made...yet!"),
+    "cancel" : MessageLookupByLibrary.simpleMessage("キャンセル"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("あなたの目標を達成しておめでとうございます！ 😆"),
+    "create" : MessageLookupByLibrary.simpleMessage("作成"),
+    "currentProgress" : MessageLookupByLibrary.simpleMessage("現在の進行"),
+    "dashboard" : MessageLookupByLibrary.simpleMessage("ダッシュボード"),
+    "days" : MessageLookupByLibrary.simpleMessage("日々"),
+    "delete" : MessageLookupByLibrary.simpleMessage("消去"),
+    "deleteGoal" : MessageLookupByLibrary.simpleMessage("目標を削除します"),
+    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("目標を削除しますか？"),
+    "device" : MessageLookupByLibrary.simpleMessage("デバイス"),
+    "done" : MessageLookupByLibrary.simpleMessage("終わり"),
+    "edit" : MessageLookupByLibrary.simpleMessage("編集"),
+    "editGoal" : MessageLookupByLibrary.simpleMessage("目標を編集します"),
+    "finish" : MessageLookupByLibrary.simpleMessage("終了"),
+    "hideFrom" : MessageLookupByLibrary.simpleMessage("歴史から隠れます"),
+    "hours" : MessageLookupByLibrary.simpleMessage("時間"),
+    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("どれくらいのお金が必要ですか？"),
+    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("現在どのくらいのお金が節約されていますか？"),
+    "minutes" : MessageLookupByLibrary.simpleMessage("分"),
+    "monthlySavings" : MessageLookupByLibrary.simpleMessage("毎月の節約"),
+    "months" : MessageLookupByLibrary.simpleMessage("数ヶ月"),
+    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("新しい毎月の支出制限"),
+    "next" : MessageLookupByLibrary.simpleMessage("次"),
+    "noResults" : MessageLookupByLibrary.simpleMessage("結果がありません"),
+    "noTransactions" : MessageLookupByLibrary.simpleMessage("取引は行われていません...まだ！"),
     "pleaseEnterLess" : m1,
-    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged."),
-    "prefCurr" : MessageLookupByLibrary.simpleMessage("Select your Preferred Currency"),
-    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Press the purple button to create a new Goal!"),
-    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "purchase" : MessageLookupByLibrary.simpleMessage("Purchase"),
-    "purchasePro" : MessageLookupByLibrary.simpleMessage("Purchase Pro😎"),
+    "pleaseNote" : MessageLookupByLibrary.simpleMessage("毎週の支出を増やすと、目標を達成するのが難しくなり、落胆していることに注意してください。"),
+    "prefCurr" : MessageLookupByLibrary.simpleMessage("優先通貨を選択します"),
+    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("パープルボタンを押して、新しい目標を作成します！"),
+    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("プライバシーポリシー"),
+    "profile" : MessageLookupByLibrary.simpleMessage("プロフィール"),
+    "purchase" : MessageLookupByLibrary.simpleMessage("購入"),
+    "purchasePro" : MessageLookupByLibrary.simpleMessage("Pro😎を購入します"),
     "purchaseProText" : m2,
-    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Remaining Balance"),
-    "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
-    "save" : MessageLookupByLibrary.simpleMessage("Save"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("What are you saving for?"),
-    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Savings Goals"),
-    "search" : MessageLookupByLibrary.simpleMessage("Search"),
-    "searchForImage" : MessageLookupByLibrary.simpleMessage("Search for images on UnSplash using the search bar"),
-    "seconds" : MessageLookupByLibrary.simpleMessage("Seconds"),
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
-    "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
-    "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "remainingBalance" : MessageLookupByLibrary.simpleMessage("保たれているバランス"),
+    "remove" : MessageLookupByLibrary.simpleMessage("削除する"),
+    "save" : MessageLookupByLibrary.simpleMessage("保存"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("何のために節約していますか？"),
+    "savingsGoals" : MessageLookupByLibrary.simpleMessage("節約目標"),
+    "search" : MessageLookupByLibrary.simpleMessage("探す"),
+    "searchForImage" : MessageLookupByLibrary.simpleMessage("検索バーを使用して、Unsplashで画像を検索します"),
+    "seconds" : MessageLookupByLibrary.simpleMessage("秒"),
+    "seeAll" : MessageLookupByLibrary.simpleMessage("すべてを見る"),
+    "selectImage" : MessageLookupByLibrary.simpleMessage("画像を選択します"),
+    "settings" : MessageLookupByLibrary.simpleMessage("設定"),
+    "skip" : MessageLookupByLibrary.simpleMessage("スキップ"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("新しい目標を開始します"),
     "statistics" : m3,
-    "support" : MessageLookupByLibrary.simpleMessage("Support"),
-    "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),
-    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total Saved"),
-    "transaction" : MessageLookupByLibrary.simpleMessage("Transaction"),
-    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Transaction History"),
-    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Unlimited Goals"),
+    "support" : MessageLookupByLibrary.simpleMessage("サポート"),
+    "timeLeft" : MessageLookupByLibrary.simpleMessage("残り時間"),
+    "totalSaved" : MessageLookupByLibrary.simpleMessage("総節約"),
+    "transaction" : MessageLookupByLibrary.simpleMessage("取引"),
+    "transactionHistory" : MessageLookupByLibrary.simpleMessage("取引履歴"),
+    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("無制限の目標"),
     "unlockText" : m4,
     "userPercentProgress" : m5,
-    "vacation" : MessageLookupByLibrary.simpleMessage("Vacation"),
+    "vacation" : MessageLookupByLibrary.simpleMessage("休暇"),
     "version" : m6,
-    "web" : MessageLookupByLibrary.simpleMessage("Web"),
-    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("When is the deadline?"),
-    "years" : MessageLookupByLibrary.simpleMessage("Years")
+    "web" : MessageLookupByLibrary.simpleMessage("ウェブ"),
+    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("締め切りはいつですか？"),
+    "years" : MessageLookupByLibrary.simpleMessage("年")
   };
 }
