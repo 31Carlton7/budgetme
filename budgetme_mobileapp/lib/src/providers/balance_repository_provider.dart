@@ -16,8 +16,11 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/repositories/balance_repository.dart';
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+// Project imports:
+import 'package:budgetme/src/repositories/balance_repository.dart';
 
 final balanceRepositoryProvider = ChangeNotifierProvider<BalanceRepository>((ref) {
   return BalanceRepository();
