@@ -41,10 +41,10 @@ class GoalView extends ConsumerStatefulWidget {
   final Goal goal;
 
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _DashboardViewState();
+  ConsumerState<ConsumerStatefulWidget> createState() => _GoalViewState();
 }
 
-class _DashboardViewState extends ConsumerState<GoalView> {
+class _GoalViewState extends ConsumerState<GoalView> {
   late ConfettiController _confettiController;
 
   @override
