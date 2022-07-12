@@ -16,8 +16,11 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/models/bm_notification.dart';
+// Package imports:
 import 'package:hive/hive.dart';
+
+// Project imports:
+import 'package:budgetme/src/models/bm_notification.dart';
 
 class NotificationsRepository {
   int notificationIndex = 0;
