@@ -16,8 +16,11 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/config/environment_keys.dart';
+// Package imports:
 import 'package:unsplash_client/unsplash_client.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/environment_keys.dart';
 
 class UnsplashService {
   UnsplashService();
