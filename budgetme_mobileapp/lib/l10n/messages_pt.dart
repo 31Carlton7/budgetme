@@ -19,84 +19,86 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'pt';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "Você tem certeza que deseja excluir seu objetivo?";
 
-  static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
+  static m1(currency, number) => "Por favor, insira um valor menor que o valor necessário de ${currency}${number}";
 
-  static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
+  static m2(amount) => "Desbloqueie metas ilimitadas para apenas 2,99 USD 😆 PAGAR uma vez, pague para sempre!";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "Estatísticas de julho";
 
-  static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
+  static m4(amount) => "Desbloqueie seu verdadeiro eu com metas ilimitadas para uma compra única de apenas 2,99 USD! 😎 Nota: os preços podem variar em outras moedas";
 
-  static m5(percent) => "You are ${percent}% of the way there!";
+  static m5(percent) => "Você está ${percent}% do caminho lá!";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "Versão 1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("About"),
-    "add" : MessageLookupByLibrary.simpleMessage("Add"),
-    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
+    "about" : MessageLookupByLibrary.simpleMessage("Sobre"),
+    "add" : MessageLookupByLibrary.simpleMessage("Adicionar"),
+    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Ajustar o limite de gastos mensais"),
     "areYouSureDelQ" : m0,
-    "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
-    "create" : MessageLookupByLibrary.simpleMessage("Create"),
-    "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
-    "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
-    "days" : MessageLookupByLibrary.simpleMessage("Days"),
-    "delete" : MessageLookupByLibrary.simpleMessage("Delete"),
-    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Delete Goal"),
-    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Delete Goal?"),
-    "device" : MessageLookupByLibrary.simpleMessage("Device"),
-    "done" : MessageLookupByLibrary.simpleMessage("Done"),
-    "edit" : MessageLookupByLibrary.simpleMessage("Edit"),
-    "editGoal" : MessageLookupByLibrary.simpleMessage("Edit Goal"),
-    "finish" : MessageLookupByLibrary.simpleMessage("Finish"),
-    "hideFrom" : MessageLookupByLibrary.simpleMessage("Hide from history"),
-    "hours" : MessageLookupByLibrary.simpleMessage("Hours"),
-    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("How much money is needed?"),
-    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("How much money is currently saved?"),
-    "minutes" : MessageLookupByLibrary.simpleMessage("Minutes"),
-    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Monthly Savings"),
-    "months" : MessageLookupByLibrary.simpleMessage("Months"),
-    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("New Monthly Spending Limit"),
-    "next" : MessageLookupByLibrary.simpleMessage("Next"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No Results"),
-    "noTransactions" : MessageLookupByLibrary.simpleMessage("No transactions have been made...yet!"),
+    "cancel" : MessageLookupByLibrary.simpleMessage("Cancelar"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("Parabéns por completar seu objetivo! 😆"),
+    "create" : MessageLookupByLibrary.simpleMessage("Crio"),
+    "currentProgress" : MessageLookupByLibrary.simpleMessage("Progresso atual"),
+    "dashboard" : MessageLookupByLibrary.simpleMessage("Painel"),
+    "days" : MessageLookupByLibrary.simpleMessage("Dias"),
+    "delete" : MessageLookupByLibrary.simpleMessage("Excluir"),
+    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Excluir o objetivo"),
+    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Excluir o objetivo?"),
+    "device" : MessageLookupByLibrary.simpleMessage("Dispositivo"),
+    "done" : MessageLookupByLibrary.simpleMessage("Feito"),
+    "edit" : MessageLookupByLibrary.simpleMessage("Editar"),
+    "editGoal" : MessageLookupByLibrary.simpleMessage("Editar objetivo"),
+    "finish" : MessageLookupByLibrary.simpleMessage("Terminar"),
+    "hideFrom" : MessageLookupByLibrary.simpleMessage("Esconder -se da história"),
+    "hours" : MessageLookupByLibrary.simpleMessage("Horas"),
+    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("Quanto dinheiro é necessário?"),
+    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("Quanto dinheiro está economizado atualmente?"),
+    "minutes" : MessageLookupByLibrary.simpleMessage("Minutos"),
+    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Economia mensal"),
+    "months" : MessageLookupByLibrary.simpleMessage("Meses"),
+    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Novo limite mensal de gastos"),
+    "next" : MessageLookupByLibrary.simpleMessage("Próximo"),
+    "noResults" : MessageLookupByLibrary.simpleMessage("Sem resultados"),
+    "noTransactions" : MessageLookupByLibrary.simpleMessage("Nenhuma transação foi feita ... ainda!"),
     "pleaseEnterLess" : m1,
-    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged."),
-    "prefCurr" : MessageLookupByLibrary.simpleMessage("Select your Preferred Currency"),
-    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Press the purple button to create a new Goal!"),
-    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "purchase" : MessageLookupByLibrary.simpleMessage("Purchase"),
-    "purchasePro" : MessageLookupByLibrary.simpleMessage("Purchase Pro😎"),
+    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Observe que aumentar seus gastos semanais tornará mais difícil alcançar objetivos e isso é desencorajado."),
+    "prefCurr" : MessageLookupByLibrary.simpleMessage("Selecione sua moeda preferida"),
+    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Pressione o botão roxo para criar um novo objetivo!"),
+    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Política de Privacidade"),
+    "profile" : MessageLookupByLibrary.simpleMessage("Perfil"),
+    "purchase" : MessageLookupByLibrary.simpleMessage("Comprar"),
+    "purchasePro" : MessageLookupByLibrary.simpleMessage("Compra pro😎"),
     "purchaseProText" : m2,
-    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Remaining Balance"),
-    "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
-    "save" : MessageLookupByLibrary.simpleMessage("Save"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("What are you saving for?"),
-    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Savings Goals"),
-    "search" : MessageLookupByLibrary.simpleMessage("Search"),
-    "searchForImage" : MessageLookupByLibrary.simpleMessage("Search for images on UnSplash using the search bar"),
-    "seconds" : MessageLookupByLibrary.simpleMessage("Seconds"),
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
-    "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
-    "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Saldo remanescente"),
+    "remove" : MessageLookupByLibrary.simpleMessage("Remover"),
+    "save" : MessageLookupByLibrary.simpleMessage("Salvar"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("O que você está economizando?"),
+    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Objetivos de poupança"),
+    "search" : MessageLookupByLibrary.simpleMessage("Procurar"),
+    "searchForImage" : MessageLookupByLibrary.simpleMessage("Pesquise imagens no UNSLASH usando a barra de pesquisa"),
+    "seconds" : MessageLookupByLibrary.simpleMessage("Segundos"),
+    "seeAll" : MessageLookupByLibrary.simpleMessage("Veja tudo"),
+    "selectImage" : MessageLookupByLibrary.simpleMessage("Selecione a imagem"),
+    "settings" : MessageLookupByLibrary.simpleMessage("Definições"),
+    "skip" : MessageLookupByLibrary.simpleMessage("Pular"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("Inicie um novo objetivo"),
     "statistics" : m3,
-    "support" : MessageLookupByLibrary.simpleMessage("Support"),
-    "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),
-    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total Saved"),
-    "transaction" : MessageLookupByLibrary.simpleMessage("Transaction"),
-    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Transaction History"),
-    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Unlimited Goals"),
+    "support" : MessageLookupByLibrary.simpleMessage("Apoiar"),
+    "timeLeft" : MessageLookupByLibrary.simpleMessage("Tempo restante"),
+    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total salvo"),
+    "transaction" : MessageLookupByLibrary.simpleMessage("Transação"),
+    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Histórico de transações"),
+    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Objetivos ilimitados"),
     "unlockText" : m4,
     "userPercentProgress" : m5,
-    "vacation" : MessageLookupByLibrary.simpleMessage("Vacation"),
+    "vacation" : MessageLookupByLibrary.simpleMessage("Período de férias"),
     "version" : m6,
-    "web" : MessageLookupByLibrary.simpleMessage("Web"),
-    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("When is the deadline?"),
-    "years" : MessageLookupByLibrary.simpleMessage("Years")
+    "web" : MessageLookupByLibrary.simpleMessage("Rede"),
+    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("Qual é o prazo?"),
+    "years" : MessageLookupByLibrary.simpleMessage("Anos")
   };
 }
