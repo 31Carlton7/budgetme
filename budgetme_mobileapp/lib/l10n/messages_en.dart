@@ -19,19 +19,19 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "Are you sure want to delete your goal?";
 
   static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
 
   static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "July Statistics";
 
   static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
 
   static m5(percent) => "You are ${percent}% of the way there!";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "Version 1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
@@ -40,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
     "areYouSureDelQ" : m0,
     "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("Congratulations on completing your goal! 😆"),
     "create" : MessageLookupByLibrary.simpleMessage("Create"),
     "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
     "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
@@ -84,6 +85,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
     "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
     "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("Start new goal"),
     "statistics" : m3,
     "support" : MessageLookupByLibrary.simpleMessage("Support"),
     "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),

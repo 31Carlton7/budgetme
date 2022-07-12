@@ -1,0 +1,281 @@
+{
+  "@@locale": "en",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "Monthly Savings",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "Remaining Balance",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "Total Saved",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "Savings Goals",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "Current Progress",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "You are {percent}% of the way there!",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "Time Left",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "Years",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "Months",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "Days",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "Hours",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "Minutes",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "Seconds",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "Transaction History",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "See All",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "Transaction",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "Edit Goal",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "Delete Goal",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "Next",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "Skip",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "of",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "Create",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "Save",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "What are you saving for?",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "How much money is needed?",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "When is the deadline?",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "How much money is currently saved?",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "Select your Preferred Currency",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "Purchase Pro😎",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "July Statistics",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "Adjust Monthly Spending Limit",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "About",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "Support",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "Version 1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "Unlimited Goals",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "Purchase",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged.",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "New Monthly Spending Limit",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "Press the purple button to create a new Goal!",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "Search",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "Finish",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "Please enter a value less than your required amount of {currency}{number}",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "Vacation",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "Web",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "Device",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "Select Image",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "Search for images on UnSplash using the search bar",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "No Results",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "Done",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "Remove",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "Add",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "Hide from history",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "Delete Goal?",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "Are you sure want to delete your goal?",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "No transactions have been made...yet!",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "Congratulations on completing your goal! 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "Start new goal",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}
