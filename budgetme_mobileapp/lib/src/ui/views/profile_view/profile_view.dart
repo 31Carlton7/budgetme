@@ -16,19 +16,22 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/config/extensions.dart';
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/constants.dart';
-import 'package:budgetme/src/ui/components/back_button.dart';
-
-import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
-import 'package:budgetme/src/ui/views/profile_view/components/purchase_pro_card.dart';
-import 'package:budgetme/src/ui/views/profile_view/components/settings_section.dart';
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:timezone/timezone.dart' as tz;
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/extensions.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/ui/components/back_button.dart';
+import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
+import 'package:budgetme/src/ui/views/profile_view/components/purchase_pro_card.dart';
+import 'package:budgetme/src/ui/views/profile_view/components/settings_section.dart';
 
 class ProfileView extends ConsumerStatefulWidget {
   const ProfileView({Key? key}) : super(key: key);
