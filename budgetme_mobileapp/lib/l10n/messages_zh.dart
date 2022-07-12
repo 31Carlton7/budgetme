@@ -19,84 +19,86 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'zh';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "您确定要删除目标吗？";
 
-  static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
+  static m1(currency, number) => "请输入一个小于您所需{货币} ${number}的数量少的值";
 
-  static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
+  static m2(amount) => "仅需2.99美元的付费一次，解锁无限目标付费一次，永远付款！";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "七月统计";
 
-  static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
+  static m4(amount) => "用无限的目标释放您的真实自我，仅一次购买2.99美元！ 😎注意：其他货币的价格可能会有所不同";
 
-  static m5(percent) => "You are ${percent}% of the way there!";
+  static m5(percent) => "您是那里的{％}％！";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "版本1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("About"),
-    "add" : MessageLookupByLibrary.simpleMessage("Add"),
-    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
+    "about" : MessageLookupByLibrary.simpleMessage("关于"),
+    "add" : MessageLookupByLibrary.simpleMessage("添加"),
+    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("调整每月支出限额"),
     "areYouSureDelQ" : m0,
-    "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
-    "create" : MessageLookupByLibrary.simpleMessage("Create"),
-    "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
-    "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
-    "days" : MessageLookupByLibrary.simpleMessage("Days"),
-    "delete" : MessageLookupByLibrary.simpleMessage("Delete"),
-    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Delete Goal"),
-    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Delete Goal?"),
-    "device" : MessageLookupByLibrary.simpleMessage("Device"),
-    "done" : MessageLookupByLibrary.simpleMessage("Done"),
-    "edit" : MessageLookupByLibrary.simpleMessage("Edit"),
-    "editGoal" : MessageLookupByLibrary.simpleMessage("Edit Goal"),
-    "finish" : MessageLookupByLibrary.simpleMessage("Finish"),
-    "hideFrom" : MessageLookupByLibrary.simpleMessage("Hide from history"),
-    "hours" : MessageLookupByLibrary.simpleMessage("Hours"),
-    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("How much money is needed?"),
-    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("How much money is currently saved?"),
-    "minutes" : MessageLookupByLibrary.simpleMessage("Minutes"),
-    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Monthly Savings"),
-    "months" : MessageLookupByLibrary.simpleMessage("Months"),
-    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("New Monthly Spending Limit"),
-    "next" : MessageLookupByLibrary.simpleMessage("Next"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No Results"),
-    "noTransactions" : MessageLookupByLibrary.simpleMessage("No transactions have been made...yet!"),
+    "cancel" : MessageLookupByLibrary.simpleMessage("取消"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("恭喜您完成了您的目标！ 😆"),
+    "create" : MessageLookupByLibrary.simpleMessage("创造"),
+    "currentProgress" : MessageLookupByLibrary.simpleMessage("现在的进展"),
+    "dashboard" : MessageLookupByLibrary.simpleMessage("仪表板"),
+    "days" : MessageLookupByLibrary.simpleMessage("天"),
+    "delete" : MessageLookupByLibrary.simpleMessage("删除"),
+    "deleteGoal" : MessageLookupByLibrary.simpleMessage("删除目标"),
+    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("删除目标？"),
+    "device" : MessageLookupByLibrary.simpleMessage("设备"),
+    "done" : MessageLookupByLibrary.simpleMessage("完毕"),
+    "edit" : MessageLookupByLibrary.simpleMessage("编辑"),
+    "editGoal" : MessageLookupByLibrary.simpleMessage("编辑目标"),
+    "finish" : MessageLookupByLibrary.simpleMessage("结束"),
+    "hideFrom" : MessageLookupByLibrary.simpleMessage("隐藏历史"),
+    "hours" : MessageLookupByLibrary.simpleMessage("小时"),
+    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("需要多少钱？"),
+    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("目前节省了多少钱？"),
+    "minutes" : MessageLookupByLibrary.simpleMessage("分钟"),
+    "monthlySavings" : MessageLookupByLibrary.simpleMessage("每月储蓄"),
+    "months" : MessageLookupByLibrary.simpleMessage("月份"),
+    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("新的每月支出限额"),
+    "next" : MessageLookupByLibrary.simpleMessage("下一个"),
+    "noResults" : MessageLookupByLibrary.simpleMessage("没有结果"),
+    "noTransactions" : MessageLookupByLibrary.simpleMessage("尚未进行交易...现在！"),
     "pleaseEnterLess" : m1,
-    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged."),
-    "prefCurr" : MessageLookupByLibrary.simpleMessage("Select your Preferred Currency"),
-    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Press the purple button to create a new Goal!"),
-    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "purchase" : MessageLookupByLibrary.simpleMessage("Purchase"),
-    "purchasePro" : MessageLookupByLibrary.simpleMessage("Purchase Pro😎"),
+    "pleaseNote" : MessageLookupByLibrary.simpleMessage("请注意，增加您的每周支出将使实现目标变得更加困难，并且会灰心。"),
+    "prefCurr" : MessageLookupByLibrary.simpleMessage("选择您的首选货币"),
+    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("按下紫色按钮创建一个新目标！"),
+    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("隐私政策"),
+    "profile" : MessageLookupByLibrary.simpleMessage("轮廓"),
+    "purchase" : MessageLookupByLibrary.simpleMessage("购买"),
+    "purchasePro" : MessageLookupByLibrary.simpleMessage("购买pro😎"),
     "purchaseProText" : m2,
-    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Remaining Balance"),
-    "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
-    "save" : MessageLookupByLibrary.simpleMessage("Save"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("What are you saving for?"),
-    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Savings Goals"),
-    "search" : MessageLookupByLibrary.simpleMessage("Search"),
-    "searchForImage" : MessageLookupByLibrary.simpleMessage("Search for images on UnSplash using the search bar"),
-    "seconds" : MessageLookupByLibrary.simpleMessage("Seconds"),
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
-    "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
-    "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "remainingBalance" : MessageLookupByLibrary.simpleMessage("保持平衡"),
+    "remove" : MessageLookupByLibrary.simpleMessage("消除"),
+    "save" : MessageLookupByLibrary.simpleMessage("节省"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("您要保存什么？"),
+    "savingsGoals" : MessageLookupByLibrary.simpleMessage("储蓄目标"),
+    "search" : MessageLookupByLibrary.simpleMessage("搜索"),
+    "searchForImage" : MessageLookupByLibrary.simpleMessage("使用搜索栏在Unsplash上​​搜索图像"),
+    "seconds" : MessageLookupByLibrary.simpleMessage("秒"),
+    "seeAll" : MessageLookupByLibrary.simpleMessage("看到所有"),
+    "selectImage" : MessageLookupByLibrary.simpleMessage("选择图像"),
+    "settings" : MessageLookupByLibrary.simpleMessage("设置"),
+    "skip" : MessageLookupByLibrary.simpleMessage("跳过"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("开始新目标"),
     "statistics" : m3,
-    "support" : MessageLookupByLibrary.simpleMessage("Support"),
-    "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),
-    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total Saved"),
-    "transaction" : MessageLookupByLibrary.simpleMessage("Transaction"),
-    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Transaction History"),
-    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Unlimited Goals"),
+    "support" : MessageLookupByLibrary.simpleMessage("支持"),
+    "timeLeft" : MessageLookupByLibrary.simpleMessage("剩下的时间"),
+    "totalSaved" : MessageLookupByLibrary.simpleMessage("总保存"),
+    "transaction" : MessageLookupByLibrary.simpleMessage("交易"),
+    "transactionHistory" : MessageLookupByLibrary.simpleMessage("交易历史记录"),
+    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("无限目标"),
     "unlockText" : m4,
     "userPercentProgress" : m5,
-    "vacation" : MessageLookupByLibrary.simpleMessage("Vacation"),
+    "vacation" : MessageLookupByLibrary.simpleMessage("假期"),
     "version" : m6,
-    "web" : MessageLookupByLibrary.simpleMessage("Web"),
-    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("When is the deadline?"),
-    "years" : MessageLookupByLibrary.simpleMessage("Years")
+    "web" : MessageLookupByLibrary.simpleMessage("网络"),
+    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("什么时候截止日期？"),
+    "years" : MessageLookupByLibrary.simpleMessage("年")
   };
 }

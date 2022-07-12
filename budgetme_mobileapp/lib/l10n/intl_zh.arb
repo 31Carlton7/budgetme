@@ -1,0 +1,281 @@
+{
+  "@@locale": "zh",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "仪表板",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "每月储蓄",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "保持平衡",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "总保存",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "储蓄目标",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "现在的进展",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "您是那里的{％}％！",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "％": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "剩下的时间",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "年",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "月份",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "天",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "小时",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "分钟",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "秒",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "交易历史记录",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "看到所有",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "交易",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "编辑目标",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "删除目标",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "下一个",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "跳过",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "取消",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "的",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "创造",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "编辑",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "节省",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "您要保存什么？",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "需要多少钱？",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "什么时候截止日期？",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "目前节省了多少钱？",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "选择您的首选货币",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "购买pro😎",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "仅需2.99美元的付费一次，解锁无限目标付费一次，永远付款！",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "七月统计",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "设置",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "调整每月支出限额",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "关于",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "隐私政策",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "支持",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "版本1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "轮廓",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "无限目标",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "用无限的目标释放您的真实自我，仅一次购买2.99美元！ 😎注意：其他货币的价格可能会有所不同",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "购买",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "请注意，增加您的每周支出将使实现目标变得更加困难，并且会灰心。",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "新的每月支出限额",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "按下紫色按钮创建一个新目标！",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "搜索",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "结束",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "请输入一个小于您所需{货币} {number}的数量少的值",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "货币": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "假期",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "网络",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "设备",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "选择图像",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "使用搜索栏在Unsplash上​​搜索图像",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "没有结果",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "完毕",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "消除",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "添加",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "隐藏历史",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "删除目标？",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "您确定要删除目标吗？",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "删除",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "尚未进行交易...现在！",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "恭喜您完成了您的目标！ 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "开始新目标",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}
