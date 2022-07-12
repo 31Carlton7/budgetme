@@ -1,10 +1,15 @@
+// Dart imports:
 import 'dart:async';
 
-import 'package:budgetme/src/lang/budgetme_localizations_delegate.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:intl/intl.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
+// Package imports:
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/intl.dart';
+
+// Project imports:
+import 'package:budgetme/src/lang/budgetme_localizations_delegate.dart';
 import '../../l10n/messages_all.dart';
 
 // We have to build this file before we uncomment the next import line,
