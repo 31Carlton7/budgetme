@@ -1,0 +1,281 @@
+{
+  "@@locale": "fr",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "Tableau de bord",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "Économies mensuelles",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "Solde restant",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "Total sauvé",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "Objectifs d'épargne",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "Progrès en cours",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "Vous êtes {percent} pour cent là-bas!",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "Temps restant",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "Années",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "Mois",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "Journées",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "Heures",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "Minutes",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "Secondes",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "Historique des transactions",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "Voir tout",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "Transaction",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "Modifier l'objectif",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "Supprimer l'objectif",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "Prochain",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "Sauter",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "Annuler",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "de",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "Créer",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "Éditer",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "sauvegarder",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "Pourquoi économisez-vous?",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "Combien d'argent est nécessaire?",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "Quand est la date limite?",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "Combien d'argent est actuellement économisé?",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "Sélectionnez votre devise préférée",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "Acheter pro😎",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "Déverrouillez les objectifs illimités pour seulement 2,99 USD 😆 Payez une fois, payez pour toujours!",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "Statistiques de juillet",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "Réglages",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "Ajuster la limite de dépenses mensuelles",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "À propos de",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "Politique de confidentialité",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "Soutien",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "Version 1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "Profil",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "Objectifs illimités",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "Déverrouillez votre vrai moi avec des objectifs illimités pour un achat unique de seulement 2,99 USD! 😎 Remarque: les prix peuvent varier dans d'autres devises",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "Acheter",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "Veuillez noter que l'augmentation de vos dépenses hebdomadaires rendra plus difficile l'atteinte d'objectifs et qu'elle est découragée.",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "Nouvelle limite de dépenses mensuelles",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "Appuyez sur le bouton violet pour créer un nouvel objectif!",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "Chercher",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "Finir",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "Veuillez saisir une valeur inférieure à votre montant requis de {currency}​​{number}",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "Vacances",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "la toile",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "Dispositif",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "Sélectionner l'image",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "Recherchez des images sur unclash à l'aide de la barre de recherche",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "Aucun résultat",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "Fait",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "Retirer",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "Ajouter",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "Se cacher de l'histoire",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "Supprimer l'objectif?",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "Êtes-vous sûr de supprimer votre objectif?",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "Effacer",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "Aucune transaction n'a été effectuée ... pourtant!",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "Félicitations pour avoir atteint votre objectif! 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "Commencer un nouvel objectif",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}
