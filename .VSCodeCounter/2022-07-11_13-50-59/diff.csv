@@ -1,9 +1,0 @@
-"filename", "language", "TypeScript", "CSS", "JavaScript", "JSON with Comments", "JSON", "comment", "blank", "total"
-"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/build/bundle.css", "CSS", 0, 1, 0, 0, 0, 2, 0, 3
-"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/build/bundle.js", "JavaScript", 0, 0, 2813, 0, 0, 175, 298, 3286
-"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/package-lock.json", "JSON", 0, 0, 0, 0, 2154, 0, 0, 2154
-"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/package.json", "JSON", 0, 0, 0, 0, 6, 0, 0, 6
-"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/rollup.config.ts", "TypeScript", 31, 0, 0, 0, 0, 0, 2, 33
-"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/src/global.d.ts", "TypeScript", 0, 0, 0, 0, 0, 1, 1, 2
-"/Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_website/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 2, -1, 1
-"Total", "-", 31, 1, 2813, 0, 2160, 180, 300, 5485
