@@ -16,26 +16,30 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:io';
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
+// Package imports:
+import 'package:currency_picker/currency_picker.dart';
+import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:http/http.dart' show get;
+import 'package:path_provider/path_provider.dart';
+import 'package:uuid/uuid.dart';
+
+// Project imports:
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/providers/goal_repository_provider.dart';
 import 'package:budgetme/src/ui/components/back_button.dart' as b;
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
-import 'package:currency_picker/currency_picker.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:http/http.dart' show get;
-import 'package:path_provider/path_provider.dart';
-import 'package:uuid/uuid.dart';
 
 class CGViewFive extends ConsumerStatefulWidget {
   const CGViewFive(this.ctx, this.goal, this.edit, {Key? key}) : super(key: key);
