@@ -16,29 +16,33 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:io';
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
-import 'package:budgetme/src/providers/balance_repository_provider.dart';
-import 'package:currency_picker/currency_picker.dart';
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+// Package imports:
+import 'package:currency_picker/currency_picker.dart';
+import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
+
+// Project imports:
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/providers/balance_repository_provider.dart';
 import 'package:budgetme/src/providers/goal_repository_provider.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
+import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:budgetme/src/ui/views/dashboard_view/components/add_goal_button.dart';
 import 'package:budgetme/src/ui/views/dashboard_view/components/goal_card.dart';
-import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
-
 import 'package:budgetme/src/ui/views/profile_view/profile_view.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:intl/intl.dart';
 
 class DashboardView extends ConsumerStatefulWidget {
   const DashboardView({Key? key}) : super(key: key);
