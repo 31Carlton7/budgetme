@@ -16,16 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/constants.dart';
-import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
-import 'package:budgetme/src/providers/balance_repository_provider.dart';
-import 'package:budgetme/src/ui/components/box_shadow.dart';
-
+// Package imports:
 import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/providers/balance_repository_provider.dart';
+import 'package:budgetme/src/ui/components/box_shadow.dart';
 
 class MonthlySavingsCard extends ConsumerWidget {
   const MonthlySavingsCard({Key? key}) : super(key: key);
