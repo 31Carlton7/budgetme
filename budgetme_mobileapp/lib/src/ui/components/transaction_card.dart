@@ -16,15 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/constants.dart';
-import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
-import 'package:budgetme/src/models/transaction.dart';
+// Package imports:
 import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:heroicons/heroicons.dart';
 import 'package:intl/intl.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/models/transaction.dart';
 
 class TransactionCard extends ConsumerWidget {
   const TransactionCard({
