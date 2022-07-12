@@ -16,22 +16,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:async';
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
-import 'package:budgetme/src/ui/views/dashboard_view/dashboard_view.dart';
+// Flutter imports:
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:budgetme/src/config/constants.dart';
-import 'package:budgetme/src/config/themes/dark_theme/dark_theme.dart';
-import 'package:budgetme/src/config/themes/light_theme/light_theme.dart';
-import 'package:budgetme/src/providers/balance_repository_provider.dart';
-import 'package:budgetme/src/providers/goal_repository_provider.dart';
-import 'package:budgetme/src/providers/notification_service_provider.dart';
-import 'package:budgetme/src/providers/theme_provider.dart';
-import 'package:budgetme/src/services/notification_service.dart';
+// Package imports:
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -39,6 +32,18 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/themes/dark_theme/dark_theme.dart';
+import 'package:budgetme/src/config/themes/light_theme/light_theme.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/providers/balance_repository_provider.dart';
+import 'package:budgetme/src/providers/goal_repository_provider.dart';
+import 'package:budgetme/src/providers/notification_service_provider.dart';
+import 'package:budgetme/src/providers/theme_provider.dart';
+import 'package:budgetme/src/services/notification_service.dart';
+import 'package:budgetme/src/ui/views/dashboard_view/dashboard_view.dart';
 
 void main() async {
   /// Catches all occuring errors in app
