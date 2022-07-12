@@ -16,11 +16,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/constants.dart';
+// Package imports:
 import 'package:currency_picker/currency_picker.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
 
 class BalanceRepository extends ChangeNotifier {
   var _remainingBalance = 0.0;
