@@ -16,17 +16,20 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
+// Package imports:
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:heroicons/heroicons.dart';
+
+// Project imports:
 import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/transaction_card.dart';
-
 import 'package:budgetme/src/ui/views/transaction_history_view/transaction_history_view.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:heroicons/heroicons.dart';
 
 class TransactionHistorySection extends ConsumerWidget {
   const TransactionHistorySection(this.goal, {Key? key}) : super(key: key);
