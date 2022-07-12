@@ -16,23 +16,27 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:io';
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/constants.dart';
-import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
-import 'package:budgetme/src/models/goal.dart';
-import 'package:budgetme/src/ui/components/box_shadow.dart';
-import 'package:budgetme/src/ui/components/primary_button.dart';
-
-import 'package:budgetme/src/ui/views/create_goal_view/bottom_sheet_views/view_two.dart';
-import 'package:budgetme/src/ui/views/create_goal_view/components/show_image_selection_bottom_sheet.dart';
+// Package imports:
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:heroicons/heroicons.dart';
 import 'package:uuid/uuid.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/models/goal.dart';
+import 'package:budgetme/src/ui/components/box_shadow.dart';
+import 'package:budgetme/src/ui/components/primary_button.dart';
+import 'package:budgetme/src/ui/views/create_goal_view/bottom_sheet_views/view_two.dart';
+import 'package:budgetme/src/ui/views/create_goal_view/components/show_image_selection_bottom_sheet.dart';
 
 class CGViewOne extends ConsumerStatefulWidget {
   const CGViewOne(this.ctx, this.goal, this.edit, {Key? key}) : super(key: key);
