@@ -16,11 +16,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:convert';
 
-import 'package:budgetme/src/models/goal.dart';
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+
+// Project imports:
+import 'package:budgetme/src/models/goal.dart';
 
 class GoalRepository extends StateNotifier<List<Goal>> {
   GoalRepository() : super([]);
