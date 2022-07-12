@@ -16,8 +16,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Flutter imports:
 import 'package:flutter/material.dart';
 
+// Project imports:
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/dark_theme/dark_color_palette.dart';
 import 'package:budgetme/src/config/themes/text_theme.dart';
