@@ -16,18 +16,22 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:async';
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/constants.dart';
-
-import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
-import 'package:budgetme/src/models/goal.dart';
-import 'package:budgetme/src/ui/components/box_shadow.dart';
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:jiffy/jiffy.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/models/goal.dart';
+import 'package:budgetme/src/ui/components/box_shadow.dart';
 
 class TimeLeftCard extends ConsumerStatefulWidget {
   const TimeLeftCard(this.goal, {Key? key}) : super(key: key);
