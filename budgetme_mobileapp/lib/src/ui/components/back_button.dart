@@ -16,12 +16,18 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/config/constants.dart';
-import 'package:flutter/material.dart';
+// Dart imports:
 import 'dart:math' as math;
 
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:heroicons/heroicons.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
 
 class BMBackButton extends ConsumerWidget {
   const BMBackButton({Key? key}) : super(key: key);
