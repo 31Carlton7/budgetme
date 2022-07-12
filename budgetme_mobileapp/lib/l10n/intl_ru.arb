@@ -1,0 +1,281 @@
+{
+  "@@locale": "ru",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "Приборная доска",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "Ежемесячные сбережения",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "Остаток средств",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "Всего сохранено",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "Сберегательные цели",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "Текущий прогресс",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "Вы {percent}% от пути!",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "Осталось времени",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "Годы",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "Месяцы",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "Дни",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "Часы",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "Минуты",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "Секунды",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "История транзакций",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "Увидеть все",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "Сделка",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "Изменить цель",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "Удалить цель",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "Следующий",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "Пропускать",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "Отмена",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "из",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "Создавать",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "Редактировать",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "Сохранять",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "Для чего вы сохраняете?",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "Сколько денег нужно?",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "Когда у него есть крайний срок?",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "Сколько денег в настоящее время сэкономлено?",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "Выберите предпочтительную валюту",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "Купить про😎",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "Разблокируйте неограниченные цели всего за 2,99 доллара США, заплатите один раз, заплатите навсегда!",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "Июльская статистика",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "Настройки",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "Корректировать лимит ежемесячных расходов",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "О",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "Политика конфиденциальности",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "Поддерживать",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "Версия 1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "Профиль",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "Неограниченные цели",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "Разблокируйте свое истинное «я» с неограниченными целями для единовременной покупки всего 2,99 доллара США! 😎 Примечание: цены могут варьироваться в других валютах",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "Покупка",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "Обратите внимание, что увеличение ваших еженедельных расходов затрудняет достижение целей, и это обескуражено.",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "Новый ежемесячный лимит расходов",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "Нажмите кнопку Purple, чтобы создать новую цель!",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "Поиск",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "Заканчивать",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "Пожалуйста, введите значение меньше, чем вам требуется {currency}{number}",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "Отпуск",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "Веб -",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "Устройство",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "Выберите изображение",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "Поиск изображений на Unsplash с помощью строки поиска",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "Нет результатов",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "Сделанный",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "Удалять",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "Добавлять",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "Скрыть от истории",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "Удалить цель?",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "Вы уверены, что хотите удалить свою цель?",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "Удалить",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "Сделки не было сделано ... пока!",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "Поздравляю с достижением своей цели! 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "Начните новую цель",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}

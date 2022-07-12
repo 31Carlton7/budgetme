@@ -19,84 +19,86 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ru';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "Вы уверены, что хотите удалить свою цель?";
 
-  static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
+  static m1(currency, number) => "Пожалуйста, введите значение меньше, чем вам требуется ${currency}${number}";
 
-  static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
+  static m2(amount) => "Разблокируйте неограниченные цели всего за 2,99 доллара США, заплатите один раз, заплатите навсегда!";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "Июльская статистика";
 
-  static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
+  static m4(amount) => "Разблокируйте свое истинное «я» с неограниченными целями для единовременной покупки всего 2,99 доллара США! 😎 Примечание: цены могут варьироваться в других валютах";
 
-  static m5(percent) => "You are ${percent}% of the way there!";
+  static m5(percent) => "Вы ${percent}% от пути!";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "Версия 1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("About"),
-    "add" : MessageLookupByLibrary.simpleMessage("Add"),
-    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
+    "about" : MessageLookupByLibrary.simpleMessage("О"),
+    "add" : MessageLookupByLibrary.simpleMessage("Добавлять"),
+    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Корректировать лимит ежемесячных расходов"),
     "areYouSureDelQ" : m0,
-    "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
-    "create" : MessageLookupByLibrary.simpleMessage("Create"),
-    "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
-    "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
-    "days" : MessageLookupByLibrary.simpleMessage("Days"),
-    "delete" : MessageLookupByLibrary.simpleMessage("Delete"),
-    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Delete Goal"),
-    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Delete Goal?"),
-    "device" : MessageLookupByLibrary.simpleMessage("Device"),
-    "done" : MessageLookupByLibrary.simpleMessage("Done"),
-    "edit" : MessageLookupByLibrary.simpleMessage("Edit"),
-    "editGoal" : MessageLookupByLibrary.simpleMessage("Edit Goal"),
-    "finish" : MessageLookupByLibrary.simpleMessage("Finish"),
-    "hideFrom" : MessageLookupByLibrary.simpleMessage("Hide from history"),
-    "hours" : MessageLookupByLibrary.simpleMessage("Hours"),
-    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("How much money is needed?"),
-    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("How much money is currently saved?"),
-    "minutes" : MessageLookupByLibrary.simpleMessage("Minutes"),
-    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Monthly Savings"),
-    "months" : MessageLookupByLibrary.simpleMessage("Months"),
-    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("New Monthly Spending Limit"),
-    "next" : MessageLookupByLibrary.simpleMessage("Next"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No Results"),
-    "noTransactions" : MessageLookupByLibrary.simpleMessage("No transactions have been made...yet!"),
+    "cancel" : MessageLookupByLibrary.simpleMessage("Отмена"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("Поздравляю с достижением своей цели! 😆"),
+    "create" : MessageLookupByLibrary.simpleMessage("Создавать"),
+    "currentProgress" : MessageLookupByLibrary.simpleMessage("Текущий прогресс"),
+    "dashboard" : MessageLookupByLibrary.simpleMessage("Приборная доска"),
+    "days" : MessageLookupByLibrary.simpleMessage("Дни"),
+    "delete" : MessageLookupByLibrary.simpleMessage("Удалить"),
+    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Удалить цель"),
+    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Удалить цель?"),
+    "device" : MessageLookupByLibrary.simpleMessage("Устройство"),
+    "done" : MessageLookupByLibrary.simpleMessage("Сделанный"),
+    "edit" : MessageLookupByLibrary.simpleMessage("Редактировать"),
+    "editGoal" : MessageLookupByLibrary.simpleMessage("Изменить цель"),
+    "finish" : MessageLookupByLibrary.simpleMessage("Заканчивать"),
+    "hideFrom" : MessageLookupByLibrary.simpleMessage("Скрыть от истории"),
+    "hours" : MessageLookupByLibrary.simpleMessage("Часы"),
+    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("Сколько денег нужно?"),
+    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("Сколько денег в настоящее время сэкономлено?"),
+    "minutes" : MessageLookupByLibrary.simpleMessage("Минуты"),
+    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Ежемесячные сбережения"),
+    "months" : MessageLookupByLibrary.simpleMessage("Месяцы"),
+    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Новый ежемесячный лимит расходов"),
+    "next" : MessageLookupByLibrary.simpleMessage("Следующий"),
+    "noResults" : MessageLookupByLibrary.simpleMessage("Нет результатов"),
+    "noTransactions" : MessageLookupByLibrary.simpleMessage("Сделки не было сделано ... пока!"),
     "pleaseEnterLess" : m1,
-    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged."),
-    "prefCurr" : MessageLookupByLibrary.simpleMessage("Select your Preferred Currency"),
-    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Press the purple button to create a new Goal!"),
-    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "purchase" : MessageLookupByLibrary.simpleMessage("Purchase"),
-    "purchasePro" : MessageLookupByLibrary.simpleMessage("Purchase Pro😎"),
+    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Обратите внимание, что увеличение ваших еженедельных расходов затрудняет достижение целей, и это обескуражено."),
+    "prefCurr" : MessageLookupByLibrary.simpleMessage("Выберите предпочтительную валюту"),
+    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Нажмите кнопку Purple, чтобы создать новую цель!"),
+    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Политика конфиденциальности"),
+    "profile" : MessageLookupByLibrary.simpleMessage("Профиль"),
+    "purchase" : MessageLookupByLibrary.simpleMessage("Покупка"),
+    "purchasePro" : MessageLookupByLibrary.simpleMessage("Купить про😎"),
     "purchaseProText" : m2,
-    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Remaining Balance"),
-    "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
-    "save" : MessageLookupByLibrary.simpleMessage("Save"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("What are you saving for?"),
-    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Savings Goals"),
-    "search" : MessageLookupByLibrary.simpleMessage("Search"),
-    "searchForImage" : MessageLookupByLibrary.simpleMessage("Search for images on UnSplash using the search bar"),
-    "seconds" : MessageLookupByLibrary.simpleMessage("Seconds"),
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
-    "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
-    "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Остаток средств"),
+    "remove" : MessageLookupByLibrary.simpleMessage("Удалять"),
+    "save" : MessageLookupByLibrary.simpleMessage("Сохранять"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("Для чего вы сохраняете?"),
+    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Сберегательные цели"),
+    "search" : MessageLookupByLibrary.simpleMessage("Поиск"),
+    "searchForImage" : MessageLookupByLibrary.simpleMessage("Поиск изображений на Unsplash с помощью строки поиска"),
+    "seconds" : MessageLookupByLibrary.simpleMessage("Секунды"),
+    "seeAll" : MessageLookupByLibrary.simpleMessage("Увидеть все"),
+    "selectImage" : MessageLookupByLibrary.simpleMessage("Выберите изображение"),
+    "settings" : MessageLookupByLibrary.simpleMessage("Настройки"),
+    "skip" : MessageLookupByLibrary.simpleMessage("Пропускать"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("Начните новую цель"),
     "statistics" : m3,
-    "support" : MessageLookupByLibrary.simpleMessage("Support"),
-    "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),
-    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total Saved"),
-    "transaction" : MessageLookupByLibrary.simpleMessage("Transaction"),
-    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Transaction History"),
-    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Unlimited Goals"),
+    "support" : MessageLookupByLibrary.simpleMessage("Поддерживать"),
+    "timeLeft" : MessageLookupByLibrary.simpleMessage("Осталось времени"),
+    "totalSaved" : MessageLookupByLibrary.simpleMessage("Всего сохранено"),
+    "transaction" : MessageLookupByLibrary.simpleMessage("Сделка"),
+    "transactionHistory" : MessageLookupByLibrary.simpleMessage("История транзакций"),
+    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Неограниченные цели"),
     "unlockText" : m4,
     "userPercentProgress" : m5,
-    "vacation" : MessageLookupByLibrary.simpleMessage("Vacation"),
+    "vacation" : MessageLookupByLibrary.simpleMessage("Отпуск"),
     "version" : m6,
-    "web" : MessageLookupByLibrary.simpleMessage("Web"),
-    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("When is the deadline?"),
-    "years" : MessageLookupByLibrary.simpleMessage("Years")
+    "web" : MessageLookupByLibrary.simpleMessage("Веб -"),
+    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("Когда у него есть крайний срок?"),
+    "years" : MessageLookupByLibrary.simpleMessage("Годы")
   };
 }
