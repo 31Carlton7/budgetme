@@ -71,9 +71,9 @@ Google Play Beta: [https://play.google.com/store/apps/details?id=com.elisha.app]
 
 </table> -->
 
-<!-- ## Featured In
+## Featured In
 
-- [FlutterAwesome](https://flutterawesome.com/pocket-bible-church-app-built-with-flutter/) -->
+- [FlutterAwesome](https://flutterawesome.com/an-app-to-save-money-and-achieve-your-goal/)
 
 ## Socials
 
