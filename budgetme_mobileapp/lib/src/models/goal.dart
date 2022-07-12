@@ -16,12 +16,17 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:convert';
 
+// Flutter imports:
 import 'package:flutter/foundation.dart';
 
-import 'package:budgetme/src/models/transaction.dart';
+// Package imports:
 import 'package:currency_picker/currency_picker.dart';
+
+// Project imports:
+import 'package:budgetme/src/models/transaction.dart';
 
 class Goal {
   /// UUID v4 to differentiate all goals.
