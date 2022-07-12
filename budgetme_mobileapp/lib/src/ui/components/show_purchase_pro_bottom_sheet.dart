@@ -16,20 +16,21 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'dart:io';
-
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/constants.dart';
-import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
-import 'package:budgetme/src/ui/components/box_shadow.dart';
-
-import 'package:budgetme/src/ui/components/primary_button.dart';
+// Package imports:
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/ui/components/box_shadow.dart';
+import 'package:budgetme/src/ui/components/primary_button.dart';
 
 Future<void> showPurchaseProBottomSheet(BuildContext context) async {
   final locale = Localizations.localeOf(context);
