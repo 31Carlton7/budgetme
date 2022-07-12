@@ -19,6 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:async';
 
 import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/ui/views/dashboard_view/dashboard_view.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -31,7 +32,6 @@ import 'package:budgetme/src/providers/goal_repository_provider.dart';
 import 'package:budgetme/src/providers/notification_service_provider.dart';
 import 'package:budgetme/src/providers/theme_provider.dart';
 import 'package:budgetme/src/services/notification_service.dart';
-import 'package:budgetme/src/ui/views/all_goals_view/all_goals_view.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -41,11 +41,13 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 
 void main() async {
+  /// Catches all occuring errors in app
   runZonedGuarded<Future<void>>(() async {
     WidgetsFlutterBinding.ensureInitialized();
 
     await Firebase.initializeApp();
 
+    /// Initiate Hive local DB.
     await Hive.initFlutter();
     await Hive.openBox('budgetme');
 
@@ -55,12 +57,15 @@ void main() async {
       FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
     }
 
+    /// Lock device orientation to portrait
     await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
     final localDir = await getApplicationDocumentsDirectory();
     generalGoalImagePath = localDir.path;
 
     runApp(const ProviderScope(child: BudgetMe()));
+
+    /// Sends all caught errors to firebase.
   }, (error, stack) async {
     await FirebaseCrashlytics.instance.recordError(error, stack);
   });
@@ -103,10 +108,10 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
           debugShowCheckedModeBanner: false,
           title: kAppTitle,
           themeMode: repo.themeMode,
-          locale: Locale('es', ''),
+          locale: Locale('en', ''),
           theme: lightTheme(),
           darkTheme: darkTheme(),
-          home: const AllGoalsView(),
+          home: const DashboardView(),
           localizationsDelegates: BudgetMeLocalizations.localizationsDelegates,
           supportedLocales: [
             Locale('en', ''),
@@ -114,8 +119,7 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
             Locale('ja', ''),
             Locale('ko', ''),
             Locale('ru', ''),
-            Locale('zh', 'CN'),
-            Locale('zh', 'TW'),
+            Locale('zh', ''),
             Locale('ar', ''),
             Locale('pt', ''),
             Locale('fr', ''),
