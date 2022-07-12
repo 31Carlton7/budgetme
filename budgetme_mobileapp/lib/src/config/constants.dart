@@ -16,14 +16,20 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
+import 'dart:io';
+
+// Flutter imports:
 import 'package:flutter/material.dart';
 
-import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
-import 'package:budgetme/src/models/goal.dart';
+// Package imports:
 import 'package:currency_picker/currency_picker.dart';
-import 'dart:io';
 import 'package:intl/intl.dart' as intl;
 import 'package:intl/intl.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
+import 'package:budgetme/src/models/goal.dart';
 
 const String kAppTitle = 'BudgetMe';
 
