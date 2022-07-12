@@ -113,7 +113,6 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
           debugShowCheckedModeBanner: false,
           title: kAppTitle,
           themeMode: repo.themeMode,
-          locale: Locale('en', ''),
           theme: lightTheme(),
           darkTheme: darkTheme(),
           home: const DashboardView(),
