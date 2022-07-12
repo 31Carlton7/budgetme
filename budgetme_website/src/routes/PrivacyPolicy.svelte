@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Banner from 'src/lib/components/Banner.svelte';
+
   import Footer from '../lib/components/Footer.svelte';
   import Header from '../lib/components/Header.svelte';
   import Navbar from '../lib/components/Navbar.svelte';
@@ -98,6 +100,7 @@
         'If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at carltonaikins7@gmail.com.',
       ]}
     />
+    <Banner />
     <Footer />
   </div>
 </div>

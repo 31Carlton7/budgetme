@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Banner from 'src/lib/components/Banner.svelte';
+
   import AboutMockupSection from '../lib/components/AboutPage/AboutMockupSection.svelte';
 
   import Footer from '../lib/components/Footer.svelte';
@@ -34,6 +36,7 @@
       mockupImage="images/mockup_about_4.png"
       alignmentRight={false}
     />
+    <Banner />
     <Footer />
   </div>
 </div>
