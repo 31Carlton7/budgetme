@@ -25,6 +25,7 @@ import 'dart:math' as math;
 
 import 'package:budgetme/src/ui/views/adjust_monthly_spending_limit_view/adjust_monthly_spending_limit_view.dart';
 import 'package:heroicons/heroicons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsSection extends StatelessWidget {
   const SettingsSection({
@@ -81,78 +82,111 @@ class SettingsSection extends StatelessWidget {
               ),
             ),
             Divider(height: 0),
-            Container(
-              padding: const EdgeInsets.only(
-                  left: kDefaultPadding, right: kDefaultPadding, top: kDefaultPadding, bottom: kSmallPadding),
-              color: Theme.of(context).cardColor,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    BudgetMeLocalizations.of(context)!.about,
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
-                  ),
-                  GestureDetector(
-                    child: Container(
-                      child: HeroIcon(
-                        HeroIcons.externalLink,
-                        size: 21,
-                        solid: true,
-                        color: Theme.of(context).colorScheme.secondaryContainer,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(vertical: kSmallPadding, horizontal: kDefaultPadding),
-              color: Theme.of(context).cardColor,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    BudgetMeLocalizations.of(context)!.privacyPolicy,
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
-                  ),
-                  GestureDetector(
-                    child: Container(
-                      child: HeroIcon(
-                        HeroIcons.externalLink,
-                        size: 21,
-                        solid: true,
-                        color: Theme.of(context).colorScheme.secondaryContainer,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              padding: const EdgeInsets.only(
-                  top: kSmallPadding, bottom: kDefaultPadding, left: kDefaultPadding, right: kDefaultPadding),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.vertical(bottom: Radius.circular(kDefaultBorderRadius)),
+            GestureDetector(
+              onTap: () async {
+                final link = Uri.parse('https://budgetme.co/#/about');
+
+                if (await canLaunchUrl(link)) {
+                  await launchUrl(link);
+                } else {
+                  DoNothingAction();
+                }
+              },
+              child: Container(
+                padding: const EdgeInsets.only(
+                    left: kDefaultPadding, right: kDefaultPadding, top: kDefaultPadding, bottom: kSmallPadding),
                 color: Theme.of(context).cardColor,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    BudgetMeLocalizations.of(context)!.support,
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
-                  ),
-                  GestureDetector(
-                    child: Container(
-                      child: HeroIcon(
-                        HeroIcons.externalLink,
-                        size: 21,
-                        solid: true,
-                        color: Theme.of(context).colorScheme.secondaryContainer,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      BudgetMeLocalizations.of(context)!.about,
+                      style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        child: HeroIcon(
+                          HeroIcons.externalLink,
+                          size: 21,
+                          solid: true,
+                          color: Theme.of(context).colorScheme.secondaryContainer,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () async {
+                final link = Uri.parse('https://budgetme.co/#/privacypolicy');
+
+                if (await canLaunchUrl(link)) {
+                  await launchUrl(link);
+                } else {
+                  DoNothingAction();
+                }
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(vertical: kSmallPadding, horizontal: kDefaultPadding),
+                color: Theme.of(context).cardColor,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      BudgetMeLocalizations.of(context)!.privacyPolicy,
+                      style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        child: HeroIcon(
+                          HeroIcons.externalLink,
+                          size: 21,
+                          solid: true,
+                          color: Theme.of(context).colorScheme.secondaryContainer,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () async {
+                final link = Uri.parse('https://budgetme.co/#/support');
+
+                if (await canLaunchUrl(link)) {
+                  await launchUrl(link);
+                } else {
+                  DoNothingAction();
+                }
+              },
+              child: Container(
+                padding: const EdgeInsets.only(
+                    top: kSmallPadding, bottom: kDefaultPadding, left: kDefaultPadding, right: kDefaultPadding),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.vertical(bottom: Radius.circular(kDefaultBorderRadius)),
+                  color: Theme.of(context).cardColor,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      BudgetMeLocalizations.of(context)!.support,
+                      style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
+                    ),
+                    GestureDetector(
+                      child: Container(
+                        child: HeroIcon(
+                          HeroIcons.externalLink,
+                          size: 21,
+                          solid: true,
+                          color: Theme.of(context).colorScheme.secondaryContainer,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
