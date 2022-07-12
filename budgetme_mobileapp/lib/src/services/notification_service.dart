@@ -16,14 +16,18 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:math';
 
-import 'package:budgetme/src/repositories/notifications_repository.dart';
+// Package imports:
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
+
+// Project imports:
+import 'package:budgetme/src/repositories/notifications_repository.dart';
 
 class NotificationService {
   static final _notifications = FlutterLocalNotificationsPlugin();
