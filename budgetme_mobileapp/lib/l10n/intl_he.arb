@@ -1,0 +1,281 @@
+{
+  "@@locale": "he",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "לוּחַ מַחווָנִים",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "חיסכון חודשי",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "יתרת האיזון",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "סה\"כ נשמר",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "יעדי חיסכון",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "התקדמות נוכחית",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "אתה {percent}% מהדרך לשם!",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "הזמן שנותר",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "שנים",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "חודשים",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "ימים",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "שעה (ות",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "דקות",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "שניות",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "היסטוריית עסקאות",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "ראה הכל",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "עִסקָה",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "ערוך מטרה",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "מחק את המטרה",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "הַבָּא",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "לדלג",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "לְבַטֵל",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "שֶׁל",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "לִיצוֹר",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "לַעֲרוֹך",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "להציל",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "בשביל מה אתה חוסך?",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "כמה כסף צריך?",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "מתי המועד האחרון?",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "כמה כסף נחסך כרגע?",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "בחר את המטבע המועדף עליך",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "רכישה pro😎",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "ביטול נעילת יעדים בלתי מוגבלים עבור 2.99 דולר בלבד 😆 שלם פעם אחת, שלם לנצח!",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "סטטיסטיקה של יולי",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "הגדרות",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "התאם את מגבלת ההוצאות החודשית",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "על אודות",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "מדיניות פרטיות",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "תמיכה",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "גרסה 1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "פּרוֹפִיל",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "יעדים בלתי מוגבלים",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "בטל את נעילת העצמי האמיתי שלך עם יעדים בלתי מוגבלים לרכישה חד פעמית של 2.99 דולר בלבד! 😎 הערה: המחירים עשויים להשתנות במטבעות אחרים",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "לִרְכּוֹשׁ",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "שימו לב כי הגדלת ההוצאות השבועיות שלכם יקשו על השגת יעדים והיא מיואשת.",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "מגבלת ההוצאות החודשית החדשה",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "לחץ על כפתור הסגול כדי ליצור מטרה חדשה!",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "לחפש",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "סיים",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "אנא הזן ערך פחות מהסכום הנדרש שלך של {currency}{number}",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "חוּפשָׁה",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "אינטרנט",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "התקן",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "בחר תמונה",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "חפש תמונות ב- Unsplash באמצעות סרגל החיפוש",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "אין תוצאות",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "בוצע",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "לְהַסִיר",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "לְהוֹסִיף",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "הסתר מההיסטוריה",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "למחוק מטרה?",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "האם אתה בטוח רוצה למחוק את המטרה שלך?",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "לִמְחוֹק",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "עדיין לא נעשו עסקאות ... עדיין!",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "מזל טוב על השלמת המטרה שלך! 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "התחל מטרה חדשה",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}

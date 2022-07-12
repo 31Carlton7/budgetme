@@ -19,84 +19,86 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'he';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "האם אתה בטוח רוצה למחוק את המטרה שלך?";
 
-  static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
+  static m1(currency, number) => "אנא הזן ערך פחות מהסכום הנדרש שלך של ${currency}${number}";
 
-  static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
+  static m2(amount) => "ביטול נעילת יעדים בלתי מוגבלים עבור 2.99 דולר בלבד 😆 שלם פעם אחת, שלם לנצח!";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "סטטיסטיקה של יולי";
 
-  static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
+  static m4(amount) => "בטל את נעילת העצמי האמיתי שלך עם יעדים בלתי מוגבלים לרכישה חד פעמית של 2.99 דולר בלבד! 😎 הערה: המחירים עשויים להשתנות במטבעות אחרים";
 
-  static m5(percent) => "You are ${percent}% of the way there!";
+  static m5(percent) => "אתה ${percent}% מהדרך לשם!";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "גרסה 1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("About"),
-    "add" : MessageLookupByLibrary.simpleMessage("Add"),
-    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
+    "about" : MessageLookupByLibrary.simpleMessage("על אודות"),
+    "add" : MessageLookupByLibrary.simpleMessage("לְהוֹסִיף"),
+    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("התאם את מגבלת ההוצאות החודשית"),
     "areYouSureDelQ" : m0,
-    "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
-    "create" : MessageLookupByLibrary.simpleMessage("Create"),
-    "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
-    "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
-    "days" : MessageLookupByLibrary.simpleMessage("Days"),
-    "delete" : MessageLookupByLibrary.simpleMessage("Delete"),
-    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Delete Goal"),
-    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Delete Goal?"),
-    "device" : MessageLookupByLibrary.simpleMessage("Device"),
-    "done" : MessageLookupByLibrary.simpleMessage("Done"),
-    "edit" : MessageLookupByLibrary.simpleMessage("Edit"),
-    "editGoal" : MessageLookupByLibrary.simpleMessage("Edit Goal"),
-    "finish" : MessageLookupByLibrary.simpleMessage("Finish"),
-    "hideFrom" : MessageLookupByLibrary.simpleMessage("Hide from history"),
-    "hours" : MessageLookupByLibrary.simpleMessage("Hours"),
-    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("How much money is needed?"),
-    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("How much money is currently saved?"),
-    "minutes" : MessageLookupByLibrary.simpleMessage("Minutes"),
-    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Monthly Savings"),
-    "months" : MessageLookupByLibrary.simpleMessage("Months"),
-    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("New Monthly Spending Limit"),
-    "next" : MessageLookupByLibrary.simpleMessage("Next"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No Results"),
-    "noTransactions" : MessageLookupByLibrary.simpleMessage("No transactions have been made...yet!"),
+    "cancel" : MessageLookupByLibrary.simpleMessage("לְבַטֵל"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("מזל טוב על השלמת המטרה שלך! 😆"),
+    "create" : MessageLookupByLibrary.simpleMessage("לִיצוֹר"),
+    "currentProgress" : MessageLookupByLibrary.simpleMessage("התקדמות נוכחית"),
+    "dashboard" : MessageLookupByLibrary.simpleMessage("לוּחַ מַחווָנִים"),
+    "days" : MessageLookupByLibrary.simpleMessage("ימים"),
+    "delete" : MessageLookupByLibrary.simpleMessage("לִמְחוֹק"),
+    "deleteGoal" : MessageLookupByLibrary.simpleMessage("מחק את המטרה"),
+    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("למחוק מטרה?"),
+    "device" : MessageLookupByLibrary.simpleMessage("התקן"),
+    "done" : MessageLookupByLibrary.simpleMessage("בוצע"),
+    "edit" : MessageLookupByLibrary.simpleMessage("לַעֲרוֹך"),
+    "editGoal" : MessageLookupByLibrary.simpleMessage("ערוך מטרה"),
+    "finish" : MessageLookupByLibrary.simpleMessage("סיים"),
+    "hideFrom" : MessageLookupByLibrary.simpleMessage("הסתר מההיסטוריה"),
+    "hours" : MessageLookupByLibrary.simpleMessage("שעה (ות"),
+    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("כמה כסף צריך?"),
+    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("כמה כסף נחסך כרגע?"),
+    "minutes" : MessageLookupByLibrary.simpleMessage("דקות"),
+    "monthlySavings" : MessageLookupByLibrary.simpleMessage("חיסכון חודשי"),
+    "months" : MessageLookupByLibrary.simpleMessage("חודשים"),
+    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("מגבלת ההוצאות החודשית החדשה"),
+    "next" : MessageLookupByLibrary.simpleMessage("הַבָּא"),
+    "noResults" : MessageLookupByLibrary.simpleMessage("אין תוצאות"),
+    "noTransactions" : MessageLookupByLibrary.simpleMessage("עדיין לא נעשו עסקאות ... עדיין!"),
     "pleaseEnterLess" : m1,
-    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged."),
-    "prefCurr" : MessageLookupByLibrary.simpleMessage("Select your Preferred Currency"),
-    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Press the purple button to create a new Goal!"),
-    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "purchase" : MessageLookupByLibrary.simpleMessage("Purchase"),
-    "purchasePro" : MessageLookupByLibrary.simpleMessage("Purchase Pro😎"),
+    "pleaseNote" : MessageLookupByLibrary.simpleMessage("שימו לב כי הגדלת ההוצאות השבועיות שלכם יקשו על השגת יעדים והיא מיואשת."),
+    "prefCurr" : MessageLookupByLibrary.simpleMessage("בחר את המטבע המועדף עליך"),
+    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("לחץ על כפתור הסגול כדי ליצור מטרה חדשה!"),
+    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("מדיניות פרטיות"),
+    "profile" : MessageLookupByLibrary.simpleMessage("פּרוֹפִיל"),
+    "purchase" : MessageLookupByLibrary.simpleMessage("לִרְכּוֹשׁ"),
+    "purchasePro" : MessageLookupByLibrary.simpleMessage("רכישה pro😎"),
     "purchaseProText" : m2,
-    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Remaining Balance"),
-    "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
-    "save" : MessageLookupByLibrary.simpleMessage("Save"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("What are you saving for?"),
-    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Savings Goals"),
-    "search" : MessageLookupByLibrary.simpleMessage("Search"),
-    "searchForImage" : MessageLookupByLibrary.simpleMessage("Search for images on UnSplash using the search bar"),
-    "seconds" : MessageLookupByLibrary.simpleMessage("Seconds"),
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
-    "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
-    "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "remainingBalance" : MessageLookupByLibrary.simpleMessage("יתרת האיזון"),
+    "remove" : MessageLookupByLibrary.simpleMessage("לְהַסִיר"),
+    "save" : MessageLookupByLibrary.simpleMessage("להציל"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("בשביל מה אתה חוסך?"),
+    "savingsGoals" : MessageLookupByLibrary.simpleMessage("יעדי חיסכון"),
+    "search" : MessageLookupByLibrary.simpleMessage("לחפש"),
+    "searchForImage" : MessageLookupByLibrary.simpleMessage("חפש תמונות ב- Unsplash באמצעות סרגל החיפוש"),
+    "seconds" : MessageLookupByLibrary.simpleMessage("שניות"),
+    "seeAll" : MessageLookupByLibrary.simpleMessage("ראה הכל"),
+    "selectImage" : MessageLookupByLibrary.simpleMessage("בחר תמונה"),
+    "settings" : MessageLookupByLibrary.simpleMessage("הגדרות"),
+    "skip" : MessageLookupByLibrary.simpleMessage("לדלג"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("התחל מטרה חדשה"),
     "statistics" : m3,
-    "support" : MessageLookupByLibrary.simpleMessage("Support"),
-    "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),
-    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total Saved"),
-    "transaction" : MessageLookupByLibrary.simpleMessage("Transaction"),
-    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Transaction History"),
-    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Unlimited Goals"),
+    "support" : MessageLookupByLibrary.simpleMessage("תמיכה"),
+    "timeLeft" : MessageLookupByLibrary.simpleMessage("הזמן שנותר"),
+    "totalSaved" : MessageLookupByLibrary.simpleMessage("סה\"כ נשמר"),
+    "transaction" : MessageLookupByLibrary.simpleMessage("עִסקָה"),
+    "transactionHistory" : MessageLookupByLibrary.simpleMessage("היסטוריית עסקאות"),
+    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("יעדים בלתי מוגבלים"),
     "unlockText" : m4,
     "userPercentProgress" : m5,
-    "vacation" : MessageLookupByLibrary.simpleMessage("Vacation"),
+    "vacation" : MessageLookupByLibrary.simpleMessage("חוּפשָׁה"),
     "version" : m6,
-    "web" : MessageLookupByLibrary.simpleMessage("Web"),
-    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("When is the deadline?"),
-    "years" : MessageLookupByLibrary.simpleMessage("Years")
+    "web" : MessageLookupByLibrary.simpleMessage("אינטרנט"),
+    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("מתי המועד האחרון?"),
+    "years" : MessageLookupByLibrary.simpleMessage("שנים")
   };
 }
