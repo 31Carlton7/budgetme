@@ -113,7 +113,7 @@ class BalanceRepository extends ChangeNotifier {
     if (startDayDate.day == lastVisitDate.day &&
         startDayDate.month == lastVisitDate.month &&
         startDayDate.year == lastVisitDate.year) {
-      _remainingBalance = box.get('balance', defaultValue: 500.0);
+      _remainingBalance = box.get('remaining_balance', defaultValue: 500.0);
       _totalMoneySaved = box.get('total_money_saved', defaultValue: 0.0);
       DoNothingAction();
     } else if (lastVisitDate.day == startDayDate.day - 1 && now.day == 1) {
