@@ -358,4 +358,14 @@ class BudgetMeLocalizations {
         'No transactions have been made...yet!',
         name: 'noTransactions',
       );
+
+  String get congratulations => Intl.message(
+        'Congratulations on completing your goal! 😆',
+        name: 'congratulations',
+      );
+
+  String get startNewGoal => Intl.message(
+        'Start new goal',
+        name: 'startNewGoal',
+      );
 }
