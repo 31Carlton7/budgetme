@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Banner from 'src/lib/components/Banner.svelte';
+  import PrivacyPolicySection from '../lib/components/PrivacyPolicyPage/PrivacyPolicySection.svelte';
 
+  import Banner from '../lib/components/Banner.svelte';
   import Footer from '../lib/components/Footer.svelte';
   import Header from '../lib/components/Header.svelte';
   import Navbar from '../lib/components/Navbar.svelte';
-  import PrivacyPolicySection from '../lib/components/PrivacyPolicyPage/PrivacyPolicySection.svelte';
 </script>
 
 <div class="relative bg-white">
