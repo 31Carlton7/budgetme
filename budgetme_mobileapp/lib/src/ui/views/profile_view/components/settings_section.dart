@@ -16,16 +16,21 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import 'package:budgetme/src/lang/budgetme_localizations.dart';
-import 'package:flutter/material.dart';
-
-import 'package:budgetme/src/config/constants.dart';
-import 'package:budgetme/src/ui/components/box_shadow.dart';
+// Dart imports:
 import 'dart:math' as math;
 
-import 'package:budgetme/src/ui/views/adjust_monthly_spending_limit_view/adjust_monthly_spending_limit_view.dart';
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:heroicons/heroicons.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+// Project imports:
+import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/ui/components/box_shadow.dart';
+import 'package:budgetme/src/ui/views/adjust_monthly_spending_limit_view/adjust_monthly_spending_limit_view.dart';
 
 class SettingsSection extends StatelessWidget {
   const SettingsSection({
