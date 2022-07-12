@@ -16,10 +16,17 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Dart imports:
 import 'dart:math' as math;
 
+// Flutter imports:
 import 'package:flutter/material.dart';
 
+// Package imports:
+import 'package:confetti/confetti.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+// Project imports:
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
@@ -32,8 +39,6 @@ import 'package:budgetme/src/ui/views/goal_view/components/add_money_button.dart
 import 'package:budgetme/src/ui/views/goal_view/components/goal_progress_card.dart';
 import 'package:budgetme/src/ui/views/goal_view/components/goal_view_header.dart';
 import 'package:budgetme/src/ui/views/goal_view/components/transaction_history_section.dart';
-import 'package:confetti/confetti.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class GoalView extends ConsumerStatefulWidget {
   const GoalView(this.goal, {Key? key}) : super(key: key);
