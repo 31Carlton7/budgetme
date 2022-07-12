@@ -1,0 +1,281 @@
+{
+  "@@locale": "es",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "Tablero",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "Ahorros mensuales",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "Balance restante",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "Total guardado",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "Objetivos de ahorro",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "Progreso actual",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "¡Eres {percent}% del camino allí!",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "Tiempo restante",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "Años",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "Meses",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "Días",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "Horas",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "Minutos",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "Segundos",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "Historial de transacciones",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "Ver todo",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "Transacción",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "Editar objetivo",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "Eliminar el gol",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "próximo",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "Saltar",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "Cancelar",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "de",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "Crear",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "Editar",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "Ahorrar",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "para qué estás ahorrando?",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "¿Cuánto dinero se necesita?",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "¿Cuando es la fecha límite?",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "¿Cuánto dinero se ahorra actualmente?",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "Seleccione su moneda preferida",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "Comprar pro😎",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "Desbloquee objetivos ilimitados por solo 2.99 USD 😆 Pague una vez, ¡pague por siempre!",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "Estadísticas de julio",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "Ajustes",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "Ajustar el límite de gasto mensual",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "Sobre",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "Política de privacidad",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "Apoyo",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "Versión 1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "Perfil",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "Objetivos ilimitados",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "¡Desbloquee su verdadero yo con objetivos ilimitados para una compra única de solo 2.99 USD! 😎 Nota: los precios pueden variar en otras monedas",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "Compra",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "Tenga en cuenta que aumentar su gasto semanal hará que sea más difícil lograr objetivos y se desanimará.",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "Nuevo límite de gasto mensual",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "¡Presione el botón morado para crear un nuevo objetivo!",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "Búsqueda",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "Finalizar",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "Ingrese un valor inferior a su cantidad requerida de {currency}{number}",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "Vacaciones",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "Web",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "Dispositivo",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "Seleccionar imagen",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "Busque imágenes en Unsplash usando la barra de búsqueda",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "No hay resultados",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "Hecho",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "Remover",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "Agregar",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "Esconderse de la historia",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "¿Eliminar el objetivo?",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "¿Estás seguro de que quieres eliminar tu objetivo?",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "Borrar",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "No se han realizado transacciones ... ¡todavía!",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "¡Felicitaciones por completar su objetivo! 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "Comienza una nueva meta",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}

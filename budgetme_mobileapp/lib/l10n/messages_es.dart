@@ -19,19 +19,19 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'es';
 
-  static m0(goalTitle) => "¿Está seguro de que quiere eliminar su objetivo ${goalTitle}?";
+  static m0(goalTitle) => "¿Estás seguro de que quieres eliminar tu objetivo?";
 
-  static m1(currency, number) => "Ingrese un valor inferior al monto requerido de ${currency}${number}";
+  static m1(currency, number) => "Ingrese un valor inferior a su cantidad requerida de ${currency}${number}";
 
-  static m2(amount) => "Desbloquee objetivos ilimitados por solo 2.99 USD 😆 PAGO una vez, ¡pague por siempre!";
+  static m2(amount) => "Desbloquee objetivos ilimitados por solo 2.99 USD 😆 Pague una vez, ¡pague por siempre!";
 
-  static m3(month) => "Estadísticas de ${month}";
+  static m3(month) => "Estadísticas de julio";
 
-  static m4(amount) => "¡Desbloquea tu verdadero yo con objetivos ilimitados para una compra única de solo 2.99 USD! 😎 Nota: los precios pueden variar en otras monedas";
+  static m4(amount) => "¡Desbloquee su verdadero yo con objetivos ilimitados para una compra única de solo 2.99 USD! 😎 Nota: los precios pueden variar en otras monedas";
 
   static m5(percent) => "¡Eres ${percent}% del camino allí!";
 
-  static m6(versionNumber) => "Versión ${versionNumber}";
+  static m6(versionNumber) => "Versión 1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
@@ -40,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Ajustar el límite de gasto mensual"),
     "areYouSureDelQ" : m0,
     "cancel" : MessageLookupByLibrary.simpleMessage("Cancelar"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("¡Felicitaciones por completar su objetivo! 😆"),
     "create" : MessageLookupByLibrary.simpleMessage("Crear"),
     "currentProgress" : MessageLookupByLibrary.simpleMessage("Progreso actual"),
     "dashboard" : MessageLookupByLibrary.simpleMessage("Tablero"),
@@ -60,7 +61,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "monthlySavings" : MessageLookupByLibrary.simpleMessage("Ahorros mensuales"),
     "months" : MessageLookupByLibrary.simpleMessage("Meses"),
     "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Nuevo límite de gasto mensual"),
-    "next" : MessageLookupByLibrary.simpleMessage("Próximo"),
+    "next" : MessageLookupByLibrary.simpleMessage("próximo"),
     "noResults" : MessageLookupByLibrary.simpleMessage("No hay resultados"),
     "noTransactions" : MessageLookupByLibrary.simpleMessage("No se han realizado transacciones ... ¡todavía!"),
     "pleaseEnterLess" : m1,
@@ -75,7 +76,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "remainingBalance" : MessageLookupByLibrary.simpleMessage("Balance restante"),
     "remove" : MessageLookupByLibrary.simpleMessage("Remover"),
     "save" : MessageLookupByLibrary.simpleMessage("Ahorrar"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("Para qué estás ahorrando?"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("para qué estás ahorrando?"),
     "savingsGoals" : MessageLookupByLibrary.simpleMessage("Objetivos de ahorro"),
     "search" : MessageLookupByLibrary.simpleMessage("Búsqueda"),
     "searchForImage" : MessageLookupByLibrary.simpleMessage("Busque imágenes en Unsplash usando la barra de búsqueda"),
@@ -84,6 +85,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "selectImage" : MessageLookupByLibrary.simpleMessage("Seleccionar imagen"),
     "settings" : MessageLookupByLibrary.simpleMessage("Ajustes"),
     "skip" : MessageLookupByLibrary.simpleMessage("Saltar"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("Comienza una nueva meta"),
     "statistics" : m3,
     "support" : MessageLookupByLibrary.simpleMessage("Apoyo"),
     "timeLeft" : MessageLookupByLibrary.simpleMessage("Tiempo restante"),
