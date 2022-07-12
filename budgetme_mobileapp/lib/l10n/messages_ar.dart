@@ -19,84 +19,86 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "هل أنت متأكد من حذف هدفك؟";
 
-  static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
+  static m1(currency, number) => "الرجاء إدخال قيمة أقل من المبلغ المطلوب من ${currency}${number}";
 
-  static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
+  static m2(amount) => "فتح أهداف غير محدودة مقابل 2.99 دولار أمريكي فقط 😆 دفع مرة واحدة ، ادفع إلى الأبد!";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "إحصائيات يوليو";
 
-  static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
+  static m4(amount) => "افتح نفسك الحقيقي بأهداف غير محدودة لشراء لمرة واحدة فقط من 2.99 دولارًا أمريكيًا فقط! 😎 ملاحظة: قد تختلف الأسعار في العملات الأخرى";
 
-  static m5(percent) => "You are ${percent}% of the way there!";
+  static m5(percent) => "أنت ${percent} ٪ من الطريق هناك!";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "الإصدار 1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("About"),
-    "add" : MessageLookupByLibrary.simpleMessage("Add"),
-    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
+    "about" : MessageLookupByLibrary.simpleMessage("حول"),
+    "add" : MessageLookupByLibrary.simpleMessage("يضيف"),
+    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("اضبط حد الإنفاق الشهري"),
     "areYouSureDelQ" : m0,
-    "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
-    "create" : MessageLookupByLibrary.simpleMessage("Create"),
-    "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
-    "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
-    "days" : MessageLookupByLibrary.simpleMessage("Days"),
-    "delete" : MessageLookupByLibrary.simpleMessage("Delete"),
-    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Delete Goal"),
-    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Delete Goal?"),
-    "device" : MessageLookupByLibrary.simpleMessage("Device"),
-    "done" : MessageLookupByLibrary.simpleMessage("Done"),
-    "edit" : MessageLookupByLibrary.simpleMessage("Edit"),
-    "editGoal" : MessageLookupByLibrary.simpleMessage("Edit Goal"),
-    "finish" : MessageLookupByLibrary.simpleMessage("Finish"),
-    "hideFrom" : MessageLookupByLibrary.simpleMessage("Hide from history"),
-    "hours" : MessageLookupByLibrary.simpleMessage("Hours"),
-    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("How much money is needed?"),
-    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("How much money is currently saved?"),
-    "minutes" : MessageLookupByLibrary.simpleMessage("Minutes"),
-    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Monthly Savings"),
-    "months" : MessageLookupByLibrary.simpleMessage("Months"),
-    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("New Monthly Spending Limit"),
-    "next" : MessageLookupByLibrary.simpleMessage("Next"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No Results"),
-    "noTransactions" : MessageLookupByLibrary.simpleMessage("No transactions have been made...yet!"),
+    "cancel" : MessageLookupByLibrary.simpleMessage("يلغي"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("مبروك على إكمال هدفك! 😆"),
+    "create" : MessageLookupByLibrary.simpleMessage("خلق"),
+    "currentProgress" : MessageLookupByLibrary.simpleMessage("التقدم الحالي"),
+    "dashboard" : MessageLookupByLibrary.simpleMessage("لوحة القيادة"),
+    "days" : MessageLookupByLibrary.simpleMessage("أيام"),
+    "delete" : MessageLookupByLibrary.simpleMessage("حذف"),
+    "deleteGoal" : MessageLookupByLibrary.simpleMessage("حذف الهدف"),
+    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("حذف الهدف؟"),
+    "device" : MessageLookupByLibrary.simpleMessage("جهاز"),
+    "done" : MessageLookupByLibrary.simpleMessage("فعله"),
+    "edit" : MessageLookupByLibrary.simpleMessage("يحرر"),
+    "editGoal" : MessageLookupByLibrary.simpleMessage("تحرير الهدف"),
+    "finish" : MessageLookupByLibrary.simpleMessage("إنهاء"),
+    "hideFrom" : MessageLookupByLibrary.simpleMessage("يختبئ من التاريخ"),
+    "hours" : MessageLookupByLibrary.simpleMessage("ساعات"),
+    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("كم من المال المطلوب؟"),
+    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("كم من المال يتم توفيره حاليًا؟"),
+    "minutes" : MessageLookupByLibrary.simpleMessage("الدقائق"),
+    "monthlySavings" : MessageLookupByLibrary.simpleMessage("وفورات شهرية"),
+    "months" : MessageLookupByLibrary.simpleMessage("شهور"),
+    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("حد الإنفاق الشهري الجديد"),
+    "next" : MessageLookupByLibrary.simpleMessage("التالي"),
+    "noResults" : MessageLookupByLibrary.simpleMessage("لا نتائج"),
+    "noTransactions" : MessageLookupByLibrary.simpleMessage("لم يتم إجراء أي معاملات ... حتى الآن!"),
     "pleaseEnterLess" : m1,
-    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged."),
-    "prefCurr" : MessageLookupByLibrary.simpleMessage("Select your Preferred Currency"),
-    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Press the purple button to create a new Goal!"),
-    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "purchase" : MessageLookupByLibrary.simpleMessage("Purchase"),
-    "purchasePro" : MessageLookupByLibrary.simpleMessage("Purchase Pro😎"),
+    "pleaseNote" : MessageLookupByLibrary.simpleMessage("يرجى ملاحظة أن زيادة إنفاقك الأسبوعي سيجعل من الصعب تحقيق الأهداف ويشجعه."),
+    "prefCurr" : MessageLookupByLibrary.simpleMessage("حدد عملتك المفضلة"),
+    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("اضغط على الزر الأرجواني لإنشاء هدف جديد!"),
+    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+    "profile" : MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+    "purchase" : MessageLookupByLibrary.simpleMessage("شراء"),
+    "purchasePro" : MessageLookupByLibrary.simpleMessage("شراء المحترفين"),
     "purchaseProText" : m2,
-    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Remaining Balance"),
-    "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
-    "save" : MessageLookupByLibrary.simpleMessage("Save"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("What are you saving for?"),
-    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Savings Goals"),
-    "search" : MessageLookupByLibrary.simpleMessage("Search"),
-    "searchForImage" : MessageLookupByLibrary.simpleMessage("Search for images on UnSplash using the search bar"),
-    "seconds" : MessageLookupByLibrary.simpleMessage("Seconds"),
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
-    "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
-    "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "remainingBalance" : MessageLookupByLibrary.simpleMessage("الرصيد المتبقي"),
+    "remove" : MessageLookupByLibrary.simpleMessage("إزالة"),
+    "save" : MessageLookupByLibrary.simpleMessage("يحفظ"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("ماذا الادخار لل؟"),
+    "savingsGoals" : MessageLookupByLibrary.simpleMessage("أهداف الادخار"),
+    "search" : MessageLookupByLibrary.simpleMessage("يبحث"),
+    "searchForImage" : MessageLookupByLibrary.simpleMessage("ابحث عن الصور على Unsplash باستخدام شريط البحث"),
+    "seconds" : MessageLookupByLibrary.simpleMessage("ثوان"),
+    "seeAll" : MessageLookupByLibrary.simpleMessage("اظهار الكل"),
+    "selectImage" : MessageLookupByLibrary.simpleMessage("اختر صورة"),
+    "settings" : MessageLookupByLibrary.simpleMessage("إعدادات"),
+    "skip" : MessageLookupByLibrary.simpleMessage("يتخطى"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("ابدأ هدفًا جديدًا"),
     "statistics" : m3,
-    "support" : MessageLookupByLibrary.simpleMessage("Support"),
-    "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),
-    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total Saved"),
-    "transaction" : MessageLookupByLibrary.simpleMessage("Transaction"),
-    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Transaction History"),
-    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Unlimited Goals"),
+    "support" : MessageLookupByLibrary.simpleMessage("الدعم"),
+    "timeLeft" : MessageLookupByLibrary.simpleMessage("الوقت المتبقي"),
+    "totalSaved" : MessageLookupByLibrary.simpleMessage("إجمالي حفظ"),
+    "transaction" : MessageLookupByLibrary.simpleMessage("عملية"),
+    "transactionHistory" : MessageLookupByLibrary.simpleMessage("تاريخ المعاملة"),
+    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("أهداف غير محدودة"),
     "unlockText" : m4,
     "userPercentProgress" : m5,
-    "vacation" : MessageLookupByLibrary.simpleMessage("Vacation"),
+    "vacation" : MessageLookupByLibrary.simpleMessage("عطلة"),
     "version" : m6,
-    "web" : MessageLookupByLibrary.simpleMessage("Web"),
-    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("When is the deadline?"),
-    "years" : MessageLookupByLibrary.simpleMessage("Years")
+    "web" : MessageLookupByLibrary.simpleMessage("الويب"),
+    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("متى سيكون الموعد النهائى؟"),
+    "years" : MessageLookupByLibrary.simpleMessage("سنوات")
   };
 }

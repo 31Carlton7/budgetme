@@ -1,0 +1,281 @@
+{
+  "@@locale": "ar",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "لوحة القيادة",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "وفورات شهرية",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "الرصيد المتبقي",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "إجمالي حفظ",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "أهداف الادخار",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "التقدم الحالي",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "أنت {percent} ٪ من الطريق هناك!",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "الوقت المتبقي",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "سنوات",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "شهور",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "أيام",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "ساعات",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "الدقائق",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "ثوان",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "تاريخ المعاملة",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "اظهار الكل",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "عملية",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "تحرير الهدف",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "حذف الهدف",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "التالي",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "يتخطى",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "يلغي",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "من",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "خلق",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "يحرر",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "يحفظ",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "ماذا الادخار لل؟",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "كم من المال المطلوب؟",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "متى سيكون الموعد النهائى؟",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "كم من المال يتم توفيره حاليًا؟",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "حدد عملتك المفضلة",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "شراء المحترفين",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "فتح أهداف غير محدودة مقابل 2.99 دولار أمريكي فقط 😆 دفع مرة واحدة ، ادفع إلى الأبد!",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "إحصائيات يوليو",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "إعدادات",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "اضبط حد الإنفاق الشهري",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "حول",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "سياسة الخصوصية",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "الدعم",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "الإصدار 1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "الملف الشخصي",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "أهداف غير محدودة",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "افتح نفسك الحقيقي بأهداف غير محدودة لشراء لمرة واحدة فقط من 2.99 دولارًا أمريكيًا فقط! 😎 ملاحظة: قد تختلف الأسعار في العملات الأخرى",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "شراء",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "يرجى ملاحظة أن زيادة إنفاقك الأسبوعي سيجعل من الصعب تحقيق الأهداف ويشجعه.",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "حد الإنفاق الشهري الجديد",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "اضغط على الزر الأرجواني لإنشاء هدف جديد!",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "يبحث",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "إنهاء",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "الرجاء إدخال قيمة أقل من المبلغ المطلوب من {currency}{number}",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "عطلة",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "الويب",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "جهاز",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "اختر صورة",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "ابحث عن الصور على Unsplash باستخدام شريط البحث",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "لا نتائج",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "فعله",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "إزالة",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "يضيف",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "يختبئ من التاريخ",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "حذف الهدف؟",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "هل أنت متأكد من حذف هدفك؟",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "حذف",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "لم يتم إجراء أي معاملات ... حتى الآن!",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "مبروك على إكمال هدفك! 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "ابدأ هدفًا جديدًا",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}
