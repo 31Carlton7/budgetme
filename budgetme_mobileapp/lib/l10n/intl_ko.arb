@@ -1,0 +1,281 @@
+{
+  "@@locale": "ko",
+  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "dashboard": "계기반",
+  "@dashboard": {
+    "type": "Text"
+  },
+  "monthlySavings": "월별 저축",
+  "@monthlySavings": {
+    "type": "Text"
+  },
+  "remainingBalance": "남은 균형",
+  "@remainingBalance": {
+    "type": "Text"
+  },
+  "totalSaved": "총 저장",
+  "@totalSaved": {
+    "type": "Text"
+  },
+  "savingsGoals": "저축 목표",
+  "@savingsGoals": {
+    "type": "Text"
+  },
+  "currentProgress": "현재 진행 상황",
+  "@currentProgress": {
+    "type": "Text"
+  },
+  "userPercentProgress": "당신은 거기의 {percent}%입니다!",
+  "@userPercentProgress": {
+    "type": "Text",
+    "placeholders": {
+      "percent": {
+        "type": "text"
+      }
+    }
+  },
+  "timeLeft": "시간이 남았습니다",
+  "@timeLeft": {
+    "type": "Text"
+  },
+  "years": "연령",
+  "@years": {
+    "type": "Text"
+  },
+  "months": "달",
+  "@months": {
+    "type": "Text"
+  },
+  "days": "날",
+  "@days": {
+    "type": "Text"
+  },
+  "hours": "시간",
+  "@hours": {
+    "type": "Text"
+  },
+  "minutes": "분",
+  "@minutes": {
+    "type": "Text"
+  },
+  "seconds": "초",
+  "@seconds": {
+    "type": "Text"
+  },
+  "transactionHistory": "거래 내역",
+  "@transactionHistory": {
+    "type": "Text"
+  },
+  "seeAll": "모두보기",
+  "@seeAll": {
+    "type": "Text"
+  },
+  "transaction": "거래",
+  "@transaction": {
+    "type": "Text"
+  },
+  "editGoal": "목표 편집",
+  "@editGoal": {
+    "type": "Text"
+  },
+  "deleteGoal": "목표 삭제",
+  "@deleteGoal": {
+    "type": "Text"
+  },
+  "next": "다음",
+  "@next": {
+    "type": "Text"
+  },
+  "skip": "건너뛰다",
+  "@skip": {
+    "type": "Text"
+  },
+  "cancel": "취소",
+  "@cancel": {
+    "type": "Text"
+  },
+  "of": "의",
+  "@of": {
+    "type": "Text"
+  },
+  "create": "만들다",
+  "@create": {
+    "type": "Text"
+  },
+  "edit": "편집하다",
+  "@edit": {
+    "type": "Text"
+  },
+  "save": "구하다",
+  "@save": {
+    "type": "Text"
+  },
+  "savingForQ": "당신은 무엇을 위해 저축하고 있습니까?",
+  "@savingForQ": {
+    "type": "Text"
+  },
+  "howMuchNeededQ": "얼마나 많은 돈이 필요합니까?",
+  "@howMuchNeededQ": {
+    "type": "Text"
+  },
+  "whenDeadlineQ": "마감일은 언제입니까?",
+  "@whenDeadlineQ": {
+    "type": "Text"
+  },
+  "howMuchSavedQ": "현재 얼마나 많은 돈이 저축됩니까?",
+  "@howMuchSavedQ": {
+    "type": "Text"
+  },
+  "prefCurr": "선호하는 통화를 선택하십시오",
+  "@prefCurr": {
+    "type": "Text"
+  },
+  "purchasePro": "Pro purchase를 구매하십시오",
+  "@purchasePro": {
+    "type": "Text"
+  },
+  "purchaseProText": "2.99 USD에 대한 무제한 목표를 잠금 해제 한 번 지불하고 영원히 지불하십시오!",
+  "@purchaseProText": {
+    "type": "Text"
+  },
+  "statistics": "7 월 통계",
+  "@statistics": {
+    "type": "Text"
+  },
+  "settings": "설정",
+  "@settings": {
+    "type": "Text"
+  },
+  "adjustMonthlySpendingLimit": "월별 지출 한도를 조정하십시오",
+  "@adjustMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "about": "에 대한",
+  "@about": {
+    "type": "Text"
+  },
+  "privacyPolicy": "개인 정보 정책",
+  "@privacyPolicy": {
+    "type": "Text"
+  },
+  "support": "지원하다",
+  "@support": {
+    "type": "Text"
+  },
+  "version": "버전 1.0.0",
+  "@version": {
+    "type": "Text"
+  },
+  "profile": "프로필",
+  "@profile": {
+    "type": "Text"
+  },
+  "unlimitedGoals": "무제한 목표",
+  "@unlimitedGoals": {
+    "type": "Text"
+  },
+  "unlockText": "불과 2.99 USD의 일회성 구매에 대한 무제한 목표로 진정한 자아를 잠금 해제하십시오! 😎 참고 : 가격은 다른 통화에 따라 다를 수 있습니다",
+  "@unlockText": {
+    "type": "Text"
+  },
+  "purchase": "구입",
+  "@purchase": {
+    "type": "Text"
+  },
+  "pleaseNote": "주간 지출을 늘리면 목표를 달성하기가 더 어려워지고 낙담합니다.",
+  "@pleaseNote": {
+    "type": "Text"
+  },
+  "newMonthlySpendingLimit": "새로운 월별 지출 한도",
+  "@newMonthlySpendingLimit": {
+    "type": "Text"
+  },
+  "pressThePBtn": "자주색 버튼을 눌러 새 목표를 만들어냅니다!",
+  "@pressThePBtn": {
+    "type": "Text"
+  },
+  "search": "검색",
+  "@search": {
+    "type": "Text"
+  },
+  "finish": "마치다",
+  "@finish": {
+    "type": "Text"
+  },
+  "pleaseEnterLess": "{currency}{number}의 필수 금액보다 적은 값을 입력하십시오.",
+  "@pleaseEnterLess": {
+    "type": "Text",
+    "placeholders": {
+      "currency": {
+        "type": "text"
+      },
+      "number": {
+        "type": "text"
+      }
+    }
+  },
+  "vacation": "휴가",
+  "@vacation": {
+    "type": "Text"
+  },
+  "web": "편물",
+  "@web": {
+    "type": "Text"
+  },
+  "device": "장치",
+  "@device": {
+    "type": "Text"
+  },
+  "selectImage": "이미지를 선택하십시오",
+  "@selectImage": {
+    "type": "Text"
+  },
+  "searchForImage": "검색 창을 사용하여 Unsplash에서 이미지를 검색하십시오",
+  "@searchForImage": {
+    "type": "Text"
+  },
+  "noResults": "결과가 없습니다",
+  "@noResults": {
+    "type": "Text"
+  },
+  "done": "완료",
+  "@done": {
+    "type": "Text"
+  },
+  "remove": "제거하다",
+  "@remove": {
+    "type": "Text"
+  },
+  "add": "추가하다",
+  "@add": {
+    "type": "Text"
+  },
+  "hideFrom": "역사에서 숨기십시오",
+  "@hideFrom": {
+    "type": "Text"
+  },
+  "deleteGoalQ": "목표 삭제?",
+  "@deleteGoalQ": {
+    "type": "Text"
+  },
+  "areYouSureDelQ": "목표를 삭제하고 싶습니까?",
+  "@areYouSureDelQ": {
+    "type": "Text"
+  },
+  "delete": "삭제",
+  "@delete": {
+    "type": "Text"
+  },
+  "noTransactions": "아직 거래되지 않았습니다 ... 아직!",
+  "@noTransactions": {
+    "type": "Text"
+  },
+  "congratulations": "목표를 마친 것을 축하합니다! 😆",
+  "@congratulations": {
+    "type": "Text"
+  },
+  "startNewGoal": "새로운 목표를 시작하십시오",
+  "@startNewGoal": {
+    "type": "Text"
+  }
+}

@@ -19,84 +19,86 @@ typedef String MessageIfAbsent(String? messageStr, List<Object>? args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ko';
 
-  static m0(goalTitle) => "Are you sure want to delete your ${goalTitle} goal?";
+  static m0(goalTitle) => "목표를 삭제하고 싶습니까?";
 
-  static m1(currency, number) => "Please enter a value less than your required amount of ${currency}${number}";
+  static m1(currency, number) => "${currency}${number}의 필수 금액보다 적은 값을 입력하십시오.";
 
-  static m2(amount) => "Unlock unlimited Goals for just 2.99 USD 😆 Pay once, Pay forever!";
+  static m2(amount) => "2.99 USD에 대한 무제한 목표를 잠금 해제 한 번 지불하고 영원히 지불하십시오!";
 
-  static m3(month) => "${month} Dashboard";
+  static m3(month) => "7 월 통계";
 
-  static m4(amount) => "Unlock your true self with unlimited goals for a one-time purchase of just 2.99 USD! 😎 Note: Prices may vary in other currencies";
+  static m4(amount) => "불과 2.99 USD의 일회성 구매에 대한 무제한 목표로 진정한 자아를 잠금 해제하십시오! 😎 참고 : 가격은 다른 통화에 따라 다를 수 있습니다";
 
-  static m5(percent) => "You are ${percent}% of the way there!";
+  static m5(percent) => "당신은 거기의 ${percent}%입니다!";
 
-  static m6(versionNumber) => "Version ${versionNumber}";
+  static m6(versionNumber) => "버전 1.0.0";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function> {
-    "about" : MessageLookupByLibrary.simpleMessage("About"),
-    "add" : MessageLookupByLibrary.simpleMessage("Add"),
-    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("Adjust Monthly Spending Limit"),
+    "about" : MessageLookupByLibrary.simpleMessage("에 대한"),
+    "add" : MessageLookupByLibrary.simpleMessage("추가하다"),
+    "adjustMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("월별 지출 한도를 조정하십시오"),
     "areYouSureDelQ" : m0,
-    "cancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
-    "create" : MessageLookupByLibrary.simpleMessage("Create"),
-    "currentProgress" : MessageLookupByLibrary.simpleMessage("Current Progress"),
-    "dashboard" : MessageLookupByLibrary.simpleMessage("Dashboard"),
-    "days" : MessageLookupByLibrary.simpleMessage("Days"),
-    "delete" : MessageLookupByLibrary.simpleMessage("Delete"),
-    "deleteGoal" : MessageLookupByLibrary.simpleMessage("Delete Goal"),
-    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("Delete Goal?"),
-    "device" : MessageLookupByLibrary.simpleMessage("Device"),
-    "done" : MessageLookupByLibrary.simpleMessage("Done"),
-    "edit" : MessageLookupByLibrary.simpleMessage("Edit"),
-    "editGoal" : MessageLookupByLibrary.simpleMessage("Edit Goal"),
-    "finish" : MessageLookupByLibrary.simpleMessage("Finish"),
-    "hideFrom" : MessageLookupByLibrary.simpleMessage("Hide from history"),
-    "hours" : MessageLookupByLibrary.simpleMessage("Hours"),
-    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("How much money is needed?"),
-    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("How much money is currently saved?"),
-    "minutes" : MessageLookupByLibrary.simpleMessage("Minutes"),
-    "monthlySavings" : MessageLookupByLibrary.simpleMessage("Monthly Savings"),
-    "months" : MessageLookupByLibrary.simpleMessage("Months"),
-    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("New Monthly Spending Limit"),
-    "next" : MessageLookupByLibrary.simpleMessage("Next"),
-    "noResults" : MessageLookupByLibrary.simpleMessage("No Results"),
-    "noTransactions" : MessageLookupByLibrary.simpleMessage("No transactions have been made...yet!"),
+    "cancel" : MessageLookupByLibrary.simpleMessage("취소"),
+    "congratulations" : MessageLookupByLibrary.simpleMessage("목표를 마친 것을 축하합니다! 😆"),
+    "create" : MessageLookupByLibrary.simpleMessage("만들다"),
+    "currentProgress" : MessageLookupByLibrary.simpleMessage("현재 진행 상황"),
+    "dashboard" : MessageLookupByLibrary.simpleMessage("계기반"),
+    "days" : MessageLookupByLibrary.simpleMessage("날"),
+    "delete" : MessageLookupByLibrary.simpleMessage("삭제"),
+    "deleteGoal" : MessageLookupByLibrary.simpleMessage("목표 삭제"),
+    "deleteGoalQ" : MessageLookupByLibrary.simpleMessage("목표 삭제?"),
+    "device" : MessageLookupByLibrary.simpleMessage("장치"),
+    "done" : MessageLookupByLibrary.simpleMessage("완료"),
+    "edit" : MessageLookupByLibrary.simpleMessage("편집하다"),
+    "editGoal" : MessageLookupByLibrary.simpleMessage("목표 편집"),
+    "finish" : MessageLookupByLibrary.simpleMessage("마치다"),
+    "hideFrom" : MessageLookupByLibrary.simpleMessage("역사에서 숨기십시오"),
+    "hours" : MessageLookupByLibrary.simpleMessage("시간"),
+    "howMuchNeededQ" : MessageLookupByLibrary.simpleMessage("얼마나 많은 돈이 필요합니까?"),
+    "howMuchSavedQ" : MessageLookupByLibrary.simpleMessage("현재 얼마나 많은 돈이 저축됩니까?"),
+    "minutes" : MessageLookupByLibrary.simpleMessage("분"),
+    "monthlySavings" : MessageLookupByLibrary.simpleMessage("월별 저축"),
+    "months" : MessageLookupByLibrary.simpleMessage("달"),
+    "newMonthlySpendingLimit" : MessageLookupByLibrary.simpleMessage("새로운 월별 지출 한도"),
+    "next" : MessageLookupByLibrary.simpleMessage("다음"),
+    "noResults" : MessageLookupByLibrary.simpleMessage("결과가 없습니다"),
+    "noTransactions" : MessageLookupByLibrary.simpleMessage("아직 거래되지 않았습니다 ... 아직!"),
     "pleaseEnterLess" : m1,
-    "pleaseNote" : MessageLookupByLibrary.simpleMessage("Please note that increasing your weekly spending will make it harder to achieve goals and it is discouraged."),
-    "prefCurr" : MessageLookupByLibrary.simpleMessage("Select your Preferred Currency"),
-    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("Press the purple button to create a new Goal!"),
-    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("Privacy Policy"),
-    "profile" : MessageLookupByLibrary.simpleMessage("Profile"),
-    "purchase" : MessageLookupByLibrary.simpleMessage("Purchase"),
-    "purchasePro" : MessageLookupByLibrary.simpleMessage("Purchase Pro😎"),
+    "pleaseNote" : MessageLookupByLibrary.simpleMessage("주간 지출을 늘리면 목표를 달성하기가 더 어려워지고 낙담합니다."),
+    "prefCurr" : MessageLookupByLibrary.simpleMessage("선호하는 통화를 선택하십시오"),
+    "pressThePBtn" : MessageLookupByLibrary.simpleMessage("자주색 버튼을 눌러 새 목표를 만들어냅니다!"),
+    "privacyPolicy" : MessageLookupByLibrary.simpleMessage("개인 정보 정책"),
+    "profile" : MessageLookupByLibrary.simpleMessage("프로필"),
+    "purchase" : MessageLookupByLibrary.simpleMessage("구입"),
+    "purchasePro" : MessageLookupByLibrary.simpleMessage("Pro purchase를 구매하십시오"),
     "purchaseProText" : m2,
-    "remainingBalance" : MessageLookupByLibrary.simpleMessage("Remaining Balance"),
-    "remove" : MessageLookupByLibrary.simpleMessage("Remove"),
-    "save" : MessageLookupByLibrary.simpleMessage("Save"),
-    "savingForQ" : MessageLookupByLibrary.simpleMessage("What are you saving for?"),
-    "savingsGoals" : MessageLookupByLibrary.simpleMessage("Savings Goals"),
-    "search" : MessageLookupByLibrary.simpleMessage("Search"),
-    "searchForImage" : MessageLookupByLibrary.simpleMessage("Search for images on UnSplash using the search bar"),
-    "seconds" : MessageLookupByLibrary.simpleMessage("Seconds"),
-    "seeAll" : MessageLookupByLibrary.simpleMessage("See All"),
-    "selectImage" : MessageLookupByLibrary.simpleMessage("Select Image"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Settings"),
-    "skip" : MessageLookupByLibrary.simpleMessage("Skip"),
+    "remainingBalance" : MessageLookupByLibrary.simpleMessage("남은 균형"),
+    "remove" : MessageLookupByLibrary.simpleMessage("제거하다"),
+    "save" : MessageLookupByLibrary.simpleMessage("구하다"),
+    "savingForQ" : MessageLookupByLibrary.simpleMessage("당신은 무엇을 위해 저축하고 있습니까?"),
+    "savingsGoals" : MessageLookupByLibrary.simpleMessage("저축 목표"),
+    "search" : MessageLookupByLibrary.simpleMessage("검색"),
+    "searchForImage" : MessageLookupByLibrary.simpleMessage("검색 창을 사용하여 Unsplash에서 이미지를 검색하십시오"),
+    "seconds" : MessageLookupByLibrary.simpleMessage("초"),
+    "seeAll" : MessageLookupByLibrary.simpleMessage("모두보기"),
+    "selectImage" : MessageLookupByLibrary.simpleMessage("이미지를 선택하십시오"),
+    "settings" : MessageLookupByLibrary.simpleMessage("설정"),
+    "skip" : MessageLookupByLibrary.simpleMessage("건너뛰다"),
+    "startNewGoal" : MessageLookupByLibrary.simpleMessage("새로운 목표를 시작하십시오"),
     "statistics" : m3,
-    "support" : MessageLookupByLibrary.simpleMessage("Support"),
-    "timeLeft" : MessageLookupByLibrary.simpleMessage("Time Left"),
-    "totalSaved" : MessageLookupByLibrary.simpleMessage("Total Saved"),
-    "transaction" : MessageLookupByLibrary.simpleMessage("Transaction"),
-    "transactionHistory" : MessageLookupByLibrary.simpleMessage("Transaction History"),
-    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("Unlimited Goals"),
+    "support" : MessageLookupByLibrary.simpleMessage("지원하다"),
+    "timeLeft" : MessageLookupByLibrary.simpleMessage("시간이 남았습니다"),
+    "totalSaved" : MessageLookupByLibrary.simpleMessage("총 저장"),
+    "transaction" : MessageLookupByLibrary.simpleMessage("거래"),
+    "transactionHistory" : MessageLookupByLibrary.simpleMessage("거래 내역"),
+    "unlimitedGoals" : MessageLookupByLibrary.simpleMessage("무제한 목표"),
     "unlockText" : m4,
     "userPercentProgress" : m5,
-    "vacation" : MessageLookupByLibrary.simpleMessage("Vacation"),
+    "vacation" : MessageLookupByLibrary.simpleMessage("휴가"),
     "version" : m6,
-    "web" : MessageLookupByLibrary.simpleMessage("Web"),
-    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("When is the deadline?"),
-    "years" : MessageLookupByLibrary.simpleMessage("Years")
+    "web" : MessageLookupByLibrary.simpleMessage("편물"),
+    "whenDeadlineQ" : MessageLookupByLibrary.simpleMessage("마감일은 언제입니까?"),
+    "years" : MessageLookupByLibrary.simpleMessage("연령")
   };
 }
