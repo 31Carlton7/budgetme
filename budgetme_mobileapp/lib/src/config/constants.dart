@@ -33,7 +33,7 @@ import 'package:budgetme/src/models/goal.dart';
 
 const String kAppTitle = 'BudgetMe';
 
-const String kVersionNumber = 'Version v0.0.1 (1)';
+const String kVersionNumber = 'v1.0.1 (2)';
 
 const String kFontFamily = 'Inter';
 
