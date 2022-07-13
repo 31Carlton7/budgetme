@@ -1,22 +1,3 @@
-/*
-BudgetMe iOS & Android App
-Copyright (C) 2022 Carlton Aikins
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
-*/
-
-// Package imports:
 import 'package:intl/intl.dart';
 
 //ignore_for_file: type_annotate_public_apis, non_constant_identifier_names
@@ -163,8 +144,8 @@ class L10n {
   String get support => Intl.message('Support', name: 'support', desc: '');
 
   ///
-  String get version =>
-      Intl.message('Version 1.0.0', name: 'version', desc: '');
+  String version(String number) => Intl.message('Version $number',
+      name: 'version', args: [number], desc: '');
 
   ///
   String get profile => Intl.message('Profile', name: 'profile', desc: '');
