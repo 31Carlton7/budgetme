@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1087233333582-9hq0r1nsik5tfsc11f6ci2bbcahfvsui.apps.googleusercontent.com</string>
+	<string>1087233333582-jji7297pcc5hslsoiafo5e9o4tbvfirg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1087233333582-9hq0r1nsik5tfsc11f6ci2bbcahfvsui</string>
+	<string>com.googleusercontent.apps.1087233333582-jji7297pcc5hslsoiafo5e9o4tbvfirg</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAxqxuJ0aJy8zL8XaLFz96pR5J4YAVhMzM</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.budgetme.app</string>
+	<string>co.budgetme.savings.goals.app</string>
 	<key>PROJECT_ID</key>
 	<string>budgetme-a500e</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1087233333582:ios:9105d154368840cc67e61f</string>
+	<string>1:1087233333582:ios:d555fa528523bdcd67e61f</string>
 </dict>
 </plist>

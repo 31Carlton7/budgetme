@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.budgetme.app">
+    package="co.budgetme.savings.goals.app">
    <application
         android:label="BudgetMe"
         android:name="${applicationName}"

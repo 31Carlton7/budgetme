@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1087233333582:android:36dcab6341e14afd67e61f",
+        "mobilesdk_app_id": "1:1087233333582:android:eedc927dd3294b7067e61f",
         "android_client_info": {
-          "package_name": "com.budgetme.app"
+          "package_name": "co.budgetme.savings.goals.app"
         }
       },
       "oauth_client": [
@@ -43,9 +43,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1087233333582:android:19bdd1134373b12767e61f",
+        "mobilesdk_app_id": "1:1087233333582:android:36dcab6341e14afd67e61f",
         "android_client_info": {
-          "package_name": "com.budgetmeco.app"
+          "package_name": "com.budgetme.app"
         }
       },
       "oauth_client": [
