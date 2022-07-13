@@ -89,7 +89,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
         SettingsSection(),
         Center(
           child: Text(
-            BudgetMeLocalizations.of(context)!.version(kVersionNumber),
+            BudgetMeLocalizations.of(context)!.version(kAppVersionNumber),
             style: Theme.of(context).textTheme.bodyText2?.copyWith(fontWeight: FontWeight.w500),
           ),
         ),

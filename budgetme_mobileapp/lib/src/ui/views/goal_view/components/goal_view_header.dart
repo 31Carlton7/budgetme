@@ -31,16 +31,21 @@ import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/views/goal_view/components/show_goal_settings_bottom_sheet.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 // ignore: non_constant_identifier_names
 List<Widget> GoalViewHeader(BuildContext context, void Function(void Function()) setState, Goal goal) {
   return [
     SliverAppBar(
       stretch: true,
+      snap: true,
+      pinned: true,
+      floating: true,
       expandedHeight: 230,
       elevation: 0,
       leadingWidth: 70,
       toolbarHeight: 65,
+      collapsedHeight: 100,
       leading: GestureDetector(
         onTap: () {
           Navigator.pop(context);
@@ -83,11 +88,10 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
           ),
         ),
       ],
-      flexibleSpace: FlexibleSpaceBar(
-        stretchModes: const [StretchMode.zoomBackground],
-        background: Stack(
-          children: [
-            Image.asset(
+      flexibleSpace: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.asset(
               goalImagePath(goal),
               fit: BoxFit.cover,
               errorBuilder: (context, obj, stack) {
@@ -99,8 +103,37 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
                 );
               },
             ),
-          ],
-        ),
+          ),
+          goal.photographer != ''
+              ? Align(
+                  alignment: Alignment.bottomRight,
+                  child: GestureDetector(
+                    onTap: () async {
+                      final link = Uri.parse(goal.photographerLink);
+
+                      if (await canLaunchUrl(link)) {
+                        await launchUrl(link);
+                      } else {
+                        DoNothingAction();
+                      }
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(vertical: 6.0, horizontal: kSmallPadding),
+                      margin: const EdgeInsets.all(kDefaultPadding),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(kSmallBorderRadius),
+                        color: BudgetMeLightColors.black.withOpacity(0.3),
+                      ),
+                      child: Text(
+                        '${goal.photographer} / UnSplash',
+                        style: Theme.of(context).textTheme.caption?.copyWith(color: BudgetMeLightColors.white),
+                        textAlign: TextAlign.right,
+                      ),
+                    ),
+                  ),
+                )
+              : Container(),
+        ],
       ),
     ),
     SliverToBoxAdapter(
