@@ -71,7 +71,20 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
   var isEnabled = true;
   var photos = <Photo>[];
   var selectedImage = -1;
-  var noImageText = '';
+  var imgText = '';
+
+  String noImageText() {
+    if (photos.isEmpty) {
+      if (imgText.isNotEmpty) {
+        return BudgetMeLocalizations.of(context)!.noResults;
+      } else if (imgText.isEmpty) {
+        return BudgetMeLocalizations.of(context)!.searchForImage;
+      }
+    }
+
+    return BudgetMeLocalizations.of(context)!.searchForImage;
+  }
+
   var _selectedImage = '';
   var _photographer = '';
   var _photographerLink = '';
@@ -81,8 +94,6 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
     super.initState();
 
     _goal = widget.goal;
-
-    noImageText = BudgetMeLocalizations.of(context)!.searchForImage;
 
     setState(() {
       isEnabled = selectedImage >= 0;
@@ -171,18 +182,15 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                         controller: controller,
                         focusNode: focusNode,
                         onSubmitted: (str) async {
+                          setState(() {
+                            imgText = 'loading';
+                          });
                           var kPhotos = await cl.search
                               .photos(str, orientation: PhotoOrientation.landscape, perPage: 30)
                               .goAndGet();
 
                           setState(() {
                             photos = kPhotos.results;
-
-                            if (photos.isEmpty && str.isNotEmpty) {
-                              noImageText = BudgetMeLocalizations.of(context)!.noResults;
-                            } else if (photos.isEmpty && str.isEmpty) {
-                              noImageText = BudgetMeLocalizations.of(context)!.searchForImage;
-                            }
                           });
                         },
                       ),
@@ -195,7 +203,7 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                             child: Text(
-                              noImageText,
+                              noImageText(),
                               style: Theme.of(context).textTheme.headline6,
                               textAlign: TextAlign.center,
                             ),
@@ -338,7 +346,7 @@ class _CupertinoBottomSheetContainer extends StatelessWidget {
           width: double.infinity,
           child: MediaQuery.removePadding(
             context: context,
-            removeTop: true, //Remove top Safe Area
+            removeTop: true, // Remove top Safe Area
             child: child,
           ),
         ),
@@ -376,30 +384,31 @@ Future<T> showCupertinoModalBottomSheet<T>({
 
   final result = await Navigator.of(context, rootNavigator: useRootNavigator).push(
     CupertinoModalBottomSheetRoute<T>(
-        builder: builder,
-        containerBuilder: (context, _, child) => _CupertinoBottomSheetContainer(
-              child: child,
-              backgroundColor: backgroundColor,
-              topRadius: topRadius,
-              shadow: shadow,
-            ),
-        secondAnimationController: secondAnimation,
-        expanded: expand,
-        closeProgressThreshold: closeProgressThreshold,
-        barrierLabel: barrierLabel,
-        elevation: elevation,
-        bounce: bounce,
-        shape: shape,
-        clipBehavior: clipBehavior,
-        isDismissible: isDismissible ?? expand == false ? true : false,
-        modalBarrierColor: barrierColor ?? Colors.black12,
-        enableDrag: enableDrag,
+      builder: builder,
+      containerBuilder: (context, _, child) => _CupertinoBottomSheetContainer(
+        child: child,
+        backgroundColor: backgroundColor,
         topRadius: topRadius,
-        animationCurve: animationCurve,
-        previousRouteAnimationCurve: previousRouteAnimationCurve,
-        duration: duration,
-        settings: settings,
-        transitionBackgroundColor: transitionBackgroundColor ?? Colors.black),
+        shadow: shadow,
+      ),
+      secondAnimationController: secondAnimation,
+      expanded: expand,
+      closeProgressThreshold: closeProgressThreshold,
+      barrierLabel: barrierLabel,
+      elevation: elevation,
+      bounce: bounce,
+      shape: shape,
+      clipBehavior: clipBehavior,
+      isDismissible: isDismissible ?? expand == false ? true : false,
+      modalBarrierColor: barrierColor ?? Colors.black12,
+      enableDrag: enableDrag,
+      topRadius: topRadius,
+      animationCurve: animationCurve,
+      previousRouteAnimationCurve: previousRouteAnimationCurve,
+      duration: duration,
+      settings: settings,
+      transitionBackgroundColor: transitionBackgroundColor ?? Colors.black,
+    ),
   );
   return result!;
 }
