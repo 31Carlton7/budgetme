@@ -334,7 +334,7 @@ class BudgetMeLocalizations {
       );
 
   String get searchForImage => Intl.message(
-        'Search for images on UnSplash using the search bar',
+        'Search for images on Unsplash using the search bar',
         name: 'searchForImage',
       );
 
