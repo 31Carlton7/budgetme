@@ -54,7 +54,8 @@ class _CGViewFourState extends ConsumerState<CGViewFour> {
   @override
   void initState() {
     super.initState();
-    _controller = TextEditingController(text: widget.goal.currentAmount.toString());
+    final currAmnt = widget.goal.currentAmount.toString();
+    _controller = TextEditingController(text: int.parse(currAmnt) <= 0 ? '' : currAmnt);
     _goal = widget.goal;
 
     _controller.addListener(() {
