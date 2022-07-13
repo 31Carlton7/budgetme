@@ -1,6 +1,6 @@
 {
   "@@locale": "es",
-  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "@@last_modified": "2022-07-12T21:04:38.176040",
   "dashboard": "Tablero",
   "@dashboard": {
     "type": "Text"
@@ -162,9 +162,14 @@
   "@support": {
     "type": "Text"
   },
-  "version": "Versión 1.0.0",
+  "version": "Versión {number}",
   "@version": {
-    "type": "Text"
+    "type": "Text",
+    "placeholders": {
+      "number": {
+        "type": "text"
+      }
+    }
   },
   "profile": "Perfil",
   "@profile": {

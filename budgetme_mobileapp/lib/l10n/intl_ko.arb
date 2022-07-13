@@ -1,6 +1,6 @@
 {
   "@@locale": "ko",
-  "@@last_modified": "2022-07-12T13:19:01.838748",
+  "@@last_modified": "2022-07-12T21:04:38.176040",
   "dashboard": "계기반",
   "@dashboard": {
     "type": "Text"
@@ -162,9 +162,14 @@
   "@support": {
     "type": "Text"
   },
-  "version": "버전 1.0.0",
+  "version": "버전 {number}",
   "@version": {
-    "type": "Text"
+    "type": "Text",
+    "placeholders": {
+      "number": {
+        "type": "text"
+      }
+    }
   },
   "profile": "프로필",
   "@profile": {
