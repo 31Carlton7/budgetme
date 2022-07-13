@@ -31,6 +31,7 @@ class BudgetMeTextTheme {
   static const double kH4 = 17.0;
   static const double kH5 = 14.0;
   static const double kH6 = 12.0;
+  static const double kH7 = 10.0;
 
   static const String kFontFamily = 'Poppins';
   static const double kLineHeight = 1.5;
@@ -113,7 +114,7 @@ class BudgetMeTextTheme {
       caption: TextStyle(
         fontFamily: kFontFamily,
         fontWeight: FontWeight.w400,
-        fontSize: kH6,
+        fontSize: kH7,
         height: kLineHeight,
         letterSpacing: kLetterSpacing,
         color: lightDarkModeDefaultTextColor(base),
@@ -121,7 +122,7 @@ class BudgetMeTextTheme {
       overline: TextStyle(
         fontFamily: kFontFamily,
         fontWeight: FontWeight.w400,
-        fontSize: 10.0,
+        fontSize: kH7,
         height: kLineHeight,
         letterSpacing: kLetterSpacing,
         color: lightDarkModeDefaultTextColor(base),
