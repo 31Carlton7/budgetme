@@ -30,6 +30,7 @@ import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/views/create_goal_view/bottom_sheet_views/view_one.dart';
 
 bool cgViewDone = false;
+String unsplashImageID = '';
 
 Future<void> showCreateGoalView(
   BuildContext context, {

@@ -109,7 +109,8 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
                   alignment: Alignment.bottomRight,
                   child: GestureDetector(
                     onTap: () async {
-                      final link = Uri.parse(goal.photographerLink);
+                      final attributionParam = '?utm_source=BudgetMe&utm_medium=referral';
+                      final link = Uri.parse(goal.photographerLink + attributionParam);
 
                       if (await canLaunchUrl(link)) {
                         await launchUrl(link);
@@ -125,7 +126,7 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
                         color: BudgetMeLightColors.black.withOpacity(0.3),
                       ),
                       child: Text(
-                        '${goal.photographer} / UnSplash',
+                        '${goal.photographer} / Unsplash',
                         style: Theme.of(context).textTheme.caption?.copyWith(color: BudgetMeLightColors.white),
                         textAlign: TextAlign.right,
                       ),

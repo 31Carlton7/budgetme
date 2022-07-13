@@ -17,6 +17,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Flutter imports:
+import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -185,6 +186,7 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                           setState(() {
                             imgText = 'loading';
                           });
+
                           var kPhotos = await cl.search
                               .photos(str, orientation: PhotoOrientation.landscape, perPage: 30)
                               .goAndGet();
@@ -230,7 +232,15 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                                   } else {
                                     selectedImage = index;
                                     _photographer = photos[index].user.username;
-                                    _photographerLink = photos[index].user.links.self.toString();
+                                    _photographerLink = photos[index].user.links.html.toString();
+
+                                    // Image has not been downloaded necessarily until last
+                                    // Screen's button 'finish' has been pressed. However,
+                                    // a variable is set to trigger the download event when this
+                                    // happens
+                                    unsplashImageID = photos[index].id;
+
+                                    // Download reference comes later in code
                                     _selectedImage = photos[index].urls.regular.toString();
                                     isEnabled = true;
                                   }
@@ -243,6 +253,7 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     fit: BoxFit.cover,
+                                    // Uses urls endpoint to quickly display image
                                     image: NetworkImage(photos[index].urls.small.toString()),
                                   ),
                                 ),

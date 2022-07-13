@@ -20,6 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:io';
 
 // Flutter imports:
+import 'package:budgetme/src/providers/unsplash_service_provider.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
@@ -194,6 +195,11 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
                     onPressed: isEnabled
                         ? () async {
                             if (_goal.image.contains('images.unsplash.com')) {
+                              final cl = ref.read(unsplashServiceProvider).client;
+
+                              // Triggers download event
+                              cl.photos.download(unsplashImageID).go();
+
                               final imgResp = await get(Uri.parse(_goal.image));
                               final imgId = const Uuid().v4();
 
