@@ -261,8 +261,7 @@ class BudgetMeLocalizations {
         name: 'support',
       );
 
-  String version(String versionNumber) =>
-      Intl.message('Version $versionNumber', name: 'version', args: [versionNumber]);
+  String version(String number) => Intl.message('Version $number', name: 'version', args: [number]);
 
   String get profile => Intl.message(
         'Profile',
