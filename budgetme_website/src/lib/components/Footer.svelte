@@ -15,7 +15,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-
 <script lang="ts">
   import AppStoreDownloadButton from './AppStoreDownloadButton.svelte';
   import GooglePlayDownloadButton from './GooglePlayDownloadButton.svelte';
@@ -157,7 +156,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       </div>
     </div>
   </div>
-  <div class="my-32 flex-row flex justify-between space-x-16 md:px-48 sm:px-24">
+  <div class="mt-20 flex-row flex justify-between space-x-16 md:px-48 sm:px-24">
     <span class="text-sm text-gray-600 sm:text-center"
       >Copyright © 2022 <a href="/" class="hover:text-gray-500">BudgetMe</a>
     </span>
