@@ -15,7 +15,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-
 <script lang="ts">
   import Banner from '../lib/components/Banner.svelte';
   import Footer from '../lib/components/Footer.svelte';
@@ -28,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   import TwitterCard from '../lib/components/SupportPage/TwitterCard.svelte';
 </script>
 
-<div class="relative bg-white">
+<div class="relative bg-white overflow-x-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <Navbar />
     <Header text="BudgetMe Support" />

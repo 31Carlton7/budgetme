@@ -15,7 +15,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-
 <script lang="ts">
   import Banner from '../lib/components/Banner.svelte';
   import Footer from '../lib/components/Footer.svelte';
@@ -23,7 +22,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   import Navbar from '../lib/components/Navbar.svelte';
 </script>
 
-<div class="relative bg-gradient-to-b from-white to-gray-200">
+<div class="relative bg-gradient-to-b from-white to-gray-200 overflow-x-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 justify-center">
     <Navbar />
     <HeroSection />

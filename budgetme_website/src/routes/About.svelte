@@ -15,7 +15,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-
 <script lang="ts">
   import AboutMockupSection from '../lib/components/AboutPage/AboutMockupSection.svelte';
 
@@ -25,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   import Navbar from '../lib/components/Navbar.svelte';
 </script>
 
-<div class="relative bg-white">
+<div class="relative bg-white overflow-x-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <Navbar />
     <Header text="Welcome to BudgetMe" />
