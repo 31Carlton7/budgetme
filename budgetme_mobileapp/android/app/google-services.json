@@ -7,6 +7,42 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1087233333582:android:b64391e9a64696d167e61f",
+        "android_client_info": {
+          "package_name": "co.budgetme.savings.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087233333582-k4m0lv0rhv3v4eb850es5eitflgupq3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZL_YdQ-xXznV_cTjEjZj2kQ1ZFH7qwT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087233333582-k4m0lv0rhv3v4eb850es5eitflgupq3v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1087233333582-9hq0r1nsik5tfsc11f6ci2bbcahfvsui.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.budgetme.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1087233333582:android:eedc927dd3294b7067e61f",
         "android_client_info": {
           "package_name": "co.budgetme.savings.goals.app"

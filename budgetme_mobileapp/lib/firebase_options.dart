@@ -85,6 +85,6 @@ class DefaultFirebaseOptions {
     projectId: 'budgetme-a500e',
     storageBucket: 'budgetme-a500e.appspot.com',
     iosClientId: '1087233333582-9hq0r1nsik5tfsc11f6ci2bbcahfvsui.apps.googleusercontent.com',
-    iosBundleId: 'co.budgetme.savings.goals.app',
+    iosBundleId: 'co.budgetme.savings.app',
   );
 }

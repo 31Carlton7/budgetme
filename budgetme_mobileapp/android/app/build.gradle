@@ -44,7 +44,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "co.budgetme.savings.goals.app"
+        applicationId "co.budgetme.savings.app"
         minSdkVersion 19
         targetSdkVersion 31
         targetSdkVersion flutter.targetSdkVersion
