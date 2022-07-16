@@ -48,7 +48,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     />
     <AboutMockupSection
       title="Available in 12 languages and all currencies"
-      content="No matter where you’re saving from, you can feel right at home with your native currency."
+      content="No matter where you’re saving from, you can feel right at home with your native currency and language."
       mockupImage="images/mockup_about_4.png"
       alignmentRight={false}
     />
