@@ -18,6 +18,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 extension StringExtension on String {
   String toCamelCase() {
-    return "${this[0].toUpperCase()}${this.substring(1).toLowerCase()}";
+    return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
   }
 }
