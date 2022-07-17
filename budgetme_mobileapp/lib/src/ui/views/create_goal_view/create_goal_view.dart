@@ -20,7 +20,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'package:flutter/material.dart';
 
 // Package imports:
-import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
@@ -94,20 +93,7 @@ class _CreateGoalViewState extends ConsumerState<CreateGoalView> {
 
     _goal = widget.goal;
 
-    if (_goal == null) {
-      _goal = Goal(
-        id: '0',
-        title: '',
-        deadline: DateTime.now(),
-        requiredAmount: 0,
-        currentAmount: 0,
-        transactions: [],
-        currency: Currency.from(json: defaultCurrency),
-        image: '',
-        photographer: '',
-        photographerLink: '',
-      );
-    }
+    _goal ??= Goal.nil();
   }
 
   @override
