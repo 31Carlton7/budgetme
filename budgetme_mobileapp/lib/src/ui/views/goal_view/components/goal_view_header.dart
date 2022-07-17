@@ -17,6 +17,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Dart imports:
+import 'dart:io';
 import 'dart:math' as math;
 import 'dart:math';
 
@@ -30,7 +31,7 @@ import 'package:heroicons/heroicons.dart';
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
-import 'package:budgetme/src/ui/views/goal_view/components/show_goal_settings_bottom_sheet.dart';
+import 'package:budgetme/src/ui/components/show_goal_settings_bottom_sheet.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 // ignore: non_constant_identifier_names
@@ -91,8 +92,8 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
       flexibleSpace: Stack(
         children: [
           Positioned.fill(
-            child: Image.asset(
-              goalImagePath(goal),
+            child: Image.file(
+              File(goalImagePath(goal)),
               fit: BoxFit.cover,
               errorBuilder: (context, obj, stack) {
                 return Container(
@@ -109,7 +110,7 @@ List<Widget> GoalViewHeader(BuildContext context, void Function(void Function())
                   alignment: Alignment.bottomRight,
                   child: GestureDetector(
                     onTap: () async {
-                      final attributionParam = '?utm_source=BudgetMe&utm_medium=referral';
+                      const attributionParam = '?utm_source=BudgetMe&utm_medium=referral';
                       final link = Uri.parse(goal.photographerLink + attributionParam);
 
                       if (await canLaunchUrl(link)) {
