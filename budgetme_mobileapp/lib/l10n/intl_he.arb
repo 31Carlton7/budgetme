@@ -1,6 +1,6 @@
 {
   "@@locale": "he",
-  "@@last_modified": "2022-07-12T21:04:38.176040",
+  "@@last_modified": "2022-07-14T23:36:16.179183",
   "dashboard": "לוּחַ מַחווָנִים",
   "@dashboard": {
     "type": "Text"
@@ -281,6 +281,10 @@
   },
   "startNewGoal": "התחל מטרה חדשה",
   "@startNewGoal": {
+    "type": "Text"
+  },
+  "outOfTime": "נגמר הזמן!",
+  "@outOfTime": {
     "type": "Text"
   }
 }
