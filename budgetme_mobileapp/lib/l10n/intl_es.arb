@@ -1,6 +1,6 @@
 {
   "@@locale": "es",
-  "@@last_modified": "2022-07-12T21:04:38.176040",
+  "@@last_modified": "2022-07-14T23:36:16.179183",
   "dashboard": "Tablero",
   "@dashboard": {
     "type": "Text"
@@ -281,6 +281,10 @@
   },
   "startNewGoal": "Comienza una nueva meta",
   "@startNewGoal": {
+    "type": "Text"
+  },
+  "outOfTime": "¡Fuera de tiempo!",
+  "@outOfTime": {
     "type": "Text"
   }
 }
