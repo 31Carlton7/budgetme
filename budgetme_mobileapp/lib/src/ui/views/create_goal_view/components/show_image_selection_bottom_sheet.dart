@@ -180,6 +180,7 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                       child: CupertinoSearchTextField(
+                        style: CupertinoTheme.of(context).textTheme.textStyle,
                         controller: controller,
                         focusNode: focusNode,
                         onSubmitted: (str) async {
@@ -304,8 +305,6 @@ class _GoalImageSelectorViewState extends ConsumerState<GoalImageSelectorView> {
                                 photographer: _photographer,
                                 photographerLink: _photographerLink,
                               );
-
-                              print(_goal.photographer);
 
                               Navigator.pop(context, _goal);
                             }
