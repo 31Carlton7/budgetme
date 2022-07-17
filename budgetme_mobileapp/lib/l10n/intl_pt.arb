@@ -1,6 +1,6 @@
 {
   "@@locale": "pt",
-  "@@last_modified": "2022-07-12T21:04:38.176040",
+  "@@last_modified": "2022-07-14T23:36:16.179183",
   "dashboard": "Painel",
   "@dashboard": {
     "type": "Text"
@@ -235,7 +235,7 @@
   "@selectImage": {
     "type": "Text"
   },
-  "searchForImage": "Pesquise imagens no UNSLASH usando a barra de pesquisa",
+  "searchForImage": "Pesquise imagens no Unsplash usando a barra de pesquisa",
   "@searchForImage": {
     "type": "Text"
   },
@@ -281,6 +281,10 @@
   },
   "startNewGoal": "Inicie um novo objetivo",
   "@startNewGoal": {
+    "type": "Text"
+  },
+  "outOfTime": "Fora do tempo!",
+  "@outOfTime": {
     "type": "Text"
   }
 }
