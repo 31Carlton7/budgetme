@@ -52,8 +52,8 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
           BudgetMeLocalizations.of(context)!.profile,
           style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w600),
         ),
-        leading: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+        leading: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: BMBackButton(),
         ),
         leadingWidth: 57,
@@ -70,7 +70,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        PurchaseProCard(),
+        const PurchaseProCard(),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
           child: Text(
@@ -78,7 +78,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
             style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
           ),
         ),
-        MonthlySavingsCard(),
+        const MonthlySavingsCard(),
         Padding(
           padding: const EdgeInsets.only(left: kDefaultPadding * 2, right: kDefaultPadding * 2, top: kMediumPadding),
           child: Text(
@@ -86,7 +86,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
             style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
           ),
         ),
-        SettingsSection(),
+        const SettingsSection(),
         Center(
           child: Text(
             BudgetMeLocalizations.of(context)!.version(kAppVersionNumber),
