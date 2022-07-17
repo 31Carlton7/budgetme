@@ -40,36 +40,36 @@ Google Play Beta: [https://play.google.com/store/apps/details?id=com.elisha.app]
 
 ## Screenshots
 
-<!--
 <table>
   <tr>
     <td>
-      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_1.png"> </img>
+      <img width="250" src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/store_screenshots/1.png" />
     </td>
     <td>
-      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_2.png">
-  </img>
+      <img width="250" src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/store_screenshots/2.png" />
     </td>
     <td>
-        <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_3.png">
-  </img>
+        <img width="250" src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/store_screenshots/3.png" />
     </td>
   </tr>
 
   <tr>
      <td>
-       <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_4.png">
-  </img>
+       <img width="250" src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/store_screenshots/4.png" />
     </td>
     <td>
-      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_5.png">
+      <img width="250" src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/store_screenshots/5.png" />
     </td>
     <td>
-      <img width="250" src="https://github.com/31Carlton7/elisha/blob/master/screenshots/promotional/iphone/iphone_7.png">
+      <img width="250" src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/store_screenshots/6.png" />
     </td>
   </tr>
-
-</table> -->
+  <tr>
+     <td>
+       <img width="250" src="https://github.com/31Carlton7/budgetme/blob/master/budgetme_mobileapp/assets/store_screenshots/7.png" />
+    </td>
+  </tr>
+</table>
 
 ## Featured In
 
