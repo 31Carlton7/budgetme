@@ -77,7 +77,7 @@ Future<void> showPurchaseProBottomSheet(BuildContext context) async {
                     Container(
                       height: 160,
                       width: 160,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(image: AssetImage(kAppIcon)),
                       ),
                     ),
