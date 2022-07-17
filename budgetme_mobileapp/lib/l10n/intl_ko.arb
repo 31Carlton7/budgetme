@@ -1,6 +1,6 @@
 {
   "@@locale": "ko",
-  "@@last_modified": "2022-07-12T21:04:38.176040",
+  "@@last_modified": "2022-07-14T23:36:16.179183",
   "dashboard": "계기반",
   "@dashboard": {
     "type": "Text"
@@ -281,6 +281,10 @@
   },
   "startNewGoal": "새로운 목표를 시작하십시오",
   "@startNewGoal": {
+    "type": "Text"
+  },
+  "outOfTime": "시간 중!",
+  "@outOfTime": {
     "type": "Text"
   }
 }
