@@ -50,12 +50,12 @@ class _TransactionHistoryViewState extends ConsumerState<TransactionHistoryView>
         systemOverlayStyle: MediaQuery.of(context).platformBrightness == Brightness.dark
             ? SystemUiOverlayStyle.light
             : SystemUiOverlayStyle.dark,
-        leading: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+        leading: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: BMBackButton(),
         ),
-        actions: [
-          const HeroIcon(
+        actions: const [
+          HeroIcon(
             HeroIcons.download,
             solid: false,
             size: 27,
