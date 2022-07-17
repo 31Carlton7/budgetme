@@ -390,4 +390,9 @@ class BudgetMeLocalizations {
         'Start new goal',
         name: 'startNewGoal',
       );
+
+  String get outOfTime => Intl.message(
+        'Out of time!',
+        name: 'outOfTime',
+      );
 }
