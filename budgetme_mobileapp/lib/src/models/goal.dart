@@ -20,6 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:convert';
 
 // Flutter imports:
+import 'package:budgetme/src/config/constants.dart';
 import 'package:flutter/foundation.dart';
 
 // Package imports:
@@ -76,7 +77,7 @@ class Goal {
     required this.photographerLink,
   });
 
-  int get percentCompleted => ((this.currentAmount / this.requiredAmount) * 100).toInt();
+  int get percentCompleted => ((currentAmount / requiredAmount) * 100).toInt();
 
   Goal copyWith({
     String? id,
@@ -136,6 +137,20 @@ class Goal {
   String toJson() => json.encode(toMap());
 
   factory Goal.fromJson(String source) => Goal.fromMap(json.decode(source));
+
+  factory Goal.nil() {
+    return Goal(
+        id: '0',
+        title: '',
+        deadline: DateTime.now(),
+        requiredAmount: 0,
+        currentAmount: 0,
+        transactions: [],
+        currency: Currency.from(json: defaultCurrency),
+        image: '',
+        photographer: '',
+        photographerLink: '');
+  }
 
   @override
   String toString() {

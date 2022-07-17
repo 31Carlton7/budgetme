@@ -25,7 +25,7 @@ import 'package:budgetme/src/models/bm_notification.dart';
 class NotificationsRepository {
   int notificationIndex = 0;
 
-  List<Map<String, String>> _notifications = [
+  final List<Map<String, String>> _notifications = [
     {'Let\'s save this bread 🍞💸': 'Anytime is a good time to save money, so why not now?'},
     {
       '🚨 Time to save! 🚨':

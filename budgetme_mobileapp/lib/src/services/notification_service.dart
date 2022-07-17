@@ -40,7 +40,7 @@ class NotificationService {
       id,
       notification.title,
       notification.body,
-      _scheduleNotificationTime(Time(15)),
+      _scheduleNotificationTime(const Time(15)),
       await _notificationDetails(),
       payload: 'budget.me',
       androidAllowWhileIdle: true,
@@ -53,13 +53,13 @@ class NotificationService {
     final now = tz.TZDateTime.now(tz.local);
     final scheduleDate = tz.TZDateTime(tz.local, now.year, now.month, now.day, time.hour, time.minute, time.second);
 
-    return scheduleDate.isBefore(now) ? scheduleDate.add(Duration(days: 1)) : scheduleDate;
+    return scheduleDate.isBefore(now) ? scheduleDate.add(const Duration(days: 1)) : scheduleDate;
   }
 
   static Future<void> init({bool initScheduled = false}) async {
-    final android = AndroidInitializationSettings('@mipmap/ic_launcher');
-    final iOS = IOSInitializationSettings();
-    final settings = InitializationSettings(android: android, iOS: iOS);
+    const android = AndroidInitializationSettings('@mipmap/ic_launcher');
+    const iOS = IOSInitializationSettings();
+    const settings = InitializationSettings(android: android, iOS: iOS);
 
     await _notifications.initialize(settings, onSelectNotification: (payload) {
       onNotifications.add(payload);
@@ -73,7 +73,7 @@ class NotificationService {
   }
 
   static Future<NotificationDetails> _notificationDetails() async {
-    return NotificationDetails(
+    return const NotificationDetails(
       android: AndroidNotificationDetails(
         'channel id',
         'channel name',
