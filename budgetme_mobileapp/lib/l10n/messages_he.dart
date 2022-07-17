@@ -64,6 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "next" : MessageLookupByLibrary.simpleMessage("הַבָּא"),
     "noResults" : MessageLookupByLibrary.simpleMessage("אין תוצאות"),
     "noTransactions" : MessageLookupByLibrary.simpleMessage("עדיין לא נעשו עסקאות ... עדיין!"),
+    "outOfTime" : MessageLookupByLibrary.simpleMessage("נגמר הזמן!"),
     "pleaseEnterLess" : m1,
     "pleaseNote" : MessageLookupByLibrary.simpleMessage("שימו לב כי הגדלת ההוצאות השבועיות שלכם יקשו על השגת יעדים והיא מיואשת."),
     "prefCurr" : MessageLookupByLibrary.simpleMessage("בחר את המטבע המועדף עליך"),
