@@ -20,6 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:io';
 
 // Flutter imports:
+import 'package:budgetme/src/providers/ad_state_provider.dart';
 import 'package:budgetme/src/providers/unsplash_service_provider.dart';
 import 'package:flutter/material.dart';
 
@@ -27,6 +28,7 @@ import 'package:flutter/material.dart';
 import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:http/http.dart' show get;
 import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';
@@ -57,11 +59,34 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
   late Goal _goal;
   late Currency _selectedCurrency;
 
+  late InterstitialAd _interstitialAd;
+  bool _isAdLoaded = false;
+
+  void _initAd() {
+    InterstitialAd.load(
+      adUnitId: ref.read(adStateProvider).createEditInterstitialAdUnitId,
+      request: const AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          _interstitialAd = ad;
+          _isAdLoaded = true;
+        },
+        onAdFailedToLoad: (LoadAdError error) {
+          // ignore: avoid_print
+          print('InterstitialAd failed to load: $error');
+        },
+      ),
+    );
+  }
+
   bool isEnabled = true;
 
   @override
   void initState() {
     super.initState();
+
+    _initAd();
+
     _goal = widget.goal;
 
     _selectedCurrency = _goal.currency;
@@ -221,6 +246,11 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
                               await ref.read(goalRepositoryProvider.notifier).addGoal(_goal);
                             } else {
                               await ref.read(goalRepositoryProvider.notifier).updateGoal(_goal);
+                            }
+
+                            // If they don't have pro, show ad
+                            if (_isAdLoaded) {
+                              // await _interstitialAd.show();
                             }
 
                             cgViewDone = true;
