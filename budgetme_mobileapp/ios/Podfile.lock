@@ -12,22 +12,22 @@ PODS:
   - Firebase/Performance (9.2.0):
     - Firebase/CoreOnly
     - FirebasePerformance (~> 9.2.0)
-  - firebase_analytics (9.1.12):
+  - firebase_analytics (9.2.0):
     - Firebase/Analytics (= 9.2.0)
     - firebase_core
     - Flutter
-  - firebase_core (1.19.1):
+  - firebase_core (1.19.2):
     - Firebase/CoreOnly (= 9.2.0)
     - Flutter
-  - firebase_crashlytics (2.8.4):
+  - firebase_crashlytics (2.8.5):
     - Firebase/Crashlytics (= 9.2.0)
     - firebase_core
     - Flutter
-  - firebase_performance (0.8.1-1):
+  - firebase_performance (0.8.2):
     - Firebase/Performance (= 9.2.0)
     - firebase_core
     - Flutter
-  - FirebaseABTesting (9.2.0):
+  - FirebaseABTesting (9.3.0):
     - FirebaseCore (~> 9.0)
   - FirebaseAnalytics (9.2.0):
     - FirebaseAnalytics/AdIdSupport (= 9.2.0)
@@ -52,12 +52,12 @@ PODS:
     - FirebaseCoreInternal (~> 9.0)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/Logger (~> 7.7)
-  - FirebaseCoreDiagnostics (9.2.0):
+  - FirebaseCoreDiagnostics (9.3.0):
     - GoogleDataTransport (< 10.0.0, >= 9.1.4)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/Logger (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseCoreInternal (9.2.0):
+  - FirebaseCoreInternal (9.3.0):
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
   - FirebaseCrashlytics (9.2.0):
     - FirebaseCore (~> 9.0)
@@ -66,7 +66,7 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (~> 2.1)
-  - FirebaseInstallations (9.2.0):
+  - FirebaseInstallations (9.3.0):
     - FirebaseCore (~> 9.0)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/UserDefaults (~> 7.7)
@@ -80,7 +80,7 @@ PODS:
     - GoogleUtilities/ISASwizzler (~> 7.7)
     - GoogleUtilities/MethodSwizzler (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseRemoteConfig (9.2.0):
+  - FirebaseRemoteConfig (9.3.0):
     - FirebaseABTesting (~> 9.0)
     - FirebaseCore (~> 9.0)
     - FirebaseInstallations (~> 9.0)
@@ -91,6 +91,12 @@ PODS:
     - Flutter
   - flutter_native_timezone (0.0.1):
     - Flutter
+  - Google-Mobile-Ads-SDK (9.7.0):
+    - GoogleAppMeasurement (< 10.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - google_mobile_ads (5.3.0):
+    - Flutter
+    - Google-Mobile-Ads-SDK (= 9.7.0)
   - GoogleAppMeasurement (9.2.0):
     - GoogleAppMeasurement/AdIdSupport (= 9.2.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
@@ -115,6 +121,7 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUserMessagingPlatform (2.0.0)
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -158,6 +165,7 @@ DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
   - flutter_native_timezone (from `.symlinks/plugins/flutter_native_timezone/ios`)
+  - google_mobile_ads (from `.symlinks/plugins/google_mobile_ads/ios`)
   - image_downloader (from `.symlinks/plugins/image_downloader/ios`)
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
   - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
@@ -175,8 +183,10 @@ SPEC REPOS:
     - FirebaseInstallations
     - FirebasePerformance
     - FirebaseRemoteConfig
+    - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleDataTransport
+    - GoogleUserMessagingPlatform
     - GoogleUtilities
     - nanopb
     - PromisesObjC
@@ -196,6 +206,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_local_notifications/ios"
   flutter_native_timezone:
     :path: ".symlinks/plugins/flutter_native_timezone/ios"
+  google_mobile_ads:
+    :path: ".symlinks/plugins/google_mobile_ads/ios"
   image_downloader:
     :path: ".symlinks/plugins/image_downloader/ios"
   image_picker_ios:
@@ -207,24 +219,27 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Firebase: 4ba896cb8e5105d4b9e247e1c1b6222b548df55a
-  firebase_analytics: 62f21c400c1fe65369985fa8ba68b5ac1d939bb8
-  firebase_core: 9e09bbfbf5467e459822850732f5fb648f5b1927
-  firebase_crashlytics: 8f38d64d3fb4d0b1976637e8a119366dbf95f3af
-  firebase_performance: 6c932fe63be1fd81140e19fd8bc045477aa65ea7
-  FirebaseABTesting: cd1ec762a0078b46a7ce91dfe5b7b8991c2dff8f
+  firebase_analytics: e6754d7dd82bd2006b002d88c0f44f8f50da26e6
+  firebase_core: ada8be870601fe3c2684dae2356f634189bd598f
+  firebase_crashlytics: c07347255e8609dbe65a72feb82a76943827730d
+  firebase_performance: 58084929e08f449e2b5b1259dab451f0518dc998
+  FirebaseABTesting: d7383da017eff5dc4fccb40987fa76271fd1cdbf
   FirebaseAnalytics: af5a03a8dff7648c7b8486f6a78b1368e0268dd3
   FirebaseCore: 0e27f2a15d8f7b7ef11e7d93e23b1cbab55d748c
-  FirebaseCoreDiagnostics: ad3f6c68b7c5b63b7cf15b0785d7137f05f32268
-  FirebaseCoreInternal: cb966328b6985dbd6f535e1461291063e1c4a00f
+  FirebaseCoreDiagnostics: 060eb57cc56dfaf40b1b1b5874a5c17c41ce79f8
+  FirebaseCoreInternal: 635d1c9a612a6502b6377a0c92af83758076ffff
   FirebaseCrashlytics: 9fff819edb2bfc9d3eff612225b207d41945a935
-  FirebaseInstallations: 21186f0ca7849f90f4a3219fa31a5eca2e30f113
+  FirebaseInstallations: 54b40022cb06e462740c9f2b9fbe38b5e78a825a
   FirebasePerformance: 5a8d2a9e645a398dfcc02657853f4b946675d5d4
-  FirebaseRemoteConfig: 16e29297f0dd0c7d2415c4506d614fe0b54875d1
+  FirebaseRemoteConfig: 0a644c924b3339bcf3bc3ea253206f171672308e
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
   flutter_local_notifications: 0c0b1ae97e741e1521e4c1629a459d04b9aec743
   flutter_native_timezone: 5f05b2de06c9776b4cc70e1839f03de178394d22
+  Google-Mobile-Ads-SDK: 2685d6b3374b26de8a71f535614396e57cf80b13
+  google_mobile_ads: 2cf494f950c0c5178c89eaec89b43cef2bf5b4ab
   GoogleAppMeasurement: 7a33224321f975d58c166657260526775d9c6b1a
   GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
+  GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   image_downloader: 73e190d6c9f286f2649554051348d9cb319cd4b3
   image_picker_ios: b786a5dcf033a8336a657191401bfdf12017dabb
