@@ -64,6 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "next" : MessageLookupByLibrary.simpleMessage("下一个"),
     "noResults" : MessageLookupByLibrary.simpleMessage("没有结果"),
     "noTransactions" : MessageLookupByLibrary.simpleMessage("尚未进行交易...现在！"),
+    "outOfTime" : MessageLookupByLibrary.simpleMessage("时间！"),
     "pleaseEnterLess" : m1,
     "pleaseNote" : MessageLookupByLibrary.simpleMessage("请注意，增加您的每周支出将使实现目标变得更加困难，并且会灰心。"),
     "prefCurr" : MessageLookupByLibrary.simpleMessage("选择您的首选货币"),
