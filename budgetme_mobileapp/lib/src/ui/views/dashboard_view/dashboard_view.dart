@@ -20,7 +20,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:io';
 
 // Flutter imports:
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -28,6 +27,7 @@ import 'package:flutter/services.dart';
 import 'package:currency_picker/currency_picker.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:heroicons/heroicons.dart';
 import 'package:intl/intl.dart';
 
 // Project imports:
@@ -61,19 +61,13 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
     await ref.read(balanceRepositoryProvider).setCurrency(currency);
   }
 
-  IconData icon() {
-    if (Platform.isIOS) return CupertinoIcons.square_pencil;
-
-    return Icons.edit_note;
-  }
-
   @override
   Widget build(BuildContext context) {
     _updateUserCurrency();
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Theme.of(context).canvasColor,
-      floatingActionButton: AddGoalButton(),
+      floatingActionButton: const AddGoalButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniEndDocked,
       appBar: AppBar(
         centerTitle: false,
@@ -90,7 +84,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ProfileView(),
+                    builder: (context) => const ProfileView(),
                   ),
                 );
               },
@@ -136,7 +130,8 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                                 boxShadow: primaryBoxShadow,
                                 padding: EdgeInsets.zero,
                                 alignment: MainAxisAlignment.center,
-                                prefixIcon: Icon(icon(), size: 18, color: BudgetMeLightColors.white),
+                                prefixIcon:
+                                    const HeroIcon(HeroIcons.pencilAlt, size: 27, color: BudgetMeLightColors.white),
                                 onPressed: () async {
                                   HapticFeedback.mediumImpact();
 
@@ -145,7 +140,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                               ),
                             ),
                           ),
-                          TextSpan(
+                          const TextSpan(
                             text: ' to create a new Goal!',
                           ),
                         ],
@@ -157,7 +152,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                     ),
             ),
           ),
-          SizedBox(height: kDefaultPadding * 4),
+          const SizedBox(height: kDefaultPadding * 4),
         ],
       );
     }
@@ -207,7 +202,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
         tilePadding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
         collapsedIconColor: Theme.of(context).iconTheme.color,
         iconColor: Theme.of(context).iconTheme.color,
-        children: [
+        children: const [
           MonthlySavingsCard(),
         ],
       ),
