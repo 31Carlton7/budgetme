@@ -17,6 +17,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Dart imports:
+import 'dart:io';
 import 'dart:math';
 
 // Flutter imports:
@@ -31,7 +32,7 @@ import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
-import 'package:budgetme/src/ui/views/goal_view/components/show_goal_settings_bottom_sheet.dart';
+import 'package:budgetme/src/ui/components/show_goal_settings_bottom_sheet.dart';
 import 'package:budgetme/src/ui/views/goal_view/goal_view.dart';
 
 class GoalCard extends ConsumerWidget {
@@ -63,8 +64,8 @@ class GoalCard extends ConsumerWidget {
           child: Stack(
             alignment: Alignment.bottomCenter,
             children: [
-              Image.asset(
-                goalImagePath(goal),
+              Image.file(
+                File(goalImagePath(goal)),
                 height: 220,
                 width: double.infinity,
                 fit: BoxFit.cover,
