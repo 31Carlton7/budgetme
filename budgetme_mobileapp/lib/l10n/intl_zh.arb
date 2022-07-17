@@ -1,6 +1,6 @@
 {
   "@@locale": "zh",
-  "@@last_modified": "2022-07-12T21:04:38.176040",
+  "@@last_modified": "2022-07-14T23:36:16.179183",
   "dashboard": "仪表板",
   "@dashboard": {
     "type": "Text"
@@ -281,6 +281,10 @@
   },
   "startNewGoal": "开始新目标",
   "@startNewGoal": {
+    "type": "Text"
+  },
+  "outOfTime": "时间！",
+  "@outOfTime": {
     "type": "Text"
   }
 }
