@@ -112,7 +112,7 @@ class _CGViewThreeState extends ConsumerState<CGViewThree> {
             const SizedBox(height: kDefaultPadding),
             GestureDetector(
               onTap: () async {
-                final initialDate = _selectedDate.add(Duration(minutes: 1));
+                final initialDate = _selectedDate.add(const Duration(minutes: 1));
                 final firstDate = DateTime.now();
                 final lastDate = DateTime(firstDate.year + 100, 12, 31);
 
@@ -159,8 +159,27 @@ class _CGViewThreeState extends ConsumerState<CGViewThree> {
                         initialDate: initialDate,
                         firstDate: firstDate,
                         lastDate: lastDate,
+                        builder: (context, child) {
+                          return Theme(
+                            data: Theme.of(context).copyWith(
+                              colorScheme: ColorScheme.light(
+                                primary: Theme.of(context).primaryColor, // header background color
+                                onPrimary: BudgetMeLightColors.white, // header text color
+                                onSurface: Theme.of(context).colorScheme.primary, // body text color
+                              ),
+                              textButtonTheme: TextButtonThemeData(
+                                style: TextButton.styleFrom(
+                                  primary: Theme.of(context).primaryColor, // button text color
+                                ),
+                              ),
+                            ),
+                            child: child!,
+                          );
+                        },
                       )) ??
                       DateTime.now().add(const Duration(days: 1));
+
+                  setState(() {});
                 }
               },
               child: Container(
@@ -205,7 +224,7 @@ class _CGViewThreeState extends ConsumerState<CGViewThree> {
                     buttonText: BudgetMeLocalizations.of(context)!.next,
                     onPressed: isEnabled
                         ? () {
-                            _goal = _goal.copyWith(deadline: _selectedDate.subtract(Duration(minutes: 1)));
+                            _goal = _goal.copyWith(deadline: _selectedDate.subtract(const Duration(minutes: 1)));
 
                             Navigator.push(
                               context,
