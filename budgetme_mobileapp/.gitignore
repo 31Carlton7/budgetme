@@ -47,6 +47,9 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+/android/app/upload-keystore.jks
+/android/key.properties
+
 /lib/src/config/environment_keys.dart
 
 localazy.json
