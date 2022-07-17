@@ -44,8 +44,8 @@ class AdjustMonthlySpendingLimitView extends ConsumerWidget {
           BudgetMeLocalizations.of(context)!.adjustMonthlySpendingLimit,
           style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w600),
         ),
-        leading: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+        leading: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: BMBackButton(),
         ),
         leadingWidth: 57,
