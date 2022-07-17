@@ -49,7 +49,7 @@ class AddGoalButton extends ConsumerWidget {
         boxShadow: primaryBoxShadow,
         padding: EdgeInsets.zero,
         alignment: MainAxisAlignment.center,
-        prefixIcon: HeroIcon(HeroIcons.pencilAlt, size: 27, color: BudgetMeLightColors.white),
+        prefixIcon: const HeroIcon(HeroIcons.pencilAlt, size: 27, color: BudgetMeLightColors.white),
         onPressed: () async {
           HapticFeedback.mediumImpact();
 
