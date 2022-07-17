@@ -41,7 +41,7 @@ ThemeData darkTheme() {
     ),
     snackBarTheme: SnackBarThemeData(
       backgroundColor: BudgetMeDarkColors.gray[900],
-      contentTextStyle: TextStyle(
+      contentTextStyle: const TextStyle(
         color: BudgetMeDarkColors.black,
         fontWeight: FontWeight.w400,
         fontSize: 14.0,
@@ -128,7 +128,8 @@ ThemeData darkTheme() {
       backgroundColor: BudgetMeDarkColors.gray[900],
       modalBackgroundColor: BudgetMeDarkColors.gray[900],
       modalElevation: 0.5,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(kLargeBorderRadius))),
+      shape:
+          const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(kLargeBorderRadius))),
     ),
     textSelectionTheme: TextSelectionThemeData(cursorColor: BudgetMeDarkColors.primary),
     appBarTheme: AppBarTheme(
