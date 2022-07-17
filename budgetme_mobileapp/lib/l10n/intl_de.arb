@@ -1,6 +1,6 @@
 {
   "@@locale": "de",
-  "@@last_modified": "2022-07-12T21:04:38.176040",
+  "@@last_modified": "2022-07-14T23:36:16.179183",
   "dashboard": "Armaturenbrett",
   "@dashboard": {
     "type": "Text"
@@ -281,6 +281,10 @@
   },
   "startNewGoal": "Neues Ziel beginnen",
   "@startNewGoal": {
+    "type": "Text"
+  },
+  "outOfTime": "Aus der Zeit!",
+  "@outOfTime": {
     "type": "Text"
   }
 }
