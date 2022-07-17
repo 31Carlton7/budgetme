@@ -30,6 +30,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -51,6 +52,9 @@ void main() async {
     WidgetsFlutterBinding.ensureInitialized();
 
     await Firebase.initializeApp();
+    MobileAds.instance.initialize();
+    MobileAds.instance
+        .updateRequestConfiguration(RequestConfiguration(testDeviceIds: ['24dd1932493cb289284c0d8588b2077b']));
 
     /// Initiate Hive local DB.
     await Hive.initFlutter();
@@ -117,7 +121,7 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
           darkTheme: darkTheme(),
           home: const DashboardView(),
           localizationsDelegates: BudgetMeLocalizations.localizationsDelegates,
-          supportedLocales: [
+          supportedLocales: const [
             Locale('en', ''),
             Locale('es', ''),
             Locale('ja', ''),
