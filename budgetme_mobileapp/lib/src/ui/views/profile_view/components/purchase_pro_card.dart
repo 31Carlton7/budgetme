@@ -65,7 +65,7 @@ class PurchaseProCard extends ConsumerWidget {
                 Transform(
                     alignment: Alignment.center,
                     transform: Matrix4.rotationY(isRTL(context) ? math.pi : 0),
-                    child: HeroIcon(HeroIcons.arrowRight, color: BudgetMeLightColors.white)),
+                    child: const HeroIcon(HeroIcons.arrowRight, color: BudgetMeLightColors.white)),
               ],
             ),
             const SizedBox(height: kSmallPadding),
