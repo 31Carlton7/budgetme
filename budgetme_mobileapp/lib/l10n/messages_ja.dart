@@ -64,6 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "next" : MessageLookupByLibrary.simpleMessage("次"),
     "noResults" : MessageLookupByLibrary.simpleMessage("結果がありません"),
     "noTransactions" : MessageLookupByLibrary.simpleMessage("取引は行われていません...まだ！"),
+    "outOfTime" : MessageLookupByLibrary.simpleMessage("時間がなくなって！"),
     "pleaseEnterLess" : m1,
     "pleaseNote" : MessageLookupByLibrary.simpleMessage("毎週の支出を増やすと、目標を達成するのが難しくなり、落胆していることに注意してください。"),
     "prefCurr" : MessageLookupByLibrary.simpleMessage("優先通貨を選択します"),
