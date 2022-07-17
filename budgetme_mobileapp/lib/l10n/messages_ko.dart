@@ -64,6 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "next" : MessageLookupByLibrary.simpleMessage("다음"),
     "noResults" : MessageLookupByLibrary.simpleMessage("결과가 없습니다"),
     "noTransactions" : MessageLookupByLibrary.simpleMessage("아직 거래되지 않았습니다 ... 아직!"),
+    "outOfTime" : MessageLookupByLibrary.simpleMessage("시간 중!"),
     "pleaseEnterLess" : m1,
     "pleaseNote" : MessageLookupByLibrary.simpleMessage("주간 지출을 늘리면 목표를 달성하기가 더 어려워지고 낙담합니다."),
     "prefCurr" : MessageLookupByLibrary.simpleMessage("선호하는 통화를 선택하십시오"),
