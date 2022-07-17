@@ -25,7 +25,6 @@ import 'package:flutter/material.dart';
 // Package imports:
 import 'package:currency_picker/currency_picker.dart';
 import 'package:intl/intl.dart' as intl;
-import 'package:intl/intl.dart';
 
 // Project imports:
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
@@ -33,7 +32,7 @@ import 'package:budgetme/src/models/goal.dart';
 
 const String kAppTitle = 'BudgetMe';
 
-const String kAppVersionNumber = 'v1.0.6 (7)';
+const String kAppVersionNumber = 'v1.0.8 (9)';
 
 const String kFontFamily = 'Inter';
 
@@ -112,4 +111,4 @@ extension DarkMode on BuildContext {
 }
 
 bool get localeIsEn => Platform.localeName.substring(0, 2) == 'en';
-bool isRTL(BuildContext context) => Directionality.of(context) == TextDirection.RTL;
+bool isRTL(BuildContext context) => Directionality.of(context) == TextDirection.rtl;
