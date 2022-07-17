@@ -67,7 +67,7 @@ class MonthlySavingsCard extends ConsumerWidget {
                         TextSpan(
                           children: [
                             TextSpan(
-                              text: '${currency + remainingBalance}',
+                              text: currency + remainingBalance,
                               style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w600),
                             ),
                             TextSpan(
@@ -75,7 +75,7 @@ class MonthlySavingsCard extends ConsumerWidget {
                               style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                             ),
                             TextSpan(
-                              text: '${currency + balance}',
+                              text: currency + balance,
                               style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                             ),
                           ],
@@ -108,7 +108,7 @@ class MonthlySavingsCard extends ConsumerWidget {
                   ),
                 ],
               ),
-              Divider(height: 15),
+              const Divider(height: 15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
