@@ -1,6 +1,6 @@
 {
   "@@locale": "ar",
-  "@@last_modified": "2022-07-12T21:04:38.176040",
+  "@@last_modified": "2022-07-14T23:36:16.179183",
   "dashboard": "لوحة القيادة",
   "@dashboard": {
     "type": "Text"
@@ -281,6 +281,10 @@
   },
   "startNewGoal": "ابدأ هدفًا جديدًا",
   "@startNewGoal": {
+    "type": "Text"
+  },
+  "outOfTime": "منتهي!",
+  "@outOfTime": {
     "type": "Text"
   }
 }
