@@ -51,7 +51,7 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
     super.initState();
 
     _currentTime = DateTime.now();
-    _timer = Timer.periodic(Duration(seconds: 1), _onTimeChange);
+    _timer = Timer.periodic(const Duration(seconds: 1), _onTimeChange);
   }
 
   @override
@@ -106,6 +106,13 @@ class _TimeLeftCardState extends ConsumerState<TimeLeftCard> {
                 style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: kSmallPadding),
+              if (DateTime.now().isAfter(widget.goal.deadline))
+                Center(
+                  child: Text(
+                    BudgetMeLocalizations.of(context)!.outOfTime,
+                    style: Theme.of(context).textTheme.bodyText1,
+                  ),
+                ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
