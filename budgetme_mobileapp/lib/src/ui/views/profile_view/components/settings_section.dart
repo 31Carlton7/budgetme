@@ -53,14 +53,14 @@ class SettingsSection extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) {
-                    return AdjustMonthlySpendingLimitView();
+                    return const AdjustMonthlySpendingLimitView();
                   }),
                 );
               },
               child: Container(
                 padding: const EdgeInsets.all(kDefaultPadding),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(kDefaultBorderRadius)),
+                  borderRadius: const BorderRadius.vertical(top: Radius.circular(kDefaultBorderRadius)),
                   color: Theme.of(context).cardColor,
                 ),
                 child: Row(
@@ -73,20 +73,18 @@ class SettingsSection extends StatelessWidget {
                     Transform(
                       alignment: Alignment.center,
                       transform: Matrix4.rotationY(isRTL(context) ? math.pi : 0),
-                      child: Container(
-                        child: HeroIcon(
-                          HeroIcons.chevronRight,
-                          size: 21,
-                          solid: true,
-                          color: Theme.of(context).colorScheme.secondaryContainer,
-                        ),
+                      child: HeroIcon(
+                        HeroIcons.chevronRight,
+                        size: 21,
+                        solid: true,
+                        color: Theme.of(context).colorScheme.secondaryContainer,
                       ),
                     ),
                   ],
                 ),
               ),
             ),
-            Divider(height: 0),
+            const Divider(height: 0),
             GestureDetector(
               onTap: () async {
                 final link = Uri.parse('https://budgetme.co/#/about');
@@ -109,13 +107,11 @@ class SettingsSection extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                     ),
                     GestureDetector(
-                      child: Container(
-                        child: HeroIcon(
-                          HeroIcons.externalLink,
-                          size: 21,
-                          solid: true,
-                          color: Theme.of(context).colorScheme.secondaryContainer,
-                        ),
+                      child: HeroIcon(
+                        HeroIcons.externalLink,
+                        size: 21,
+                        solid: true,
+                        color: Theme.of(context).colorScheme.secondaryContainer,
                       ),
                     ),
                   ],
@@ -143,13 +139,11 @@ class SettingsSection extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                     ),
                     GestureDetector(
-                      child: Container(
-                        child: HeroIcon(
-                          HeroIcons.externalLink,
-                          size: 21,
-                          solid: true,
-                          color: Theme.of(context).colorScheme.secondaryContainer,
-                        ),
+                      child: HeroIcon(
+                        HeroIcons.externalLink,
+                        size: 21,
+                        solid: true,
+                        color: Theme.of(context).colorScheme.secondaryContainer,
                       ),
                     ),
                   ],
@@ -170,7 +164,7 @@ class SettingsSection extends StatelessWidget {
                 padding: const EdgeInsets.only(
                     top: kSmallPadding, bottom: kDefaultPadding, left: kDefaultPadding, right: kDefaultPadding),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.vertical(bottom: Radius.circular(kDefaultBorderRadius)),
+                  borderRadius: const BorderRadius.vertical(bottom: Radius.circular(kDefaultBorderRadius)),
                   color: Theme.of(context).cardColor,
                 ),
                 child: Row(
@@ -181,13 +175,11 @@ class SettingsSection extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
                     ),
                     GestureDetector(
-                      child: Container(
-                        child: HeroIcon(
-                          HeroIcons.externalLink,
-                          size: 21,
-                          solid: true,
-                          color: Theme.of(context).colorScheme.secondaryContainer,
-                        ),
+                      child: HeroIcon(
+                        HeroIcons.externalLink,
+                        size: 21,
+                        solid: true,
+                        color: Theme.of(context).colorScheme.secondaryContainer,
                       ),
                     ),
                   ],
