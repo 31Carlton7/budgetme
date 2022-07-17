@@ -60,6 +60,7 @@ class AddMoneyButton extends ConsumerWidget {
         onPressed: () async {
           HapticFeedback.mediumImpact();
 
+          // Awaits result of bottom sheet to check if the goal has been completed
           var glComplete = await showAddMoneyBottomSheet(context, _goal);
 
           if (glComplete) {
