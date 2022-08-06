@@ -20,12 +20,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:async';
 
 // Flutter imports:
+import 'package:budgetme/src/config/device_preview_screenshot_helper.dart';
+import 'package:budgetme/src/repositories/pro_user_repository.dart';
+import 'package:device_preview_screenshot/device_preview_screenshot.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 // Package imports:
-import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -46,21 +48,25 @@ import 'package:budgetme/src/providers/theme_provider.dart';
 import 'package:budgetme/src/services/notification_service.dart';
 import 'package:budgetme/src/ui/views/dashboard_view/dashboard_view.dart';
 
+final bmNavigatorKey = GlobalKey<NavigatorState>();
+
 void main() async {
   /// Catches all occuring errors in app
   runZonedGuarded<Future<void>>(() async {
     WidgetsFlutterBinding.ensureInitialized();
 
     await Firebase.initializeApp();
-    MobileAds.instance.initialize();
-    MobileAds.instance
-        .updateRequestConfiguration(RequestConfiguration(testDeviceIds: ['24dd1932493cb289284c0d8588b2077b']));
+    if (!ProUserRepository().proUser) {
+      MobileAds.instance.initialize();
+      MobileAds.instance
+          .updateRequestConfiguration(RequestConfiguration(testDeviceIds: ['24dd1932493cb289284c0d8588b2077b']));
+    }
 
     /// Initiate Hive local DB.
     await Hive.initFlutter();
     await Hive.openBox('budgetme');
 
-    if (kDebugMode) {
+    if (!kReleaseMode) {
       // await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(false);
     } else {
       FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
@@ -72,7 +78,26 @@ void main() async {
     final localDir = await getApplicationDocumentsDirectory();
     generalGoalImagePath = localDir.path;
 
-    runApp(const ProviderScope(child: BudgetMe()));
+    /// Device Preview makes it easier to do the store screenshots
+    /// process.
+    ///
+    /// Set `enabled: !kReleaseMode => enabled: false` if you want to
+    /// remove the toolbar and use the app regularly
+    runApp(
+      DevicePreview(
+        enabled: !kReleaseMode, // This line
+        devices: screenshotDevices,
+        availableLocales: supportedLocales,
+        tools: const [
+          DeviceSection(),
+          SystemSection(),
+          DevicePreviewScreenshot(onScreenshot: onScreenshot, multipleScreenshots: true),
+        ],
+        builder: (context) {
+          return const ProviderScope(child: BudgetMe());
+        },
+      ),
+    );
 
     /// Sends all caught errors to firebase.
   }, (error, stack) async {
@@ -113,7 +138,9 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
       splitScreenMode: true,
       builder: (context, child) {
         final repo = ref.watch(themeProvider);
+
         return MaterialApp(
+          useInheritedMediaQuery: !kReleaseMode,
           debugShowCheckedModeBanner: false,
           title: kAppTitle,
           themeMode: repo.themeMode,
@@ -121,38 +148,8 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
           darkTheme: darkTheme(),
           home: const DashboardView(),
           localizationsDelegates: BudgetMeLocalizations.localizationsDelegates,
-          supportedLocales: const [
-            Locale('en', ''),
-            Locale('es', ''),
-            Locale('ja', ''),
-            Locale('ko', ''),
-            Locale('ru', ''),
-            Locale('zh', ''),
-            Locale('ar', ''),
-            Locale('pt', ''),
-            Locale('fr', ''),
-            Locale('de', ''),
-            Locale('he', ''),
-          ],
-          builder: (context, child) {
-            return MediaQuery(
-              data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
-              child: GestureDetector(
-                onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
-                child: Navigator(
-                  observers: [FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance)],
-                  onGenerateRoute: (settings) {
-                    return MaterialPageRoute(
-                      settings: settings,
-                      builder: (context) {
-                        return child!;
-                      },
-                    );
-                  },
-                ),
-              ),
-            );
-          },
+          supportedLocales: supportedLocales,
+          builder: DevicePreview.appBuilder,
         );
       },
     );
