@@ -36,7 +36,7 @@ If you would like to use the app via TestFlight or Google Play Beta, you can dow
 
 TestFlight: [https://testflight.apple.com/join/7vWnoWaD](https://testflight.apple.com/join/7vWnoWaD)
 
-Google Play Beta: [https://play.google.com/store/apps/details?id=com.elisha.app](https://play.google.com/store/apps/details?id=com.elisha.app)
+Google Play Beta: [https://play.google.com/apps/testing/co.budgetme.savings.app](https://play.google.com/apps/testing/co.budgetme.savings.app)
 
 ## Screenshots
 
