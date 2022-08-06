@@ -17,6 +17,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Flutter imports:
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -55,7 +56,7 @@ class AddGoalButton extends ConsumerWidget {
 
           final goals = ref.read(goalRepositoryProvider);
 
-          if (goals.length >= 2 /* && if they don't have Pro */) {
+          if (goals.length >= 2 && !ref.read(proUserRepositoryProvider).proUser) {
             return showPurchaseProBottomSheet(context);
           } else {
             return showCreateGoalView(context);
