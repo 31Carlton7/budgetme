@@ -32,7 +32,7 @@ import 'package:budgetme/src/models/goal.dart';
 
 const String kAppTitle = 'BudgetMe';
 
-const String kAppVersionNumber = 'v1.0.8 (9)';
+const String kAppVersionNumber = 'v1.0.12 (13)';
 
 const String kFontFamily = 'Inter';
 
@@ -112,3 +112,17 @@ extension DarkMode on BuildContext {
 
 bool get localeIsEn => Platform.localeName.substring(0, 2) == 'en';
 bool isRTL(BuildContext context) => Directionality.of(context) == TextDirection.rtl;
+
+const supportedLocales = <Locale>[
+  Locale('en', ''),
+  Locale('es', ''),
+  Locale('ja', ''),
+  Locale('ko', ''),
+  Locale('ru', ''),
+  Locale('zh', ''),
+  Locale('ar', ''),
+  Locale('pt', ''),
+  Locale('fr', ''),
+  Locale('de', ''),
+  Locale('he', ''),
+];
