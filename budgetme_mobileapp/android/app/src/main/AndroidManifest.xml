@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.budgetme.savings.app">
+    <uses-permission android:name="android.permission.INTERNET" /> 
    <application
         android:label="BudgetMe"
         android:name="${applicationName}"
@@ -31,6 +32,10 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6026970342993334~5663365302"/>
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="true" />
 </manifest>
