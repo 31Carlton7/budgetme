@@ -18,6 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 // Flutter imports:
 import 'package:budgetme/src/providers/ad_state_provider.dart';
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -97,7 +98,7 @@ class _AddMoneyViewState extends ConsumerState<AddMoneyView> {
         },
         onAdFailedToLoad: (LoadAdError error) {
           // ignore: avoid_print
-          print('InterstitialAd failed to load: $error');
+          // print('InterstitialAd failed to load: $error');
         },
       ),
     );
@@ -106,8 +107,9 @@ class _AddMoneyViewState extends ConsumerState<AddMoneyView> {
   @override
   void initState() {
     super.initState();
-
-    _initAd();
+    if (!ref.read(proUserRepositoryProvider).proUser) {
+      _initAd();
+    }
 
     goal = widget.goal;
 
@@ -367,8 +369,8 @@ class _AddMoneyViewState extends ConsumerState<AddMoneyView> {
                           glComplete = goal.currentAmount == goal.requiredAmount;
 
                           // If they don't have pro, show ad
-                          if (_isAdLoaded) {
-                            // await _interstitialAd.show();
+                          if (!ref.read(proUserRepositoryProvider).proUser && _isAdLoaded) {
+                            await _interstitialAd.show();
                           }
 
                           Navigator.pop(context);

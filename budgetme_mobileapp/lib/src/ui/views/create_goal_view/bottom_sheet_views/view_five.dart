@@ -21,6 +21,7 @@ import 'dart:io';
 
 // Flutter imports:
 import 'package:budgetme/src/providers/ad_state_provider.dart';
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:budgetme/src/providers/unsplash_service_provider.dart';
 import 'package:flutter/material.dart';
 
@@ -249,8 +250,8 @@ class _CGViewFiveState extends ConsumerState<CGViewFive> {
                             }
 
                             // If they don't have pro, show ad
-                            if (_isAdLoaded) {
-                              // await _interstitialAd.show();
+                            if (!ref.read(proUserRepositoryProvider).proUser && _isAdLoaded) {
+                              await _interstitialAd.show();
                             }
 
                             cgViewDone = true;
