@@ -66,34 +66,36 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
     final _mth = tz.TZDateTime.now(tz.local);
     final month = Jiffy(_mth).MMMM;
 
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const PurchaseProCard(),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
-          child: Text(
-            BudgetMeLocalizations.of(context)!.statistics(month).toCamelCase(),
-            style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const PurchaseProCard(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
+            child: Text(
+              BudgetMeLocalizations.of(context)!.statistics(month).toCamelCase(),
+              style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
+            ),
           ),
-        ),
-        const MonthlySavingsCard(),
-        Padding(
-          padding: const EdgeInsets.only(left: kDefaultPadding * 2, right: kDefaultPadding * 2, top: kMediumPadding),
-          child: Text(
-            BudgetMeLocalizations.of(context)!.settings,
-            style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
+          const MonthlySavingsCard(),
+          Padding(
+            padding: const EdgeInsets.only(left: kDefaultPadding * 2, right: kDefaultPadding * 2, top: kMediumPadding),
+            child: Text(
+              BudgetMeLocalizations.of(context)!.settings,
+              style: Theme.of(context).textTheme.headline5?.copyWith(fontSize: 18, fontWeight: FontWeight.w600),
+            ),
           ),
-        ),
-        const SettingsSection(),
-        Center(
-          child: Text(
-            BudgetMeLocalizations.of(context)!.version(kAppVersionNumber),
-            style: Theme.of(context).textTheme.bodyText2?.copyWith(fontWeight: FontWeight.w500),
+          const SettingsSection(),
+          Center(
+            child: Text(
+              BudgetMeLocalizations.of(context)!.version(kAppVersionNumber),
+              style: Theme.of(context).textTheme.bodyText2?.copyWith(fontWeight: FontWeight.w500),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
