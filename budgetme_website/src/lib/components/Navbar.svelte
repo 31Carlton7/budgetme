@@ -15,7 +15,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-
 <script lang="ts">
   import Logo from './Logo.svelte';
 
@@ -70,15 +69,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       Privacy Policy
     </a>
   </nav>
-
-  <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-    <a
-      href="/"
-      class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-6 py-2.5 border-transparent rounded-full text-base font-medium text-white bg-gradient-to-b from-primary-500 to-primary-600"
-    >
-      Download
-    </a>
-  </div>
 
   <!--Mobile Menu-->
   <div
