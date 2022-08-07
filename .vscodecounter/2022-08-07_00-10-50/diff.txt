@@ -1,0 +1,53 @@
+Date : 2022-08-07 00:10:50
+Directory : /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme
+Total : 11 files,  611 codes, -2 comments, 34 blanks, all 643 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Markdown |          4 |        578 |          0 |         26 |        604 |
+| Dart     |          4 |         30 |         -2 |          8 |         36 |
+| JSON     |          1 |          1 |          0 |          0 |          1 |
+| YAML     |          1 |          1 |          0 |          0 |          1 |
+| XML      |          1 |          1 |          0 |          0 |          1 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                         | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                            |         11 |        611 |         -2 |         34 |        643 |
+| .vscodecounter                                                                                                                               |          5 |        579 |          0 |         26 |        605 |
+| .vscodecounter/2022-08-06_01-41-55                                                                                                           |          5 |        579 |          0 |         26 |        605 |
+| budgetme_mobileapp                                                                                                                           |          6 |         32 |         -2 |          8 |         38 |
+| budgetme_mobileapp/android                                                                                                                   |          1 |          1 |          0 |          0 |          1 |
+| budgetme_mobileapp/android/app                                                                                                               |          1 |          1 |          0 |          0 |          1 |
+| budgetme_mobileapp/android/app/src                                                                                                           |          1 |          1 |          0 |          0 |          1 |
+| budgetme_mobileapp/android/app/src/main                                                                                                      |          1 |          1 |          0 |          0 |          1 |
+| budgetme_mobileapp/lib                                                                                                                       |          4 |         30 |         -2 |          8 |         36 |
+| budgetme_mobileapp/lib/src                                                                                                                   |          3 |        -27 |         -7 |         -9 |        -43 |
+| budgetme_mobileapp/lib/src/repositories                                                                                                      |          1 |          2 |          0 |          1 |          3 |
+| budgetme_mobileapp/lib/src/ui                                                                                                                |          2 |        -29 |         -7 |        -10 |        -46 |
+| budgetme_mobileapp/lib/src/ui/components                                                                                                     |          1 |        -62 |         -7 |        -11 |        -80 |
+| budgetme_mobileapp/lib/src/ui/views                                                                                                          |          1 |         33 |          0 |          1 |         34 |
+| budgetme_mobileapp/lib/src/ui/views/profile_view                                                                                             |          1 |         33 |          0 |          1 |         34 |
++----------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                                                     | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/.vscodecounter/2022-08-06_01-41-55/details.md                                | Markdown |        264 |          0 |          6 |        270 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/.vscodecounter/2022-08-06_01-41-55/diff-details.md                           | Markdown |        103 |          0 |          6 |        109 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/.vscodecounter/2022-08-06_01-41-55/diff.md                                   | Markdown |         77 |          0 |          7 |         84 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/.vscodecounter/2022-08-06_01-41-55/results.json                              | JSON     |          1 |          0 |          0 |          1 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/.vscodecounter/2022-08-06_01-41-55/results.md                                | Markdown |        134 |          0 |          7 |        141 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/android/app/src/main/AndroidManifest.xml                  | XML      |          1 |          0 |          0 |          1 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/main.dart                                             | Dart     |         57 |          5 |         17 |         79 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/repositories/pro_user_repository.dart             | Dart     |          2 |          0 |          1 |          3 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/ui/components/show_purchase_pro_bottom_sheet.dart | Dart     |        -62 |         -7 |        -11 |        -80 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/lib/src/ui/views/profile_view/profile_view.dart           | Dart     |         33 |          0 |          1 |         34 |
+| /Users/carltonaikins/Desktop/Home/Programming/projects/budgetme/budgetme_mobileapp/pubspec.yaml                                              | YAML     |          1 |          0 |          0 |          1 |
+| Total                                                                                                                                        |          |        611 |         -2 |         34 |        643 |
++----------------------------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
