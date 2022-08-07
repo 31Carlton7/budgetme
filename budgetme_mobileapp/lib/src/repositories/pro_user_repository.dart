@@ -1,4 +1,7 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:hive_flutter/hive_flutter.dart';
 
 class ProUserRepository extends ChangeNotifier {
