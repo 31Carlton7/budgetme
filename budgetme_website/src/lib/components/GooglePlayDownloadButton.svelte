@@ -16,6 +16,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
-<a href="/" class="px-2">
+<a
+  href="https://play.google.com/store/apps/details?id=co.budgetme.savings.app"
+  target="_blank"
+  class="px-2"
+>
   <img src="images/google_play_download_button.png" alt="" width="175" /></a
 >
