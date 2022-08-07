@@ -17,7 +17,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Flutter imports:
-import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -30,6 +29,7 @@ import 'package:heroicons/heroicons.dart';
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/providers/goal_repository_provider.dart';
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
 import 'package:budgetme/src/ui/components/show_purchase_pro_bottom_sheet.dart';
