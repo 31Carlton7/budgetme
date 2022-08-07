@@ -17,7 +17,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Flutter imports:
-import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -38,6 +37,7 @@ import 'package:budgetme/src/providers/unsplash_service_provider.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/close_button.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
+import 'package:budgetme/src/ui/views/create_goal_view/create_goal_view.dart';
 
 Future<Goal> showImageSelectionBottomSheet(BuildContext context, Goal goal) async {
   Future<Goal> _btmSheet = showCupertinoModalBottomSheet<Goal>(
