@@ -20,16 +20,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:async';
 
 // Flutter imports:
-import 'package:budgetme/src/config/device_preview_screenshot_helper.dart';
-import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
-import 'package:budgetme/src/repositories/pro_user_repository.dart';
-import 'package:budgetme/src/ui/components/show_purchase_pro_bottom_sheet.dart';
-import 'package:device_preview_screenshot/device_preview_screenshot.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 // Package imports:
+import 'package:device_preview_screenshot/device_preview_screenshot.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
@@ -42,14 +38,18 @@ import 'package:path_provider/path_provider.dart';
 
 // Project imports:
 import 'package:budgetme/src/config/constants.dart';
+import 'package:budgetme/src/config/device_preview_screenshot_helper.dart';
 import 'package:budgetme/src/config/themes/dark_theme/dark_theme.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_theme.dart';
 import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:budgetme/src/providers/balance_repository_provider.dart';
 import 'package:budgetme/src/providers/goal_repository_provider.dart';
 import 'package:budgetme/src/providers/notification_service_provider.dart';
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:budgetme/src/providers/theme_provider.dart';
+import 'package:budgetme/src/repositories/pro_user_repository.dart';
 import 'package:budgetme/src/services/notification_service.dart';
+import 'package:budgetme/src/ui/components/show_purchase_pro_bottom_sheet.dart';
 import 'package:budgetme/src/ui/views/dashboard_view/dashboard_view.dart';
 
 final bmNavigatorKey = GlobalKey<NavigatorState>();
