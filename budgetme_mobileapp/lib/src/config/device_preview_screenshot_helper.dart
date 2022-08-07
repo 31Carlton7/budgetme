@@ -38,9 +38,9 @@ Future<void> onScreenshot(BuildContext context, DeviceScreenshot screenshot) asy
   }
 
   final message = 'mv ${file.parent.path}/*.png ~/Desktop';
-  if (!kReleaseMode) {
-    print(message);
-  }
+  // ignore: avoid_print
+  if (!kReleaseMode) print(message);
+
   await Clipboard.setData(
     ClipboardData(text: 'mv ${file.parent.path}/*.png ~/Desktop'),
   );
