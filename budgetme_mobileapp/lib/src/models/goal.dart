@@ -20,13 +20,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:convert';
 
 // Flutter imports:
-import 'package:budgetme/src/config/constants.dart';
 import 'package:flutter/foundation.dart';
 
 // Package imports:
 import 'package:currency_picker/currency_picker.dart';
 
 // Project imports:
+import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/models/transaction.dart';
 
 class Goal {
