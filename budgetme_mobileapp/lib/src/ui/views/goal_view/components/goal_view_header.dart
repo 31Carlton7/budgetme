@@ -26,13 +26,13 @@ import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:heroicons/heroicons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 // Project imports:
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/ui/components/show_goal_settings_bottom_sheet.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 // ignore: non_constant_identifier_names
 List<Widget> GoalViewHeader(BuildContext context, void Function(void Function()) setState, Goal goal) {
