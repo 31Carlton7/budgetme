@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-class ProUserRepository {
+class ProUserRepository extends ChangeNotifier {
   bool _proUser = false;
 
   bool get proUser => _proUser;
@@ -11,6 +12,8 @@ class ProUserRepository {
     _proUser = true;
 
     await box.put('pro_user', _proUser);
+
+    notifyListeners();
   }
 
   void loadData() {

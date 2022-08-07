@@ -19,7 +19,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 // Flutter imports:
 import 'dart:async';
 
-import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
@@ -74,44 +73,10 @@ class _PurchaseProViewState extends ConsumerState<PurchaseProView> {
   /// Products for sale
   List<ProductDetails> _products = [];
 
-  /// Past purchases
-  List<PurchaseDetails> _purchaseDetails = [];
-
-  /// Updates to purchases
-  late StreamSubscription<List<PurchaseDetails>> _subscription;
-
-  bool proUser = false;
-
   @override
   void initState() {
     _initialize();
     super.initState();
-  }
-
-  void _initialize() async {
-    _available = await _iap.isAvailable();
-
-    if (_available) {
-      await _getProducts();
-
-      // List<Future> futures = [_getProducts(), _getPastPurchases()];
-      // await Future.wait(futures);
-
-      _verifyPurchase();
-
-      _subscription = _iap.purchaseStream.listen((data) {
-        _listenToPurchaseUpdated(data);
-
-        setState(() {
-          _purchaseDetails = data;
-          ref.read(proUserRepositoryProvider).setProUser();
-        });
-      }, onDone: () {
-        _subscription.cancel();
-      }, onError: (error) {
-        // handle error here.
-      });
-    }
   }
 
   Future<void> _getProducts() async {
@@ -123,33 +88,11 @@ class _PurchaseProViewState extends ConsumerState<PurchaseProView> {
     });
   }
 
-  void _listenToPurchaseUpdated(List<PurchaseDetails> purchaseDetailsList) async {
-    for (var purchaseDetails in purchaseDetailsList) {
-      if (purchaseDetails.status == PurchaseStatus.pending) {
-        // _showPendingUI();
-      } else {
-        if (purchaseDetails.status == PurchaseStatus.error) {
-          // _handleError(purchaseDetails.error!);
-        } else if (purchaseDetails.status == PurchaseStatus.purchased ||
-            purchaseDetails.status == PurchaseStatus.restored) {
-          _verifyPurchase();
-        }
-        if (purchaseDetails.pendingCompletePurchase) {
-          await _iap.completePurchase(purchaseDetails);
-        }
-      }
-    }
-  }
+  void _initialize() async {
+    _available = await _iap.isAvailable();
 
-  PurchaseDetails _hasPurchased(String productId) {
-    return _purchaseDetails.firstWhere((element) => element.productID == productId);
-  }
-
-  void _verifyPurchase() {
-    PurchaseDetails purchase = _hasPurchased(budgetmeProID);
-
-    if (purchase.status == PurchaseStatus.purchased) {
-      proUser = true;
+    if (_available) {
+      await _getProducts();
     }
   }
 
@@ -182,38 +125,38 @@ class _PurchaseProViewState extends ConsumerState<PurchaseProView> {
               ),
             ],
           ),
-          body: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const SizedBox(height: 100),
-              Container(
-                height: 160,
-                width: 160,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(image: AssetImage(kAppIcon)),
+          body: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const SizedBox(height: 50),
+                Container(
+                  height: 160,
+                  width: 160,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(image: AssetImage(kAppIcon)),
+                  ),
                 ),
-              ),
-              const SizedBox(height: kSmallPadding),
-              Text(
-                'Pro',
-                style: Theme.of(context).textTheme.headline1,
-              ),
-              const SizedBox(height: kSmallPadding),
-              Text(
-                BudgetMeLocalizations.of(context)!.unlimitedGoals,
-                style: Theme.of(context).textTheme.headline5?.copyWith(fontWeight: FontWeight.w500),
-              ),
-              const SizedBox(height: kDefaultPadding * 2),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                child: Text(
-                  BudgetMeLocalizations.of(context)!.unlockText('2.99 USD'),
-                  style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w500),
+                const SizedBox(height: kSmallPadding),
+                Text(
+                  'Pro',
+                  style: Theme.of(context).textTheme.headline1,
                 ),
-              ),
-              Expanded(
-                child: Align(
+                const SizedBox(height: kSmallPadding),
+                Text(
+                  BudgetMeLocalizations.of(context)!.unlimitedGoals,
+                  style: Theme.of(context).textTheme.headline5?.copyWith(fontWeight: FontWeight.w500),
+                ),
+                const SizedBox(height: kDefaultPadding * 2),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  child: Text(
+                    BudgetMeLocalizations.of(context)!.unlockText('2.99 USD'),
+                    style: Theme.of(context).textTheme.headline6?.copyWith(fontWeight: FontWeight.w500),
+                  ),
+                ),
+                Align(
                   alignment: Alignment.center,
                   child: Padding(
                     padding: const EdgeInsets.only(left: 23.0, right: 24, bottom: kDefaultPadding * 2),
@@ -239,35 +182,12 @@ class _PurchaseProViewState extends ConsumerState<PurchaseProView> {
                           ),
                         ),
                         const SizedBox(height: kDefaultPadding * 2),
-                        GestureDetector(
-                          onTap: () async {
-                            await _iap.restorePurchases();
-                          },
-                          child: Container(
-                            margin: const EdgeInsets.symmetric(horizontal: kDefaultPadding, vertical: kSmallPadding),
-                            decoration: BoxDecoration(
-                              boxShadow: cardBoxShadow,
-                              color: Theme.of(context).cardColor,
-                              borderRadius: BorderRadius.circular(kDefaultBorderRadius),
-                            ),
-                            padding: const EdgeInsets.all(kDefaultPadding),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  'Restore Purchases',
-                                  style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
                       ],
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

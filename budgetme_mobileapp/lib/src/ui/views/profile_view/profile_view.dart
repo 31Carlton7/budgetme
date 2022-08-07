@@ -17,10 +17,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Flutter imports:
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
+import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:timezone/timezone.dart' as tz;
 
@@ -41,6 +44,8 @@ class ProfileView extends ConsumerStatefulWidget {
 }
 
 class _ProfileViewState extends ConsumerState<ProfileView> {
+  final _iap = InAppPurchase.instance;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +76,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const PurchaseProCard(),
+          ref.read(proUserRepositoryProvider).proUser ? Container() : const PurchaseProCard(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding * 2),
             child: Text(
@@ -88,9 +93,38 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
             ),
           ),
           const SettingsSection(),
+          GestureDetector(
+            onTap: () async {
+              await _iap.restorePurchases();
+            },
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: kDefaultPadding, vertical: kSmallPadding),
+              decoration: BoxDecoration(
+                boxShadow: cardBoxShadow,
+                color: Theme.of(context).cardColor,
+                borderRadius: BorderRadius.circular(kDefaultBorderRadius),
+              ),
+              padding: const EdgeInsets.all(kDefaultPadding),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Restore Purchases',
+                    style: Theme.of(context).textTheme.bodyText1?.copyWith(fontWeight: FontWeight.w600),
+                  ),
+                ],
+              ),
+            ),
+          ),
           Center(
             child: Text(
               BudgetMeLocalizations.of(context)!.version(kAppVersionNumber),
+              style: Theme.of(context).textTheme.bodyText2?.copyWith(fontWeight: FontWeight.w500),
+            ),
+          ),
+          Center(
+            child: Text(
+              'BudgetMe Pro',
               style: Theme.of(context).textTheme.bodyText2?.copyWith(fontWeight: FontWeight.w500),
             ),
           ),

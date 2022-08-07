@@ -21,7 +21,9 @@ import 'dart:async';
 
 // Flutter imports:
 import 'package:budgetme/src/config/device_preview_screenshot_helper.dart';
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:budgetme/src/repositories/pro_user_repository.dart';
+import 'package:budgetme/src/ui/components/show_purchase_pro_bottom_sheet.dart';
 import 'package:device_preview_screenshot/device_preview_screenshot.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -30,10 +32,12 @@ import 'package:flutter/services.dart';
 // Package imports:
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:path_provider/path_provider.dart';
 
 // Project imports:
@@ -56,11 +60,6 @@ void main() async {
     WidgetsFlutterBinding.ensureInitialized();
 
     await Firebase.initializeApp();
-    if (!ProUserRepository().proUser) {
-      MobileAds.instance.initialize();
-      MobileAds.instance
-          .updateRequestConfiguration(RequestConfiguration(testDeviceIds: ['24dd1932493cb289284c0d8588b2077b']));
-    }
 
     /// Initiate Hive local DB.
     await Hive.initFlutter();
@@ -94,7 +93,7 @@ void main() async {
           DevicePreviewScreenshot(onScreenshot: onScreenshot, multipleScreenshots: true),
         ],
         builder: (context) {
-          return const ProviderScope(child: BudgetMe());
+          return Phoenix(child: const ProviderScope(child: BudgetMe()));
         },
       ),
     );
@@ -113,14 +112,39 @@ class BudgetMe extends ConsumerStatefulWidget {
 }
 
 class _BudgetMeState extends ConsumerState<BudgetMe> {
+  /// IAP Plugin Interface
+  final _iap = InAppPurchase.instance;
+
+  /// Updates to purchases
+  late StreamSubscription<List<PurchaseDetails>> _subscription;
+
+  /// Past purchases
+  List<PurchaseDetails> _purchaseDetails = [];
+
+  /// Is the API available on the device
+  bool _available = true;
+
+  /// Pro User
+  bool proUser = ProUserRepository().proUser;
+
   @override
   void initState() {
     super.initState();
+
     _loadData();
+
+    final proUser = ref.read(proUserRepositoryProvider).proUser;
+
+    if (!proUser) {
+      _startAdMob();
+    }
+
+    _startIAP();
     _startNotifications();
   }
 
   void _loadData() async {
+    ref.read(proUserRepositoryProvider).loadData();
     ref.read(goalRepositoryProvider.notifier).loadData();
     await ref.read(balanceRepositoryProvider).loadData();
   }
@@ -128,6 +152,61 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
   void _startNotifications() async {
     await NotificationService.init(initScheduled: true);
     await ref.read(notificationServiceProvider).showScheduledNotification();
+  }
+
+  void _startIAP() async {
+    _available = await _iap.isAvailable();
+
+    if (_available) {
+      _subscription = _iap.purchaseStream.listen((data) {
+        if (mounted) {
+          setState(() {
+            _purchaseDetails = data;
+          });
+        }
+
+        _listenToPurchaseUpdated(data);
+      }, onDone: () {
+        _subscription.cancel();
+      }, onError: (error) {
+        FirebaseCrashlytics.instance.recordError(error, null);
+      });
+    }
+  }
+
+  void _startAdMob() {
+    MobileAds.instance.initialize();
+    if (!kReleaseMode) {
+      MobileAds.instance
+          .updateRequestConfiguration(RequestConfiguration(testDeviceIds: ['24dd1932493cb289284c0d8588b2077b']));
+    }
+  }
+
+  void _listenToPurchaseUpdated(List<PurchaseDetails> purchaseDetailsList) async {
+    for (var purchaseDetails in purchaseDetailsList) {
+      if (purchaseDetails.status == PurchaseStatus.error) {
+        FirebaseCrashlytics.instance.recordError(purchaseDetails.error, null);
+      } else if (purchaseDetails.status == PurchaseStatus.purchased ||
+          purchaseDetails.status == PurchaseStatus.restored) {
+        _verifyPurchase();
+        ref.read(proUserRepositoryProvider).setProUser();
+        Phoenix.rebirth(context);
+      } else if (purchaseDetails.pendingCompletePurchase) {
+        await _iap.completePurchase(purchaseDetails);
+      }
+    }
+  }
+
+  PurchaseDetails _hasPurchased(String productId) {
+    return _purchaseDetails.firstWhere((element) => element.productID == productId);
+  }
+
+  void _verifyPurchase() {
+    PurchaseDetails purchase = _hasPurchased(budgetmeProID);
+
+    if (purchase.status == PurchaseStatus.purchased) {
+      proUser = true;
+    }
   }
 
   @override
