@@ -16,6 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 
-<a href="/" class="px-2">
+<a href="/" class="px-2" target="_blank">
   <img src="images/app_store_download_button.png" alt="" width="175" /></a
 >
