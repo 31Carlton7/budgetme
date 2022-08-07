@@ -16,8 +16,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+// Project imports:
 import 'package:budgetme/src/services/ad_state.dart';
 
 final adStateProvider = Provider<AdState>((ref) {
