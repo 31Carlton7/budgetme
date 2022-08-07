@@ -17,8 +17,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Flutter imports:
-import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
-import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
@@ -31,7 +29,9 @@ import 'package:timezone/timezone.dart' as tz;
 import 'package:budgetme/src/config/constants.dart';
 import 'package:budgetme/src/config/extensions.dart';
 import 'package:budgetme/src/lang/budgetme_localizations.dart';
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:budgetme/src/ui/components/back_button.dart';
+import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/monthly_savings_card.dart';
 import 'package:budgetme/src/ui/views/profile_view/components/purchase_pro_card.dart';
 import 'package:budgetme/src/ui/views/profile_view/components/settings_section.dart';
