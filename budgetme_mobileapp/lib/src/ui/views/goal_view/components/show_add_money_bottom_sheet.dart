@@ -17,8 +17,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 // Flutter imports:
-import 'package:budgetme/src/providers/ad_state_provider.dart';
-import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -38,8 +36,10 @@ import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart'
 import 'package:budgetme/src/lang/budgetme_localizations.dart';
 import 'package:budgetme/src/models/goal.dart';
 import 'package:budgetme/src/models/transaction.dart';
+import 'package:budgetme/src/providers/ad_state_provider.dart';
 import 'package:budgetme/src/providers/balance_repository_provider.dart';
 import 'package:budgetme/src/providers/goal_repository_provider.dart';
+import 'package:budgetme/src/providers/pro_user_repository_provider.dart';
 import 'package:budgetme/src/ui/components/box_shadow.dart';
 import 'package:budgetme/src/ui/components/close_button.dart';
 import 'package:budgetme/src/ui/components/primary_button.dart';
