@@ -20,6 +20,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import 'dart:async';
 
 // Flutter imports:
+import 'package:budgetme/src/config/themes/light_theme/light_color_palette.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -29,6 +30,7 @@ import 'package:device_preview_screenshot/device_preview_screenshot.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -137,9 +139,9 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
 
     if (!proUser) {
       _startAdMob();
+      _startIAP();
     }
 
-    _startIAP();
     _startNotifications();
   }
 
@@ -190,6 +192,40 @@ class _BudgetMeState extends ConsumerState<BudgetMe> {
           purchaseDetails.status == PurchaseStatus.restored) {
         _verifyPurchase();
         ref.read(proUserRepositoryProvider).setProUser();
+        final dialog = PlatformAlertDialog(
+          title: PlatformText('You\'re all set!'),
+          actions: [
+            PlatformTextButton(
+              material: (context, platform) {
+                return MaterialTextButtonData(
+                  child: const Text(
+                    'OK',
+                    style: TextStyle(color: BudgetMeLightColors.black),
+                  ),
+                  onPressed: () async {
+                    Navigator.pop(context);
+                  },
+                );
+              },
+              cupertino: (context, platform) {
+                return CupertinoTextButtonData(
+                  child: const Text(
+                    'OK',
+                    style: TextStyle(color: BudgetMeLightColors.black),
+                  ),
+                  onPressed: () async {
+                    Navigator.pop(context);
+                  },
+                );
+              },
+            ),
+          ],
+        );
+
+        await showDialog(
+          context: context,
+          builder: (context) => dialog,
+        );
         Phoenix.rebirth(context);
       } else if (purchaseDetails.pendingCompletePurchase) {
         await _iap.completePurchase(purchaseDetails);
