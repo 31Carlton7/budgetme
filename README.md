@@ -34,7 +34,7 @@ flutter run
 
 If you would like to use the app via TestFlight or Google Play Beta, you can download the apps with the following links below:
 
-TestFlight: [https://testflight.apple.com/join/7vWnoWaD](https://testflight.apple.com/join/7vWnoWaD)
+TestFlight: [https://testflight.apple.com/join/c0LkxziW](https://testflight.apple.com/join/c0LkxziW)
 
 Google Play Beta: [https://play.google.com/apps/testing/co.budgetme.savings.app](https://play.google.com/apps/testing/co.budgetme.savings.app)
 
